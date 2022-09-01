@@ -1,6 +1,9 @@
 import { Injectable } from '@nestjs/common'
 import { DataSource } from 'typeorm'
+import { xorBy } from 'lodash'
+
 import { User } from './user.entity'
+import { BookVolume } from 'repositories/bookVolume/bookVolume.entity'
 
 @Injectable()
 export class UserRepository {
@@ -12,5 +15,42 @@ export class UserRepository {
 
   findAll() {
     return this.userRepository.find()
+  }
+
+  getById(id: string) {
+    return this.userRepository.findOne({
+      where: { id },
+      relations: { volumes: true },
+    })
+  }
+
+  async toogleVolume(userId: string, volumeId: string) {
+    const user = await this.userRepository.findOne({
+      where: { id: userId },
+      relations: { volumes: true },
+    })
+
+    const volumes = xorBy(
+      user.volumes || [],
+      [{ id: volumeId }] as BookVolume[],
+      'id',
+    )
+
+    const newUser = this.userRepository.create({
+      volumes,
+      email: volumeId,
+      id: userId,
+    })
+
+    await this.userRepository.save(newUser, { reload: true })
+
+    return this.userRepository.findOne({
+      where: { id: userId },
+      relations: {
+        volumes: {
+          book: { volumes: true },
+        },
+      },
+    })
   }
 }

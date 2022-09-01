@@ -1,0 +1,1280 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="profile" href="http://gmpg.org/xfn/11">
+
+        <title>100% Morango | Biblioteca Brasileira de Mangás</title>
+<script type="text/javascript">
+  WebFontConfig = {"google":{"families":["Exo+2:r,i,b,bi:latin,latin-ext"]}};
+  (function() {
+    var wf = document.createElement('script');
+    wf.src = 'https://blogbbm.com/wp-content/mu-plugins/wpcomsh/vendor/automattic/custom-fonts/js/webfont.js';
+    wf.type = 'text/javascript';
+    wf.async = 'true';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(wf, s);
+	})();
+</script><style id="jetpack-custom-fonts-css"></style>
+<meta name='robots' content='max-image-preview:large' />
+<!-- Jetpack Site Verification Tags -->
+<meta name="google-site-verification" content="LhYpUzu6HMhmNhcnN312UESVHLjxyj9oZjFiH_kiYsg" />
+<meta name="yandex-verification" content="22467833" />
+<link rel='dns-prefetch' href='//secure.gravatar.com' />
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel='dns-prefetch' href='//widgets.wp.com' />
+<link rel='dns-prefetch' href='//jetpack.wordpress.com' />
+<link rel='dns-prefetch' href='//s0.wp.com' />
+<link rel='dns-prefetch' href='//public-api.wordpress.com' />
+<link rel='dns-prefetch' href='//0.gravatar.com' />
+<link rel='dns-prefetch' href='//1.gravatar.com' />
+<link rel='dns-prefetch' href='//2.gravatar.com' />
+<link rel='dns-prefetch' href='//i0.wp.com' />
+<link rel='dns-prefetch' href='//c0.wp.com' />
+<link rel='dns-prefetch' href='//s.pubmine.com' />
+<link rel='dns-prefetch' href='//x.bidswitch.net' />
+<link rel='dns-prefetch' href='//static.criteo.net' />
+<link rel='dns-prefetch' href='//ib.adnxs.com' />
+<link rel='dns-prefetch' href='//aax.amazon-adsystem.com' />
+<link rel='dns-prefetch' href='//bidder.criteo.com' />
+<link rel='dns-prefetch' href='//cas.criteo.com' />
+<link rel='dns-prefetch' href='//gum.criteo.com' />
+<link rel='dns-prefetch' href='//ads.pubmatic.com' />
+<link rel='dns-prefetch' href='//gads.pubmatic.com' />
+<link rel='dns-prefetch' href='//tpc.googlesyndication.com' />
+<link rel='dns-prefetch' href='//ad.doubleclick.net' />
+<link rel='dns-prefetch' href='//googleads.g.doubleclick.net' />
+<link rel='dns-prefetch' href='//www.googletagservices.com' />
+<link rel='dns-prefetch' href='//cdn.switchadhub.com' />
+<link rel='dns-prefetch' href='//delivery.g.switchadhub.com' />
+<link rel='dns-prefetch' href='//delivery.swid.switchadhub.com' />
+<link href='https://fonts.gstatic.com' crossorigin rel='preconnect' />
+<link rel="alternate" type="application/rss+xml" title="Feed para Biblioteca Brasileira de Mangás &raquo;" href="https://blogbbm.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Feed de comentários para Biblioteca Brasileira de Mangás &raquo;" href="https://blogbbm.com/comments/feed/" />
+<script type="text/javascript">
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/blogbbm.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.0.2"}};
+/*! This file is auto-generated */
+!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){var a=String.fromCharCode,e=(p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,e),0,0),i.toDataURL());return p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,t),0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(!p||!p.fillText)return!1;switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])?!1:!s([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!s([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]);case"emoji":return!s([129777,127995,8205,129778,127999],[129777,127995,8203,129778,127999])}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(e=t.source||{}).concatemoji?c(e.concatemoji):e.wpemoji&&e.twemoji&&(c(e.twemoji),c(e.wpemoji)))}(window,document,window._wpemojiSettings);
+</script>
+<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 0.07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='all-css-df35416c0a2a3f855227d1ce61a511f0' href='https://blogbbm.com/_static/??-eJyVkkFywjAMRS9Uo6ELyqbTo3QUWxgT28pYNiG3r5NASzukwCYj2Xrf0o/6TmmOmWKGzhfrooAtNW0oWWiK8wYaz7pV3jUJ0wCSB08rLfLSP4vmPYVv1EXtiyGBg0Ag45B8va1a10nncaCkPFnUwyq4eJeud9f5NXNpNhR16bfvNAfZw5Gi4QRYMgfM2WnIdMqzkuqdsZTVNLhAFYPzyViz5EQ9MphaFdgQoAjlGd2lqdAscQfKHeoWKlfG57xr6/em6ZOdAkeX0KtI/cNlYx91TEoOffXQ2ehqsTwGcu9XGhMXIf/oELNfAvUuo00YfqJnJXaoqWEel6qtwen/fVxSydypjiUvWLaIczJoZh+eAmWPiSpqhil00d4jP+uGg7Cuv0h5tiy/kltr/VdhbPIcj6Uf4X292ay329e37eYLbP2FsA==' type='text/css' media='all' />
+<style id='wp-block-library-inline-css'>
+.has-text-align-justify{text-align:justify;}
+</style>
+<style id='wp-dark-mode-frontend-inline-css'>
+body{--wp-dark-mode-scale: 1}
+</style>
+<style id='viral-news-style-inline-css'>
+body,button,input,select,textarea{
+font-family:'Open Sans',sans-serif;}
+body,button,input,select,textarea,.entry-footer .cat-links a,.entry-footer .tags-links a,.entry-footer .edit-link a,.widget-area a,.entry-header .entry-title a,.entry-categories,.entry-categories a{color:#404040}
+.entry-post-info .entry-author{border-color:#404040}
+.vn-site-title,.vn-main-navigation a,h1,h2,h3,h4,h5,h6{
+font-family:'Nunito Sans',sans-serif;}
+button,input[type='button'],input[type='reset'],input[type='submit'],.entry-post-info .entry-date,.entry-footer .vn-read-more,.vn-timeline .vn-post-item:hover:after,.comment-navigation .nav-previous a,.comment-navigation .nav-next a,#vn-site-navigation.vn-theme-color,.vn-top-header.vn-theme-color,.vn-top-block .post-categories li a:hover,body .he-post-thumb .post-categories li a:hover,body .he-post-content .post-categories li a:hover,.vn-block-title span:before,body .he-title-style2.he-block-title span:before,.widget-area .widget-title span:before,#vn-back-top,.vn-carousel-block .owl-carousel .owl-nav button.owl-prev,.vn-carousel-block .owl-carousel .owl-nav button.owl-next,body .he-carousel-block .owl-carousel .owl-nav button.owl-prev,body .he-carousel-block .owl-carousel .owl-nav button.owl-next,body .he-ticker-title,body .he-ticker .owl-carousel .owl-nav button[class^='owl-']{background:#29495a;}
+a,.comment-list a:hover,.post-navigation a:hover,.vn-post-item h3 a:hover,.widget-area a:hover,body .he-ticker .owl-item a:hover{color:#29495a;}
+body .he-title-style3.he-block-title,.comment-navigation .nav-next a:after{
+border-left-color:#29495a;}
+.comment-navigation .nav-previous a:after{
+border-right-color:#29495a;}
+body .he-ticker-title:after{border-color:transparent transparent transparent #29495a;}
+.vn-header{padding:70px 0;background-image:url('https://blogbbm.com/wp-content/uploads/2020/06/novo.jpg')}
+</style>
+<style id='global-styles-inline-css'>
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--duotone--dark-grayscale: url('#wp-duotone-dark-grayscale');--wp--preset--duotone--grayscale: url('#wp-duotone-grayscale');--wp--preset--duotone--purple-yellow: url('#wp-duotone-purple-yellow');--wp--preset--duotone--blue-red: url('#wp-duotone-blue-red');--wp--preset--duotone--midnight: url('#wp-duotone-midnight');--wp--preset--duotone--magenta-yellow: url('#wp-duotone-magenta-yellow');--wp--preset--duotone--purple-green: url('#wp-duotone-purple-green');--wp--preset--duotone--blue-orange: url('#wp-duotone-blue-orange');--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--10: 0.3rem;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--spacing--90: 7.59rem;--wp--preset--spacing--100: 11.39rem;}:where(.is-layout-flex){gap: 0.5em;}body .is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+.wp-block-audio{margin: 0 0 1em 0;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}
+.wp-block-table > table{margin: 0 0 1em 0;}
+.wp-block-video{margin: 0 0 1em 0;}
+.wp-block-embed{margin: 0 0 1em 0;}
+</style>
+<link crossorigin="anonymous" rel='stylesheet' id='viral-news-fonts-css'  href='https://fonts.googleapis.com/css?family=Nunito+Sans%3A400%2C400i%2C700%7COpen+Sans%3A400%2C400i%2C700&#038;subset=latin%2Clatin-ext&#038;display=swap' media='all' />
+<style id='jetpack-global-styles-frontend-style-inline-css'>
+:root { --font-headings: unset; --font-base: unset; --font-headings-default: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif; --font-base-default: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;}
+</style>
+<script id='jquery-core-js-extra'>
+var SDT_DATA = {"ajaxurl":"https:\/\/blogbbm.com\/wp-admin\/admin-ajax.php","siteUrl":"https:\/\/blogbbm.com\/","pluginsUrl":"https:\/\/blogbbm.com\/wp-content\/plugins","isAdmin":""};
+</script>
+<script src='https://blogbbm.com/wp-includes/js/jquery/jquery.min.js?ver=3.6.0' id='jquery-core-js'></script>
+<script type='text/javascript'  src='https://blogbbm.com/_static/??wp-includes/js/jquery/jquery-migrate.min.js,wp-content/plugins/wp-dark-mode/assets/js/dark-mode.min.js?m=1660660908'></script>
+<link rel="https://api.w.org/" href="https://blogbbm.com/wp-json/" /><link rel="alternate" type="application/json" href="https://blogbbm.com/wp-json/wp/v2/pages/105444" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://blogbbm.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://blogbbm.com/wp-includes/wlwmanifest.xml" /> 
+
+<link rel="canonical" href="https://blogbbm.com/manga/morango/" />
+<link rel='shortlink' href='https://wp.me/P5GyYq-rqI' />
+<link rel="alternate" type="application/json+oembed" href="https://blogbbm.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fblogbbm.com%2Fmanga%2Fmorango%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://blogbbm.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fblogbbm.com%2Fmanga%2Fmorango%2F&#038;format=xml" />
+                <script>
+					(function() { window.wpDarkMode = {"config":{"brightness":100,"contrast":90,"sepia":10},"enable_preset":false,"customize_colors":false,"colors":{"bg":"#1B2836","text":"#fff","link":"#459BE6"},"enable_frontend":true,"enable_backend":false,"enable_os_mode":true,"excludes":"rs-fullwidth-wrap,.mejs-container","includes":"","is_excluded":false,"remember_darkmode":false,"default_mode":false,"keyboard_shortcut":true,"url_parameter":false,"images":"","videos":"","is_pro_active":false,"is_ultimate_active":false,"pro_version":0,"is_elementor_editor":false,"is_block_editor":false,"frontend_mode":false,"pluginUrl":"https:\/\/blogbbm.com\/wp-content\/plugins\/wp-dark-mode\/"} ; window.checkOsDarkMode = () => { if (!window.wpDarkMode.enable_os_mode || localStorage.getItem('wp_dark_mode_active')) return false; const darkMediaQuery = window.matchMedia('(prefers-color-scheme: dark)'); if (darkMediaQuery.matches) return true; try { darkMediaQuery.addEventListener('change', function(e) { return e.matches == true; }); } catch (e1) { try { darkMediaQuery.addListener(function(e) { return e.matches == true; }); } catch (e2) { console.error(e2); return false; } } return false; }; const is_saved = localStorage.getItem('wp_dark_mode_active'); const isCustomColor = parseInt(""); const shouldDarkMode = is_saved == '1' || (!is_saved && window.checkOsDarkMode()); if (!shouldDarkMode) return; document.querySelector('html').classList.add('wp-dark-mode-active'); const isPerformanceMode = Boolean(  ); if (!isCustomColor && !isPerformanceMode) { var css = `body, div, section, header, article, main, aside{background-color: #2B2D2D !important;}`; var head = document.head || document.getElementsByTagName('head')[0], style = document.createElement('style'); style.setAttribute('id', 'pre_css'); head.appendChild(style); style.type = 'text/css'; if (style.styleSheet) { style.styleSheet.cssText = css; } else { style.appendChild(document.createTextNode(css)); } } })();
+				</script>
+				<style>img#wpstats{display:none}</style>
+	<meta name="description" content="Título original: いちご100% Título nacional: 100% Morango Autor: Mizuki Kawashita Serialização no Japão: Weekly Shonen Jump Demografia: Shonen Editora original: Shueisha Editora Brasileira: Panini Nº de volumes no Japão: 19 Nº de volumes no Brasil: 19 Início da publicação no Brasil: Maio de 2010 Fim da publicação no Brasil: Abril de 2013 Formato: 13,7 x 20 cm Miolo:&hellip;" />
+<link rel="amphtml" href="https://blogbbm.com/manga/morango/?amp">			<style type="text/css">
+				/* If html does not have either class, do not show lazy loaded images. */
+				html:not( .jetpack-lazy-images-js-enabled ):not( .js ) .jetpack-lazy-image {
+					display: none;
+				}
+			</style>
+			<script>
+				document.documentElement.classList.add(
+					'jetpack-lazy-images-js-enabled'
+				);
+			</script>
+		
+<!-- Jetpack Open Graph Tags -->
+<meta property="og:type" content="article" />
+<meta property="og:title" content="100% Morango | Biblioteca Brasileira de Mangás" />
+<meta property="og:url" content="https://blogbbm.com/manga/morango/" />
+<meta property="og:description" content="Título original: いちご100% Título nacional: 100% Morango Autor: Mizuki Kawashita Serialização no Japão: Weekly Shonen Jump Demografia: Shonen Editora original: Shueisha Editora Brasileira: Panini Nº …" />
+<meta property="article:published_time" content="2019-04-22T20:46:39+00:00" />
+<meta property="article:modified_time" content="2021-09-09T21:25:54+00:00" />
+<meta property="og:site_name" content="Biblioteca Brasileira de Mangás" />
+<meta property="og:image" content="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/morango-01.jpg?fit=400%2C588&#038;ssl=1" />
+<meta property="og:image:width" content="400" />
+<meta property="og:image:height" content="588" />
+<meta property="og:image:alt" content="" />
+<meta property="og:locale" content="pt_BR" />
+<meta name="twitter:text:title" content="100% Morango" />
+<meta name="twitter:image" content="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/morango-01.jpg?fit=400%2C588&#038;ssl=1&#038;w=640" />
+<meta name="twitter:card" content="summary_large_image" />
+
+<!-- End Jetpack Open Graph Tags -->
+		<script type="text/javascript">
+			var __ATA_PP = { pt: 2, ht: 1, tn: 'viral-news', uloggedin: 0, amp: false, siteid: 84025898, consent: 0, ad: { label: { text: 'Anúncios' }, reportAd: { text: 'Denunciar este anúncio' } } };
+			var __ATA = __ATA || {};
+			__ATA.cmd = __ATA.cmd || [];
+			__ATA.criteo = __ATA.criteo || {};
+			__ATA.criteo.cmd = __ATA.criteo.cmd || [];
+		</script>
+				<script type="text/javascript">
+		(function(){var g=Date.now||function(){return+new Date};function h(a,b){a:{for(var c=a.length,d="string"==typeof a?a.split(""):a,e=0;e<c;e++)if(e in d&&b.call(void 0,d[e],e,a)){b=e;break a}b=-1}return 0>b?null:"string"==typeof a?a.charAt(b):a[b]};function k(a,b,c){c=null!=c?"="+encodeURIComponent(String(c)):"";if(b+=c){c=a.indexOf("#");0>c&&(c=a.length);var d=a.indexOf("?");if(0>d||d>c){d=c;var e=""}else e=a.substring(d+1,c);a=[a.substr(0,d),e,a.substr(c)];c=a[1];a[1]=b?c?c+"&"+b:b:c;a=a[0]+(a[1]?"?"+a[1]:"")+a[2]}return a};var l=0;function m(a,b){var c=document.createElement("script");c.src=a;c.onload=function(){b&&b(void 0)};c.onerror=function(){b&&b("error")};a=document.getElementsByTagName("head");var d;a&&0!==a.length?d=a[0]:d=document.documentElement;d.appendChild(c)}function n(a){var b=void 0===b?document.cookie:b;return(b=h(b.split("; "),function(c){return-1!=c.indexOf(a+"=")}))?b.split("=")[1]:""}function p(a){return"string"==typeof a&&0<a.length}
+		function r(a,b,c){b=void 0===b?"":b;c=void 0===c?".":c;var d=[];Object.keys(a).forEach(function(e){var f=a[e],q=typeof f;"object"==q&&null!=f||"function"==q?d.push(r(f,b+e+c)):null!==f&&void 0!==f&&(e=encodeURIComponent(b+e),d.push(e+"="+encodeURIComponent(f)))});return d.filter(p).join("&")}function t(a,b){a||((window.__ATA||{}).config=b.c,m(b.url))}var u=Math.floor(1E13*Math.random()),v=window.__ATA||{};window.__ATA=v;window.__ATA.cmd=v.cmd||[];v.rid=u;v.createdAt=g();var w=window.__ATA||{},x="s.pubmine.com";
+		w&&w.serverDomain&&(x=w.serverDomain);var y="//"+x+"/conf",z=window.top===window,A=window.__ATA_PP&&window.__ATA_PP.gdpr_applies,B="boolean"===typeof A?Number(A):null,C=window.__ATA_PP||null,D=z?document.referrer?document.referrer:null:null,E=z?window.location.href:document.referrer?document.referrer:null,F,G=n("__ATA_tuuid");F=G?G:null;var H=window.innerWidth+"x"+window.innerHeight,I=n("usprivacy"),J=r({gdpr:B,pp:C,rid:u,src:D,ref:E,tuuid:F,vp:H,us_privacy:I?I:null},"",".");
+		(function(a){var b=void 0===b?"cb":b;l++;var c="callback__"+g().toString(36)+"_"+l.toString(36);a=k(a,b,c);window[c]=function(d){t(void 0,d)};m(a,function(d){d&&t(d)})})(y+"?"+J);}).call(this);
+		</script>
+		<link rel="icon" href="https://i0.wp.com/blogbbm.com/wp-content/uploads/2020/06/cropped-13391593_1093777110695979_3604007059539203306_o.jpg?fit=32%2C32&#038;ssl=1" sizes="32x32" />
+<link rel="icon" href="https://i0.wp.com/blogbbm.com/wp-content/uploads/2020/06/cropped-13391593_1093777110695979_3604007059539203306_o.jpg?fit=192%2C192&#038;ssl=1" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://i0.wp.com/blogbbm.com/wp-content/uploads/2020/06/cropped-13391593_1093777110695979_3604007059539203306_o.jpg?fit=180%2C180&#038;ssl=1" />
+<meta name="msapplication-TileImage" content="https://i0.wp.com/blogbbm.com/wp-content/uploads/2020/06/cropped-13391593_1093777110695979_3604007059539203306_o.jpg?fit=270%2C270&#038;ssl=1" />
+<style type="text/css" id="wp-custom-css">p {
+  font-family: open sans;
+  font-size: 18px;
+}
+.button {
+	border-radius: 50px;
+  background-color: #29495A; 
+  border: none;
+	color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+.button:hover {
+  background-color: #10a4a7;
+  color: white;
+}
+.button:link {
+  color: white;
+} 
+.button:visited {
+  color: white;
+} 
+a:link {
+  color: #10a4a7;
+}
+a:visited {
+  color: #10a4a7;
+}
+a:hover {
+  color: #29495A;
+}
+	a:active {
+  color: #10a4a7;
+}
+blockquote {	
+	border-left:4px solid #10a4a7;
+	border-right: 2px solid whitesmoke;
+	border-top: 2px solid whitesmoke;
+	border-bottom: 2px solid whitesmoke;
+	font-style: italic;
+	padding-left: 1em;
+	padding-bottom: 0,5em;
+	padding-top: 1em;
+    }
+hr {
+  border-top: 1px solid #DDDDDD;
+}
+
+table, td, th {
+	 border: 1px solid #DDDDDD;
+	 }
+.vn-main-navigation ul ul li a{
+	background-color: #29495A;
+	color: white;
+}
+.vn-main-navigation ul ul li a:hover {
+	background-color: #10a4a7;
+}
+.vn-colophon {
+    background: #29495A;
+    color: white;
+}
+.vn-top-header.vl-dark {
+    background: #29495A;
+    border: none;}
+.vn-main-header {
+    margin-bottom: 5px;
+    text-align: left;
+}</style><!-- Jetpack Google Analytics -->
+			<script type='text/javascript'>
+				var _gaq = _gaq || [];
+				_gaq.push(['_setAccount', 'UA-151661069-1']);
+_gaq.push(['_trackPageview']);
+				(function() {
+					var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+					ga.src = ('https:' === document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+					var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+				})();
+			</script>
+			<!-- End Jetpack Google Analytics -->
+    </head>
+
+    <body class="page-template-default page page-id-105444 page-child parent-pageid-82066 wp-embed-responsive he-viral-news group-blog viral-news-right-sidebar elementor-default elementor-kit-135926">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-dark-grayscale"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0 0.49803921568627" /><feFuncG type="table" tableValues="0 0.49803921568627" /><feFuncB type="table" tableValues="0 0.49803921568627" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-grayscale"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0 1" /><feFuncG type="table" tableValues="0 1" /><feFuncB type="table" tableValues="0 1" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-purple-yellow"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0.54901960784314 0.98823529411765" /><feFuncG type="table" tableValues="0 1" /><feFuncB type="table" tableValues="0.71764705882353 0.25490196078431" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-blue-red"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0 1" /><feFuncG type="table" tableValues="0 0.27843137254902" /><feFuncB type="table" tableValues="0.5921568627451 0.27843137254902" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-midnight"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0 0" /><feFuncG type="table" tableValues="0 0.64705882352941" /><feFuncB type="table" tableValues="0 1" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-magenta-yellow"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0.78039215686275 1" /><feFuncG type="table" tableValues="0 0.94901960784314" /><feFuncB type="table" tableValues="0.35294117647059 0.47058823529412" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-purple-green"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0.65098039215686 0.40392156862745" /><feFuncG type="table" tableValues="0 1" /><feFuncB type="table" tableValues="0.44705882352941 0.4" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-blue-orange"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0.098039215686275 1" /><feFuncG type="table" tableValues="0 0.66274509803922" /><feFuncB type="table" tableValues="0.84705882352941 0.41960784313725" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg>        <div id="vn-page">
+            <a class="skip-link screen-reader-text" href="#vn-content">Skip to content</a>
+                        <header id="vn-masthead" class="vn-site-header">
+                                    <div class="vn-top-header vn-dark">
+                        <div class="vn-container">
+                            <div class="vn-top-left-header">
+                                                            </div>
+
+                            <div class="vn-top-right-header">
+                                <div class="vn-top-menu"><ul id="menu-menu-5" class="vn-clearfix"><li id="menu-item-106550" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-106550"><a href="https://blogbbm.com/manga/">Mangás</a></li>
+<li id="menu-item-106549" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-106549"><a href="https://blogbbm.com/2020/10/15/o-guia-de-light-novels-lancados-no-brasil/">Light Novels</a></li>
+<li id="menu-item-106548" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-106548"><a href="https://blogbbm.com/ebook/">Ebooks</a></li>
+<li id="menu-item-106546" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-106546"><a href="https://blogbbm.com/2019/04/29/onde-comprar-mangas-e-light-novels-pela-internet/">Onde Comprar</a></li>
+<li id="menu-item-136937" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-136937"><a href="https://blogbbm.com/sobre/">SOBRE O BLOG</a></li>
+</ul></div>                            </div>
+                        </div>
+                    </div>
+                
+                <div class="vn-header vn-white">
+                    <div class="vn-container">
+                        <div class="vn-header-social-icons"><a class="vn-facebook" href="https://www.facebook.com/bibliotecabrasileirademangas" target="_blank"><i class="mdi mdi-facebook"></i></a><a class="vn-twitter" href="https://twitter.com/BBMangas" target="_blank"><i class="mdi mdi-twitter"></i></a><a class="vn-instagram" href="https://www.instagram.com/blogbbm/" target="_blank"><i class="mdi mdi-instagram"></i></a></div>        <div id="vn-site-branding">
+                                <p class="vn-site-title"><a href="https://blogbbm.com/" rel="home">Biblioteca Brasileira de Mangás</a></p>
+                                <p class="vn-site-description"><a href="https://blogbbm.com/" rel="home">&quot;As crianças se tornam adultas após muito imitarem os adultos.&quot;</a></p>
+                        </div><!-- .site-branding -->
+        <div class="vn-header-search" ><span><i class="mdi mdi-magnify"></i></span></div>                    </div>
+                </div>
+
+                                    <nav id="vn-site-navigation" class="vn-main-navigation vn-theme-color">
+                        <div class="vn-container">
+                            <div class="vn-header-search"><span ><i class="mdi mdi-magnify"></i></span></div>
+
+                            <a href="#" class="vn-toggle-menu"><span></span></a>
+                            <div class="vn-menu vn-clearfix"><ul id="menu-menu-3" class="vn-clearfix"><li id="menu-item-4027" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-4027"><a href="https://blogbbm.com/">Home</a></li>
+<li id="menu-item-78928" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-78928"><a href="https://blogbbm.com/category/noticias/checklist/">Lançamentos</a>
+<ul class="sub-menu">
+	<li id="menu-item-82574" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-82574"><a title="Lista de títulos licenciados que ainda não começaram a sair…" href="https://blogbbm.com/2022/08/01/futuros-lancamentos-agosto-de-2022/">Futuros Lançamentos</a></li>
+	<li id="menu-item-4028" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4028"><a href="https://blogbbm.com/checklists/">Checklists</a></li>
+	<li id="menu-item-76794" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-76794"><a href="https://blogbbm.com/tag/nas-bancas/">Lançamentos da semana</a></li>
+	<li id="menu-item-76795" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-76795"><a title="Volumes de mangás publicados no Japão durante o mês" href="https://blogbbm.com/category/novos-volumes-de-mangas-no-japao/">Lançamentos no Japão</a></li>
+</ul>
+</li>
+<li id="menu-item-84099" class="menu-item menu-item-type-post_type menu-item-object-page current-page-ancestor menu-item-has-children menu-item-84099"><a title="Lista com todos os mangás que já foram publicados no Brasil" href="https://blogbbm.com/manga/">Mangás publicados no Brasil</a>
+<ul class="sub-menu">
+	<li id="menu-item-168110" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-168110"><a href="https://blogbbm.com/manga/">Mangás Impressos</a></li>
+	<li id="menu-item-96074" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-96074"><a href="https://blogbbm.com/ebook">Mangás Digitais</a></li>
+	<li id="menu-item-76798" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-76798"><a href="https://blogbbm.com/2020/10/15/o-guia-de-light-novels-lancados-no-brasil/">Light Novels</a></li>
+</ul>
+</li>
+<li id="menu-item-104521" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-104521"><a title="Lista de editoras brasileiras que publicam ou já publicaram mangás" href="https://blogbbm.com/editora/">Editoras</a>
+<ul class="sub-menu">
+	<li id="menu-item-56830" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-56830"><a href="https://blogbbm.com/editora/jbc/">JBC</a>
+	<ul class="sub-menu">
+		<li id="menu-item-56831" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-56831"><a href="https://blogbbm.com/editora/jbc/catalogo-da-editora-jbc/">CATÁLOGO DA EDITORA JBC</a></li>
+	</ul>
+</li>
+	<li id="menu-item-56833" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-56833"><a href="https://blogbbm.com/editora/newpop/">NewPOP</a>
+	<ul class="sub-menu">
+		<li id="menu-item-56834" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-56834"><a href="https://blogbbm.com/editora/newpop/catalogo-da-editora-newpop/">CATÁLOGO DA EDITORA NEWPOP</a></li>
+	</ul>
+</li>
+	<li id="menu-item-56837" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-56837"><a href="https://blogbbm.com/editora/panini/">Panini</a>
+	<ul class="sub-menu">
+		<li id="menu-item-56838" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-56838"><a href="https://blogbbm.com/editora/panini/catalogo-da-editora-panini/">CATÁLOGO DA EDITORA PANINI</a></li>
+	</ul>
+</li>
+	<li id="menu-item-91296" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-91296"><a href="https://blogbbm.com/editora/devir/">Devir</a></li>
+	<li id="menu-item-68544" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-68544"><a href="https://blogbbm.com/editora/">Outras editoras</a></li>
+</ul>
+</li>
+<li id="menu-item-7300" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-7300"><a href="https://blogbbm.com/materias/">Matérias</a>
+<ul class="sub-menu">
+	<li id="menu-item-76796" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-76796"><a href="https://blogbbm.com/2018/10/13/o-grande-guia-dos-mangas-cancelados-no-brasil/">Mangás cancelados no Brasil</a></li>
+	<li id="menu-item-76799" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-76799"><a href="https://blogbbm.com/2016/06/13/manhwas-e-manhuas-no-brasil/">Manhwas e Manhuas no Brasil</a></li>
+	<li id="menu-item-76800" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-76800"><a href="https://blogbbm.com/materias/">Perguntas Frequentes</a></li>
+</ul>
+</li>
+<li id="menu-item-135938" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-135938"><a href="https://blogbbm.com/category/review/">Resenhas</a></li>
+<li id="menu-item-89395" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-89395"><a href="https://blogbbm.com/blog/">Últimas Notícias</a></li>
+</ul></div>                        </div>
+                    </nav>
+                            </header>
+
+            <div id="vn-content" class="vn-site-content">
+<div class="vn-container">
+                <header class="vn-main-header">
+                <h1>100% Morango</h1>            </header><!-- .entry-header -->
+        
+        <div class="vn-content-wrap vn-clearfix">
+            <div id="primary" class="content-area">
+
+                
+<article id="post-105444" class="vn-article-content post-105444 page type-page status-publish has-post-thumbnail hentry">
+
+    <div class="entry-content">
+        <hr />
+<p style="text-align: justify;"><strong>Título original:</strong> いちご100%<br />
+<strong>Título nacional</strong>: 100% Morango<br />
+<strong>Autor</strong>: Mizuki Kawashita<br />
+<strong>Serialização no Japão</strong>: Weekly Shonen Jump<br />
+<strong>Demografia</strong>: Shonen<br />
+<strong>Editora original</strong>: Shueisha<br />
+<strong>Editora Brasileira</strong>: Panini<br />
+<strong>Nº de volumes no Japão</strong>: 19<br />
+<strong>Nº de volumes no Brasil</strong>: 19<br />
+<strong>Início da publicação no Brasil</strong>: Maio de 2010<br />
+<strong>Fim da publicação no Brasil</strong>: Abril de 2013<br />
+<strong>Formato</strong>: 13,7 x 20 cm<br />
+<strong>Miolo</strong>: Papel jornal<br />
+<strong>Preço</strong>: R$ 10,90</p>
+<hr />
+<p style="text-align: justify;"><em><span style="font-size: 13px;">Jumpei Manaka não é o que se pode dizer de alguém de bom senso pelo fato de ser meio afobado, apesar de ter boas intenções. Seu maior sonho é se tornar um grande cineasta, mesmo sem ter uma grande idéia e lutar para conseguir criar uma obra que chame a atenção e o torne famoso. Por enquanto, ainda está no colégio e sem muita coisa para fazer. Querendo espairecer e ver o pôr-do-sol um pouco vai ao telhado e repentinamente uma garota está bem na sua frente e a derruba. Observa que sua roupa de baixo tinha estampas de morango e ela se torna sua musa, querendo saber a identidade dela a qualquer custo. Procurando pela misteriosa estampa se foca na mais popular garota da escola, Tsukasa Nishino. Tem uma amiga que tem uma certa queda por ele e como é muita tímida acaba se reprimindo, Aya Toujo, uma escritora com muito talento, mas meio que desprezada por todos. Certo que Tsukasa é a musa que procurava, ele se declara a ela e propõe namorarem, o que ela aceita de pronto. Jumpei foi precipitado, pois quem usava a peça era Aya. Agora está numa sinuca onde não sabe o que fazer, ou fica com Tsukasa, sua agora namorada ou Aya, a que o deixou inspirado a fazer um filme épico e fará de tudo que isso aconteça, mesmo que envolva as duas nesse estranho triângulo amoroso.</span></em></p>
+<hr />
+<p style="text-align: center;"><strong>DATAS DE PUBLICAÇÃO</strong></p>
+<hr />
+<table style="margin: auto;" width="100%">
+<tbody>
+<tr>
+<td style="text-align: center;" width="8%"><strong>Vol</strong></td>
+<td style="text-align: center;"><strong>Data no Japão</strong></td>
+<td style="text-align: center;"><strong>Data no Brasil</strong></td>
+<td style="text-align: center;" width="15%"><strong>Preço</strong></td>
+</tr>
+<tr>
+<td># 01</td>
+<td style="text-align: center;">02/08/2002</td>
+<td style="text-align: center;">Maio de 2010</td>
+<td style="text-align: center;">R$ 9,90</td>
+</tr>
+<tr>
+<td># 02</td>
+<td style="text-align: center;">04/10/2002</td>
+<td style="text-align: center;">Junho de 2010</td>
+<td style="text-align: center;">R$ 9,90</td>
+</tr>
+<tr>
+<td># 03</td>
+<td style="text-align: center;">06/01/2003</td>
+<td style="text-align: center;">Julho de 2010</td>
+<td style="text-align: center;">R$ 9,90</td>
+</tr>
+<tr>
+<td># 04</td>
+<td style="text-align: center;">04/04/2003</td>
+<td style="text-align: center;">Agosto de 2010</td>
+<td style="text-align: center;">R$ 9,90</td>
+</tr>
+<tr>
+<td># 05</td>
+<td style="text-align: center;">04/06/2003</td>
+<td style="text-align: center;">Setembro de 2010</td>
+<td style="text-align: center;">R$ 9,90</td>
+</tr>
+<tr>
+<td># 06</td>
+<td style="text-align: center;">04/08/2003</td>
+<td style="text-align: center;">Outubro de 2010</td>
+<td style="text-align: center;">R$ 9,90</td>
+</tr>
+<tr>
+<td># 07</td>
+<td style="text-align: center;">03/10/2003</td>
+<td style="text-align: center;">Novembro de 2010</td>
+<td style="text-align: center;">R$ 9,90</td>
+</tr>
+<tr>
+<td># 08</td>
+<td style="text-align: center;">04/12/2003</td>
+<td style="text-align: center;">Dezembro de 2010</td>
+<td style="text-align: center;">R$ 9,90</td>
+</tr>
+<tr>
+<td># 09</td>
+<td style="text-align: center;">04/03/2004</td>
+<td style="text-align: center;">Janeiro de 2011</td>
+<td style="text-align: center;">R$ 9,90</td>
+</tr>
+<tr>
+<td># 10</td>
+<td style="text-align: center;">30/04/2004</td>
+<td style="text-align: center;">Março de 2011</td>
+<td style="text-align: center;">R$ 9,90</td>
+</tr>
+<tr>
+<td># 11</td>
+<td style="text-align: center;">02/07/2004</td>
+<td style="text-align: center;">Abril de 2011</td>
+<td style="text-align: center;">R$ 9,90</td>
+</tr>
+<tr>
+<td># 12</td>
+<td style="text-align: center;">03/09/2004</td>
+<td style="text-align: center;">Maio de 2011</td>
+<td style="text-align: center;">R$ 9,90</td>
+</tr>
+<tr>
+<td># 13</td>
+<td style="text-align: center;">04/11/2004</td>
+<td style="text-align: center;">Julho de 2011</td>
+<td style="text-align: center;">R$ 10,90</td>
+</tr>
+<tr>
+<td># 14</td>
+<td style="text-align: center;">05/01/2005</td>
+<td style="text-align: center;">Setembro de 2011</td>
+<td style="text-align: center;">R$ 10,90</td>
+</tr>
+<tr>
+<td># 15</td>
+<td style="text-align: center;">04/04/2005</td>
+<td style="text-align: center;">Janeiro de 2012</td>
+<td style="text-align: center;">R$ 10,90</td>
+</tr>
+<tr>
+<td># 16</td>
+<td style="text-align: center;">03/06/2005</td>
+<td style="text-align: center;">Junho de 2012</td>
+<td style="text-align: center;">R$ 10,90</td>
+</tr>
+<tr>
+<td># 17</td>
+<td style="text-align: center;">04/08/2005</td>
+<td style="text-align: center;">Setembro de 2012</td>
+<td style="text-align: center;">R$ 10,90</td>
+</tr>
+<tr>
+<td># 18</td>
+<td style="text-align: center;">04/10/2005</td>
+<td style="text-align: center;">Dezembro de 2012</td>
+<td style="text-align: center;">R$ 10,90</td>
+</tr>
+<tr>
+<td># 19</td>
+<td style="text-align: center;">02/12/2005</td>
+<td style="text-align: center;">Abril de 2013</td>
+<td style="text-align: center;">R$ 10,90</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p style="text-align: center;"><strong>CAPAS BRASILEIRAS</strong></p>
+<hr />
+<div data-carousel-extra='{"blog_id":1,"permalink":"https:\/\/blogbbm.com\/manga\/morango\/"}' id='gallery-1' class='gallery galleryid-105444 gallery-columns-4 gallery-size-medium'><figure class='gallery-item'>
+			<div class='gallery-icon portrait'>
+				<a href='https://blogbbm.com/manga/morango/morango-01/'><img width="204" height="300" src="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/morango-01.jpg?fit=204%2C300&amp;ssl=1" class="attachment-medium size-medium jetpack-lazy-image" alt data-attachment-id="105446" data-permalink="https://blogbbm.com/manga/morango/morango-01/" data-orig-file="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/morango-01.jpg?fit=400%2C588&amp;ssl=1" data-orig-size="400,588" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="morango 01" data-image-description data-image-caption data-medium-file="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/morango-01.jpg?fit=204%2C300&amp;ssl=1" data-large-file="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/morango-01.jpg?fit=400%2C588&amp;ssl=1" data-lazy-src="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/morango-01.jpg?fit=204%2C300&amp;ssl=1&amp;is-pending-load=1" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"></a>
+			</div></figure><figure class='gallery-item'>
+			<div class='gallery-icon portrait'>
+				<a href='https://blogbbm.com/manga/morango/morango-02/'><img width="206" height="300" src="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/morango-02.jpg?fit=206%2C300&amp;ssl=1" class="attachment-medium size-medium jetpack-lazy-image" alt data-attachment-id="105447" data-permalink="https://blogbbm.com/manga/morango/morango-02/" data-orig-file="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/morango-02.jpg?fit=400%2C583&amp;ssl=1" data-orig-size="400,583" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="morango 02" data-image-description data-image-caption data-medium-file="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/morango-02.jpg?fit=206%2C300&amp;ssl=1" data-large-file="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/morango-02.jpg?fit=400%2C583&amp;ssl=1" data-lazy-src="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/morango-02.jpg?fit=206%2C300&amp;ssl=1&amp;is-pending-load=1" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"></a>
+			</div></figure><figure class='gallery-item'>
+			<div class='gallery-icon portrait'>
+				<a href='https://blogbbm.com/manga/morango/morango-03/'><img width="201" height="300" src="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/morango-03.jpg?fit=201%2C300&amp;ssl=1" class="attachment-medium size-medium jetpack-lazy-image" alt data-attachment-id="105448" data-permalink="https://blogbbm.com/manga/morango/morango-03/" data-orig-file="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/morango-03.jpg?fit=400%2C596&amp;ssl=1" data-orig-size="400,596" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="morango 03" data-image-description data-image-caption data-medium-file="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/morango-03.jpg?fit=201%2C300&amp;ssl=1" data-large-file="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/morango-03.jpg?fit=400%2C596&amp;ssl=1" data-lazy-src="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/morango-03.jpg?fit=201%2C300&amp;ssl=1&amp;is-pending-load=1" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"></a>
+			</div></figure><figure class='gallery-item'>
+			<div class='gallery-icon portrait'>
+				<a href='https://blogbbm.com/manga/morango/morango-04/'><img width="203" height="300" src="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/morango-04.jpg?fit=203%2C300&amp;ssl=1" class="attachment-medium size-medium jetpack-lazy-image" alt data-attachment-id="105449" data-permalink="https://blogbbm.com/manga/morango/morango-04/" data-orig-file="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/morango-04.jpg?fit=400%2C590&amp;ssl=1" data-orig-size="400,590" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="morango 04" data-image-description data-image-caption data-medium-file="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/morango-04.jpg?fit=203%2C300&amp;ssl=1" data-large-file="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/morango-04.jpg?fit=400%2C590&amp;ssl=1" data-lazy-src="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/morango-04.jpg?fit=203%2C300&amp;ssl=1&amp;is-pending-load=1" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"></a>
+			</div></figure><figure class='gallery-item'>
+			<div class='gallery-icon portrait'>
+				<a href='https://blogbbm.com/manga/morango/morango-05/'><img width="203" height="300" src="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/morango-05.jpg?fit=203%2C300&amp;ssl=1" class="attachment-medium size-medium jetpack-lazy-image" alt data-attachment-id="105450" data-permalink="https://blogbbm.com/manga/morango/morango-05/" data-orig-file="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/morango-05.jpg?fit=400%2C591&amp;ssl=1" data-orig-size="400,591" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="morango 05" data-image-description data-image-caption data-medium-file="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/morango-05.jpg?fit=203%2C300&amp;ssl=1" data-large-file="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/morango-05.jpg?fit=400%2C591&amp;ssl=1" data-lazy-src="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/morango-05.jpg?fit=203%2C300&amp;ssl=1&amp;is-pending-load=1" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"></a>
+			</div></figure><figure class='gallery-item'>
+			<div class='gallery-icon portrait'>
+				<a href='https://blogbbm.com/manga/morango/morango-06/'><img width="201" height="300" src="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/morango-06.jpg?fit=201%2C300&amp;ssl=1" class="attachment-medium size-medium jetpack-lazy-image" alt data-attachment-id="105451" data-permalink="https://blogbbm.com/manga/morango/morango-06/" data-orig-file="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/morango-06.jpg?fit=400%2C598&amp;ssl=1" data-orig-size="400,598" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="morango 06" data-image-description data-image-caption data-medium-file="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/morango-06.jpg?fit=201%2C300&amp;ssl=1" data-large-file="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/morango-06.jpg?fit=400%2C598&amp;ssl=1" data-lazy-src="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/morango-06.jpg?fit=201%2C300&amp;ssl=1&amp;is-pending-load=1" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"></a>
+			</div></figure><figure class='gallery-item'>
+			<div class='gallery-icon portrait'>
+				<a href='https://blogbbm.com/manga/morango/morango-07/'><img width="201" height="300" src="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/morango-07.jpg?fit=201%2C300&amp;ssl=1" class="attachment-medium size-medium jetpack-lazy-image" alt data-attachment-id="105452" data-permalink="https://blogbbm.com/manga/morango/morango-07/" data-orig-file="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/morango-07.jpg?fit=400%2C596&amp;ssl=1" data-orig-size="400,596" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="morango 07" data-image-description data-image-caption data-medium-file="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/morango-07.jpg?fit=201%2C300&amp;ssl=1" data-large-file="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/morango-07.jpg?fit=400%2C596&amp;ssl=1" data-lazy-src="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/morango-07.jpg?fit=201%2C300&amp;ssl=1&amp;is-pending-load=1" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"></a>
+			</div></figure><figure class='gallery-item'>
+			<div class='gallery-icon portrait'>
+				<a href='https://blogbbm.com/manga/morango/morango-08/'><img width="203" height="300" src="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/morango-08.jpg?fit=203%2C300&amp;ssl=1" class="attachment-medium size-medium jetpack-lazy-image" alt data-attachment-id="105453" data-permalink="https://blogbbm.com/manga/morango/morango-08/" data-orig-file="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/morango-08.jpg?fit=400%2C592&amp;ssl=1" data-orig-size="400,592" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="morango 08" data-image-description data-image-caption data-medium-file="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/morango-08.jpg?fit=203%2C300&amp;ssl=1" data-large-file="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/morango-08.jpg?fit=400%2C592&amp;ssl=1" data-lazy-src="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/morango-08.jpg?fit=203%2C300&amp;ssl=1&amp;is-pending-load=1" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"></a>
+			</div></figure><figure class='gallery-item'>
+			<div class='gallery-icon portrait'>
+				<a href='https://blogbbm.com/manga/morango/morango-09/'><img width="203" height="300" src="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/morango-09.jpg?fit=203%2C300&amp;ssl=1" class="attachment-medium size-medium jetpack-lazy-image" alt data-attachment-id="105454" data-permalink="https://blogbbm.com/manga/morango/morango-09/" data-orig-file="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/morango-09.jpg?fit=400%2C590&amp;ssl=1" data-orig-size="400,590" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="morango 09" data-image-description data-image-caption data-medium-file="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/morango-09.jpg?fit=203%2C300&amp;ssl=1" data-large-file="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/morango-09.jpg?fit=400%2C590&amp;ssl=1" data-lazy-src="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/morango-09.jpg?fit=203%2C300&amp;ssl=1&amp;is-pending-load=1" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"></a>
+			</div></figure><figure class='gallery-item'>
+			<div class='gallery-icon portrait'>
+				<a href='https://blogbbm.com/manga/morango/morango-10/'><img width="204" height="300" src="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/morango-10.jpg?fit=204%2C300&amp;ssl=1" class="attachment-medium size-medium jetpack-lazy-image" alt data-attachment-id="105455" data-permalink="https://blogbbm.com/manga/morango/morango-10/" data-orig-file="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/morango-10.jpg?fit=400%2C587&amp;ssl=1" data-orig-size="400,587" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="morango 10" data-image-description data-image-caption data-medium-file="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/morango-10.jpg?fit=204%2C300&amp;ssl=1" data-large-file="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/morango-10.jpg?fit=400%2C587&amp;ssl=1" data-lazy-src="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/morango-10.jpg?fit=204%2C300&amp;ssl=1&amp;is-pending-load=1" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"></a>
+			</div></figure><figure class='gallery-item'>
+			<div class='gallery-icon portrait'>
+				<a href='https://blogbbm.com/manga/morango/morango-11/'><img width="205" height="300" src="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/morango-11.jpg?fit=205%2C300&amp;ssl=1" class="attachment-medium size-medium jetpack-lazy-image" alt data-attachment-id="105456" data-permalink="https://blogbbm.com/manga/morango/morango-11/" data-orig-file="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/morango-11.jpg?fit=400%2C586&amp;ssl=1" data-orig-size="400,586" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="morango 11" data-image-description data-image-caption data-medium-file="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/morango-11.jpg?fit=205%2C300&amp;ssl=1" data-large-file="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/morango-11.jpg?fit=400%2C586&amp;ssl=1" data-lazy-src="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/morango-11.jpg?fit=205%2C300&amp;ssl=1&amp;is-pending-load=1" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"></a>
+			</div></figure><figure class='gallery-item'>
+			<div class='gallery-icon portrait'>
+				<a href='https://blogbbm.com/manga/morango/morango-12/'><img width="204" height="300" src="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/morango-12.jpg?fit=204%2C300&amp;ssl=1" class="attachment-medium size-medium jetpack-lazy-image" alt data-attachment-id="105457" data-permalink="https://blogbbm.com/manga/morango/morango-12/" data-orig-file="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/morango-12.jpg?fit=400%2C588&amp;ssl=1" data-orig-size="400,588" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="morango 12" data-image-description data-image-caption data-medium-file="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/morango-12.jpg?fit=204%2C300&amp;ssl=1" data-large-file="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/morango-12.jpg?fit=400%2C588&amp;ssl=1" data-lazy-src="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/morango-12.jpg?fit=204%2C300&amp;ssl=1&amp;is-pending-load=1" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"></a>
+			</div></figure><figure class='gallery-item'>
+			<div class='gallery-icon portrait'>
+				<a href='https://blogbbm.com/manga/morango/morango-13/'><img width="200" height="300" src="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/morango-13.jpg?fit=200%2C300&amp;ssl=1" class="attachment-medium size-medium jetpack-lazy-image" alt data-attachment-id="105458" data-permalink="https://blogbbm.com/manga/morango/morango-13/" data-orig-file="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/morango-13.jpg?fit=400%2C599&amp;ssl=1" data-orig-size="400,599" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="morango 13" data-image-description data-image-caption data-medium-file="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/morango-13.jpg?fit=200%2C300&amp;ssl=1" data-large-file="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/morango-13.jpg?fit=400%2C599&amp;ssl=1" data-lazy-src="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/morango-13.jpg?fit=200%2C300&amp;ssl=1&amp;is-pending-load=1" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"></a>
+			</div></figure><figure class='gallery-item'>
+			<div class='gallery-icon portrait'>
+				<a href='https://blogbbm.com/manga/morango/morango-14/'><img width="203" height="300" src="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/morango-14.jpg?fit=203%2C300&amp;ssl=1" class="attachment-medium size-medium jetpack-lazy-image" alt data-attachment-id="105459" data-permalink="https://blogbbm.com/manga/morango/morango-14/" data-orig-file="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/morango-14.jpg?fit=400%2C591&amp;ssl=1" data-orig-size="400,591" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="morango 14" data-image-description data-image-caption data-medium-file="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/morango-14.jpg?fit=203%2C300&amp;ssl=1" data-large-file="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/morango-14.jpg?fit=400%2C591&amp;ssl=1" data-lazy-src="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/morango-14.jpg?fit=203%2C300&amp;ssl=1&amp;is-pending-load=1" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"></a>
+			</div></figure><figure class='gallery-item'>
+			<div class='gallery-icon portrait'>
+				<a href='https://blogbbm.com/manga/morango/morango-15/'><img width="202" height="300" src="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/morango-15.jpg?fit=202%2C300&amp;ssl=1" class="attachment-medium size-medium jetpack-lazy-image" alt data-attachment-id="105460" data-permalink="https://blogbbm.com/manga/morango/morango-15/" data-orig-file="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/morango-15.jpg?fit=400%2C594&amp;ssl=1" data-orig-size="400,594" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="morango 15" data-image-description data-image-caption data-medium-file="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/morango-15.jpg?fit=202%2C300&amp;ssl=1" data-large-file="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/morango-15.jpg?fit=400%2C594&amp;ssl=1" data-lazy-src="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/morango-15.jpg?fit=202%2C300&amp;ssl=1&amp;is-pending-load=1" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"></a>
+			</div></figure><figure class='gallery-item'>
+			<div class='gallery-icon portrait'>
+				<a href='https://blogbbm.com/manga/morango/morango-16/'><img width="201" height="300" src="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/morango-16.jpg?fit=201%2C300&amp;ssl=1" class="attachment-medium size-medium jetpack-lazy-image" alt data-attachment-id="105461" data-permalink="https://blogbbm.com/manga/morango/morango-16/" data-orig-file="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/morango-16.jpg?fit=400%2C598&amp;ssl=1" data-orig-size="400,598" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="morango 16" data-image-description data-image-caption data-medium-file="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/morango-16.jpg?fit=201%2C300&amp;ssl=1" data-large-file="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/morango-16.jpg?fit=400%2C598&amp;ssl=1" data-lazy-src="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/morango-16.jpg?fit=201%2C300&amp;ssl=1&amp;is-pending-load=1" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"></a>
+			</div></figure><figure class='gallery-item'>
+			<div class='gallery-icon portrait'>
+				<a href='https://blogbbm.com/manga/morango/morango-17/'><img width="201" height="300" src="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/morango-17.jpg?fit=201%2C300&amp;ssl=1" class="attachment-medium size-medium jetpack-lazy-image" alt data-attachment-id="105462" data-permalink="https://blogbbm.com/manga/morango/morango-17/" data-orig-file="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/morango-17.jpg?fit=400%2C596&amp;ssl=1" data-orig-size="400,596" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="morango 17" data-image-description data-image-caption data-medium-file="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/morango-17.jpg?fit=201%2C300&amp;ssl=1" data-large-file="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/morango-17.jpg?fit=400%2C596&amp;ssl=1" data-lazy-src="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/morango-17.jpg?fit=201%2C300&amp;ssl=1&amp;is-pending-load=1" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"></a>
+			</div></figure><figure class='gallery-item'>
+			<div class='gallery-icon portrait'>
+				<a href='https://blogbbm.com/manga/morango/morango-18/'><img width="204" height="300" src="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/morango-18.jpg?fit=204%2C300&amp;ssl=1" class="attachment-medium size-medium jetpack-lazy-image" alt data-attachment-id="105463" data-permalink="https://blogbbm.com/manga/morango/morango-18/" data-orig-file="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/morango-18.jpg?fit=400%2C588&amp;ssl=1" data-orig-size="400,588" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="morango 18" data-image-description data-image-caption data-medium-file="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/morango-18.jpg?fit=204%2C300&amp;ssl=1" data-large-file="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/morango-18.jpg?fit=400%2C588&amp;ssl=1" data-lazy-src="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/morango-18.jpg?fit=204%2C300&amp;ssl=1&amp;is-pending-load=1" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"></a>
+			</div></figure><figure class='gallery-item'>
+			<div class='gallery-icon portrait'>
+				<a href='https://blogbbm.com/editora/panini/catalogo-da-editora-panini/100-morango-19/'><img width="202" height="300" src="https://i0.wp.com/blogbbm.com/wp-content/uploads/2015/08/100-morango-19.jpg?fit=202%2C300&amp;ssl=1" class="attachment-medium size-medium jetpack-lazy-image" alt data-attachment-id="11840" data-permalink="https://blogbbm.com/editora/panini/catalogo-da-editora-panini/100-morango-19/" data-orig-file="https://i0.wp.com/blogbbm.com/wp-content/uploads/2015/08/100-morango-19.jpg?fit=400%2C593&amp;ssl=1" data-orig-size="400,593" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="100 morango 19" data-image-description data-image-caption data-medium-file="https://i0.wp.com/blogbbm.com/wp-content/uploads/2015/08/100-morango-19.jpg?fit=202%2C300&amp;ssl=1" data-large-file="https://i0.wp.com/blogbbm.com/wp-content/uploads/2015/08/100-morango-19.jpg?fit=400%2C593&amp;ssl=1" data-lazy-src="https://i0.wp.com/blogbbm.com/wp-content/uploads/2015/08/100-morango-19.jpg?fit=202%2C300&amp;ssl=1&amp;is-pending-load=1" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"></a>
+			</div></figure>
+		</div>
+
+<hr />
+<p style="text-align: center;"><strong>CAPAS JAPONESAS</strong></p>
+<hr />
+<p style="text-align: center;"><strong>ORIGINAIS</strong></p>
+<div data-carousel-extra='{"blog_id":1,"permalink":"https:\/\/blogbbm.com\/manga\/morango\/"}' id='gallery-2' class='gallery galleryid-105444 gallery-columns-4 gallery-size-medium'><figure class='gallery-item'>
+			<div class='gallery-icon portrait'>
+				<a href='https://blogbbm.com/manga/morango/ichigo-01/'><img width="190" height="300" src="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/ichigo-01.jpg?fit=190%2C300&amp;ssl=1" class="attachment-medium size-medium jetpack-lazy-image" alt data-attachment-id="105465" data-permalink="https://blogbbm.com/manga/morango/ichigo-01/" data-orig-file="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/ichigo-01.jpg?fit=317%2C500&amp;ssl=1" data-orig-size="317,500" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;1&quot;}" data-image-title="Ichigo 01" data-image-description data-image-caption data-medium-file="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/ichigo-01.jpg?fit=190%2C300&amp;ssl=1" data-large-file="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/ichigo-01.jpg?fit=317%2C500&amp;ssl=1" data-lazy-src="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/ichigo-01.jpg?fit=190%2C300&amp;ssl=1&amp;is-pending-load=1" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"></a>
+			</div></figure><figure class='gallery-item'>
+			<div class='gallery-icon portrait'>
+				<a href='https://blogbbm.com/manga/morango/ichigo-02/'><img width="189" height="300" src="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/ichigo-02.jpg?fit=189%2C300&amp;ssl=1" class="attachment-medium size-medium jetpack-lazy-image" alt data-attachment-id="105466" data-permalink="https://blogbbm.com/manga/morango/ichigo-02/" data-orig-file="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/ichigo-02.jpg?fit=315%2C500&amp;ssl=1" data-orig-size="315,500" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;1&quot;}" data-image-title="Ichigo 02" data-image-description data-image-caption data-medium-file="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/ichigo-02.jpg?fit=189%2C300&amp;ssl=1" data-large-file="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/ichigo-02.jpg?fit=315%2C500&amp;ssl=1" data-lazy-src="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/ichigo-02.jpg?fit=189%2C300&amp;ssl=1&amp;is-pending-load=1" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"></a>
+			</div></figure><figure class='gallery-item'>
+			<div class='gallery-icon portrait'>
+				<a href='https://blogbbm.com/manga/morango/ichigo-03/'><img width="190" height="300" src="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/ichigo-03.jpg?fit=190%2C300&amp;ssl=1" class="attachment-medium size-medium jetpack-lazy-image" alt data-attachment-id="105467" data-permalink="https://blogbbm.com/manga/morango/ichigo-03/" data-orig-file="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/ichigo-03.jpg?fit=316%2C500&amp;ssl=1" data-orig-size="316,500" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;1&quot;}" data-image-title="Ichigo 03" data-image-description data-image-caption data-medium-file="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/ichigo-03.jpg?fit=190%2C300&amp;ssl=1" data-large-file="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/ichigo-03.jpg?fit=316%2C500&amp;ssl=1" data-lazy-src="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/ichigo-03.jpg?fit=190%2C300&amp;ssl=1&amp;is-pending-load=1" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"></a>
+			</div></figure><figure class='gallery-item'>
+			<div class='gallery-icon portrait'>
+				<a href='https://blogbbm.com/manga/morango/ichigo-04/'><img width="189" height="300" src="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/ichigo-04.jpg?fit=189%2C300&amp;ssl=1" class="attachment-medium size-medium jetpack-lazy-image" alt data-attachment-id="105468" data-permalink="https://blogbbm.com/manga/morango/ichigo-04/" data-orig-file="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/ichigo-04.jpg?fit=218%2C346&amp;ssl=1" data-orig-size="218,346" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;1&quot;}" data-image-title="Ichigo 04" data-image-description data-image-caption data-medium-file="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/ichigo-04.jpg?fit=189%2C300&amp;ssl=1" data-large-file="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/ichigo-04.jpg?fit=218%2C346&amp;ssl=1" data-lazy-src="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/ichigo-04.jpg?fit=189%2C300&amp;ssl=1&amp;is-pending-load=1" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"></a>
+			</div></figure><figure class='gallery-item'>
+			<div class='gallery-icon portrait'>
+				<a href='https://blogbbm.com/manga/morango/ichigo-05/'><img width="188" height="300" src="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/ichigo-05.jpg?fit=188%2C300&amp;ssl=1" class="attachment-medium size-medium jetpack-lazy-image" alt data-attachment-id="105469" data-permalink="https://blogbbm.com/manga/morango/ichigo-05/" data-orig-file="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/ichigo-05.jpg?fit=314%2C500&amp;ssl=1" data-orig-size="314,500" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;1&quot;}" data-image-title="Ichigo 05" data-image-description data-image-caption data-medium-file="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/ichigo-05.jpg?fit=188%2C300&amp;ssl=1" data-large-file="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/ichigo-05.jpg?fit=314%2C500&amp;ssl=1" data-lazy-src="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/ichigo-05.jpg?fit=188%2C300&amp;ssl=1&amp;is-pending-load=1" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"></a>
+			</div></figure><figure class='gallery-item'>
+			<div class='gallery-icon portrait'>
+				<a href='https://blogbbm.com/manga/morango/ichigo-06/'><img width="190" height="300" src="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/ichigo-06.jpg?fit=190%2C300&amp;ssl=1" class="attachment-medium size-medium jetpack-lazy-image" alt data-attachment-id="105470" data-permalink="https://blogbbm.com/manga/morango/ichigo-06/" data-orig-file="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/ichigo-06.jpg?fit=316%2C500&amp;ssl=1" data-orig-size="316,500" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;1&quot;}" data-image-title="Ichigo 06" data-image-description data-image-caption data-medium-file="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/ichigo-06.jpg?fit=190%2C300&amp;ssl=1" data-large-file="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/ichigo-06.jpg?fit=316%2C500&amp;ssl=1" data-lazy-src="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/ichigo-06.jpg?fit=190%2C300&amp;ssl=1&amp;is-pending-load=1" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"></a>
+			</div></figure><figure class='gallery-item'>
+			<div class='gallery-icon portrait'>
+				<a href='https://blogbbm.com/manga/morango/ichigo-07/'><img width="190" height="300" src="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/ichigo-07.jpg?fit=190%2C300&amp;ssl=1" class="attachment-medium size-medium jetpack-lazy-image" alt data-attachment-id="105471" data-permalink="https://blogbbm.com/manga/morango/ichigo-07/" data-orig-file="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/ichigo-07.jpg?fit=316%2C500&amp;ssl=1" data-orig-size="316,500" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;1&quot;}" data-image-title="Ichigo 07" data-image-description data-image-caption data-medium-file="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/ichigo-07.jpg?fit=190%2C300&amp;ssl=1" data-large-file="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/ichigo-07.jpg?fit=316%2C500&amp;ssl=1" data-lazy-src="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/ichigo-07.jpg?fit=190%2C300&amp;ssl=1&amp;is-pending-load=1" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"></a>
+			</div></figure><figure class='gallery-item'>
+			<div class='gallery-icon portrait'>
+				<a href='https://blogbbm.com/manga/morango/ichigo-08/'><img width="189" height="300" src="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/ichigo-08.jpg?fit=189%2C300&amp;ssl=1" class="attachment-medium size-medium jetpack-lazy-image" alt data-attachment-id="105472" data-permalink="https://blogbbm.com/manga/morango/ichigo-08/" data-orig-file="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/ichigo-08.jpg?fit=315%2C500&amp;ssl=1" data-orig-size="315,500" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;1&quot;}" data-image-title="Ichigo 08" data-image-description data-image-caption data-medium-file="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/ichigo-08.jpg?fit=189%2C300&amp;ssl=1" data-large-file="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/ichigo-08.jpg?fit=315%2C500&amp;ssl=1" data-lazy-src="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/ichigo-08.jpg?fit=189%2C300&amp;ssl=1&amp;is-pending-load=1" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"></a>
+			</div></figure><figure class='gallery-item'>
+			<div class='gallery-icon portrait'>
+				<a href='https://blogbbm.com/manga/morango/ichigo-09/'><img width="189" height="300" src="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/ichigo-09.jpg?fit=189%2C300&amp;ssl=1" class="attachment-medium size-medium jetpack-lazy-image" alt data-attachment-id="105473" data-permalink="https://blogbbm.com/manga/morango/ichigo-09/" data-orig-file="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/ichigo-09.jpg?fit=315%2C500&amp;ssl=1" data-orig-size="315,500" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;1&quot;}" data-image-title="Ichigo 09" data-image-description data-image-caption data-medium-file="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/ichigo-09.jpg?fit=189%2C300&amp;ssl=1" data-large-file="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/ichigo-09.jpg?fit=315%2C500&amp;ssl=1" data-lazy-src="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/ichigo-09.jpg?fit=189%2C300&amp;ssl=1&amp;is-pending-load=1" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"></a>
+			</div></figure><figure class='gallery-item'>
+			<div class='gallery-icon portrait'>
+				<a href='https://blogbbm.com/manga/morango/ichigo-10/'><img width="191" height="300" src="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/ichigo-10.jpg?fit=191%2C300&amp;ssl=1" class="attachment-medium size-medium jetpack-lazy-image" alt data-attachment-id="105474" data-permalink="https://blogbbm.com/manga/morango/ichigo-10/" data-orig-file="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/ichigo-10.jpg?fit=318%2C500&amp;ssl=1" data-orig-size="318,500" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;1&quot;}" data-image-title="Ichigo 10" data-image-description data-image-caption data-medium-file="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/ichigo-10.jpg?fit=191%2C300&amp;ssl=1" data-large-file="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/ichigo-10.jpg?fit=318%2C500&amp;ssl=1" data-lazy-src="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/ichigo-10.jpg?fit=191%2C300&amp;ssl=1&amp;is-pending-load=1" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"></a>
+			</div></figure><figure class='gallery-item'>
+			<div class='gallery-icon portrait'>
+				<a href='https://blogbbm.com/manga/morango/ichigo-11/'><img width="190" height="300" src="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/ichigo-11.jpg?fit=190%2C300&amp;ssl=1" class="attachment-medium size-medium jetpack-lazy-image" alt data-attachment-id="105475" data-permalink="https://blogbbm.com/manga/morango/ichigo-11/" data-orig-file="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/ichigo-11.jpg?fit=317%2C500&amp;ssl=1" data-orig-size="317,500" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;1&quot;}" data-image-title="Ichigo 11" data-image-description data-image-caption data-medium-file="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/ichigo-11.jpg?fit=190%2C300&amp;ssl=1" data-large-file="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/ichigo-11.jpg?fit=317%2C500&amp;ssl=1" data-lazy-src="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/ichigo-11.jpg?fit=190%2C300&amp;ssl=1&amp;is-pending-load=1" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"></a>
+			</div></figure><figure class='gallery-item'>
+			<div class='gallery-icon portrait'>
+				<a href='https://blogbbm.com/manga/morango/ichigo-12/'><img width="190" height="300" src="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/ichigo-12.jpg?fit=190%2C300&amp;ssl=1" class="attachment-medium size-medium jetpack-lazy-image" alt data-attachment-id="105476" data-permalink="https://blogbbm.com/manga/morango/ichigo-12/" data-orig-file="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/ichigo-12.jpg?fit=316%2C500&amp;ssl=1" data-orig-size="316,500" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;1&quot;}" data-image-title="Ichigo 12" data-image-description data-image-caption data-medium-file="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/ichigo-12.jpg?fit=190%2C300&amp;ssl=1" data-large-file="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/ichigo-12.jpg?fit=316%2C500&amp;ssl=1" data-lazy-src="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/ichigo-12.jpg?fit=190%2C300&amp;ssl=1&amp;is-pending-load=1" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"></a>
+			</div></figure><figure class='gallery-item'>
+			<div class='gallery-icon portrait'>
+				<a href='https://blogbbm.com/manga/morango/ichigo-13/'><img width="188" height="300" src="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/ichigo-13.jpg?fit=188%2C300&amp;ssl=1" class="attachment-medium size-medium jetpack-lazy-image" alt data-attachment-id="105477" data-permalink="https://blogbbm.com/manga/morango/ichigo-13/" data-orig-file="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/ichigo-13.jpg?fit=314%2C500&amp;ssl=1" data-orig-size="314,500" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;1&quot;}" data-image-title="Ichigo 13" data-image-description data-image-caption data-medium-file="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/ichigo-13.jpg?fit=188%2C300&amp;ssl=1" data-large-file="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/ichigo-13.jpg?fit=314%2C500&amp;ssl=1" data-lazy-src="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/ichigo-13.jpg?fit=188%2C300&amp;ssl=1&amp;is-pending-load=1" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"></a>
+			</div></figure><figure class='gallery-item'>
+			<div class='gallery-icon portrait'>
+				<a href='https://blogbbm.com/manga/morango/ichigo-14/'><img width="188" height="300" src="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/ichigo-14.jpg?fit=188%2C300&amp;ssl=1" class="attachment-medium size-medium jetpack-lazy-image" alt data-attachment-id="105478" data-permalink="https://blogbbm.com/manga/morango/ichigo-14/" data-orig-file="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/ichigo-14.jpg?fit=314%2C500&amp;ssl=1" data-orig-size="314,500" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;1&quot;}" data-image-title="Ichigo 14" data-image-description data-image-caption data-medium-file="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/ichigo-14.jpg?fit=188%2C300&amp;ssl=1" data-large-file="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/ichigo-14.jpg?fit=314%2C500&amp;ssl=1" data-lazy-src="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/ichigo-14.jpg?fit=188%2C300&amp;ssl=1&amp;is-pending-load=1" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"></a>
+			</div></figure><figure class='gallery-item'>
+			<div class='gallery-icon portrait'>
+				<a href='https://blogbbm.com/manga/morango/ichigo-15/'><img width="190" height="300" src="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/ichigo-15.jpg?fit=190%2C300&amp;ssl=1" class="attachment-medium size-medium jetpack-lazy-image" alt data-attachment-id="105479" data-permalink="https://blogbbm.com/manga/morango/ichigo-15/" data-orig-file="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/ichigo-15.jpg?fit=317%2C500&amp;ssl=1" data-orig-size="317,500" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;1&quot;}" data-image-title="Ichigo 15" data-image-description data-image-caption data-medium-file="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/ichigo-15.jpg?fit=190%2C300&amp;ssl=1" data-large-file="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/ichigo-15.jpg?fit=317%2C500&amp;ssl=1" data-lazy-src="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/ichigo-15.jpg?fit=190%2C300&amp;ssl=1&amp;is-pending-load=1" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"></a>
+			</div></figure><figure class='gallery-item'>
+			<div class='gallery-icon portrait'>
+				<a href='https://blogbbm.com/manga/morango/ichigo-16/'><img width="188" height="300" src="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/ichigo-16.jpg?fit=188%2C300&amp;ssl=1" class="attachment-medium size-medium jetpack-lazy-image" alt data-attachment-id="105480" data-permalink="https://blogbbm.com/manga/morango/ichigo-16/" data-orig-file="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/ichigo-16.jpg?fit=314%2C500&amp;ssl=1" data-orig-size="314,500" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;1&quot;}" data-image-title="Ichigo 16" data-image-description data-image-caption data-medium-file="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/ichigo-16.jpg?fit=188%2C300&amp;ssl=1" data-large-file="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/ichigo-16.jpg?fit=314%2C500&amp;ssl=1" data-lazy-src="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/ichigo-16.jpg?fit=188%2C300&amp;ssl=1&amp;is-pending-load=1" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"></a>
+			</div></figure><figure class='gallery-item'>
+			<div class='gallery-icon portrait'>
+				<a href='https://blogbbm.com/manga/morango/ichigo-17/'><img width="189" height="300" src="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/ichigo-17.jpg?fit=189%2C300&amp;ssl=1" class="attachment-medium size-medium jetpack-lazy-image" alt data-attachment-id="105481" data-permalink="https://blogbbm.com/manga/morango/ichigo-17/" data-orig-file="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/ichigo-17.jpg?fit=315%2C500&amp;ssl=1" data-orig-size="315,500" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;1&quot;}" data-image-title="Ichigo 17" data-image-description data-image-caption data-medium-file="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/ichigo-17.jpg?fit=189%2C300&amp;ssl=1" data-large-file="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/ichigo-17.jpg?fit=315%2C500&amp;ssl=1" data-lazy-src="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/ichigo-17.jpg?fit=189%2C300&amp;ssl=1&amp;is-pending-load=1" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"></a>
+			</div></figure><figure class='gallery-item'>
+			<div class='gallery-icon portrait'>
+				<a href='https://blogbbm.com/manga/morango/ichigo-18/'><img width="189" height="300" src="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/ichigo-18.jpg?fit=189%2C300&amp;ssl=1" class="attachment-medium size-medium jetpack-lazy-image" alt data-attachment-id="105482" data-permalink="https://blogbbm.com/manga/morango/ichigo-18/" data-orig-file="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/ichigo-18.jpg?fit=315%2C500&amp;ssl=1" data-orig-size="315,500" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;1&quot;}" data-image-title="Ichigo 18" data-image-description data-image-caption data-medium-file="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/ichigo-18.jpg?fit=189%2C300&amp;ssl=1" data-large-file="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/ichigo-18.jpg?fit=315%2C500&amp;ssl=1" data-lazy-src="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/ichigo-18.jpg?fit=189%2C300&amp;ssl=1&amp;is-pending-load=1" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"></a>
+			</div></figure><figure class='gallery-item'>
+			<div class='gallery-icon portrait'>
+				<a href='https://blogbbm.com/manga/morango/ichigo-19/'><img width="188" height="300" src="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/ichigo-19.jpg?fit=188%2C300&amp;ssl=1" class="attachment-medium size-medium jetpack-lazy-image" alt data-attachment-id="105483" data-permalink="https://blogbbm.com/manga/morango/ichigo-19/" data-orig-file="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/ichigo-19.jpg?fit=313%2C500&amp;ssl=1" data-orig-size="313,500" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;1&quot;}" data-image-title="Ichigo 19" data-image-description data-image-caption data-medium-file="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/ichigo-19.jpg?fit=188%2C300&amp;ssl=1" data-large-file="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/ichigo-19.jpg?fit=313%2C500&amp;ssl=1" data-lazy-src="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/ichigo-19.jpg?fit=188%2C300&amp;ssl=1&amp;is-pending-load=1" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"></a>
+			</div></figure>
+		</div>
+
+<p style="text-align: center;"><strong>2ª PUBLICAÇÃO (VERSÃO BUNKO, 10 VOLUMES NO TOTAL)</strong></p>
+<div data-carousel-extra='{"blog_id":1,"permalink":"https:\/\/blogbbm.com\/manga\/morango\/"}' id='gallery-3' class='gallery galleryid-105444 gallery-columns-4 gallery-size-medium'><figure class='gallery-item'>
+			<div class='gallery-icon portrait'>
+				<a href='https://blogbbm.com/manga/morango/new-ichigo-01/'><img width="217" height="300" src="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/new-ichigo-01.jpg?fit=217%2C300&amp;ssl=1" class="attachment-medium size-medium jetpack-lazy-image" alt aria-describedby="gallery-3-105484" data-attachment-id="105484" data-permalink="https://blogbbm.com/manga/morango/new-ichigo-01/" data-orig-file="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/new-ichigo-01.jpg?fit=361%2C500&amp;ssl=1" data-orig-size="361,500" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="NEW ICHIGO 01" data-image-description data-image-caption="&lt;p&gt;18/04/2013&lt;/p&gt;
+" data-medium-file="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/new-ichigo-01.jpg?fit=217%2C300&amp;ssl=1" data-large-file="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/new-ichigo-01.jpg?fit=361%2C500&amp;ssl=1" data-lazy-src="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/new-ichigo-01.jpg?fit=217%2C300&amp;ssl=1&amp;is-pending-load=1" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"></a>
+			</div>
+				<figcaption class='wp-caption-text gallery-caption' id='gallery-3-105484'>
+				18/04/2013
+				</figcaption></figure><figure class='gallery-item'>
+			<div class='gallery-icon portrait'>
+				<a href='https://blogbbm.com/manga/morango/new-ichigo-02/'><img width="218" height="300" src="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/new-ichigo-02.jpg?fit=218%2C300&amp;ssl=1" class="attachment-medium size-medium jetpack-lazy-image" alt aria-describedby="gallery-3-105485" data-attachment-id="105485" data-permalink="https://blogbbm.com/manga/morango/new-ichigo-02/" data-orig-file="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/new-ichigo-02.jpg?fit=363%2C500&amp;ssl=1" data-orig-size="363,500" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="NEW ICHIGO 02" data-image-description data-image-caption="&lt;p&gt;18/04/2013&lt;/p&gt;
+" data-medium-file="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/new-ichigo-02.jpg?fit=218%2C300&amp;ssl=1" data-large-file="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/new-ichigo-02.jpg?fit=363%2C500&amp;ssl=1" data-lazy-src="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/new-ichigo-02.jpg?fit=218%2C300&amp;ssl=1&amp;is-pending-load=1" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"></a>
+			</div>
+				<figcaption class='wp-caption-text gallery-caption' id='gallery-3-105485'>
+				18/04/2013
+				</figcaption></figure><figure class='gallery-item'>
+			<div class='gallery-icon portrait'>
+				<a href='https://blogbbm.com/manga/morango/new-ichigo-03/'><img width="218" height="300" src="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/new-ichigo-03.jpg?fit=218%2C300&amp;ssl=1" class="attachment-medium size-medium jetpack-lazy-image" alt aria-describedby="gallery-3-105486" data-attachment-id="105486" data-permalink="https://blogbbm.com/manga/morango/new-ichigo-03/" data-orig-file="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/new-ichigo-03.jpg?fit=361%2C497&amp;ssl=1" data-orig-size="361,497" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;1&quot;}" data-image-title="NEW ICHIGO 03" data-image-description data-image-caption="&lt;p&gt;17/05/2013&lt;/p&gt;
+" data-medium-file="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/new-ichigo-03.jpg?fit=218%2C300&amp;ssl=1" data-large-file="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/new-ichigo-03.jpg?fit=361%2C497&amp;ssl=1" data-lazy-src="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/new-ichigo-03.jpg?fit=218%2C300&amp;ssl=1&amp;is-pending-load=1" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"></a>
+			</div>
+				<figcaption class='wp-caption-text gallery-caption' id='gallery-3-105486'>
+				17/05/2013
+				</figcaption></figure><figure class='gallery-item'>
+			<div class='gallery-icon portrait'>
+				<a href='https://blogbbm.com/manga/morango/new-ichigo-04/'><img width="217" height="300" src="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/new-ichigo-04.jpg?fit=217%2C300&amp;ssl=1" class="attachment-medium size-medium jetpack-lazy-image" alt aria-describedby="gallery-3-105487" data-attachment-id="105487" data-permalink="https://blogbbm.com/manga/morango/new-ichigo-04/" data-orig-file="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/new-ichigo-04.jpg?fit=359%2C496&amp;ssl=1" data-orig-size="359,496" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;1&quot;}" data-image-title="NEW ICHIGO 04" data-image-description data-image-caption="&lt;p&gt;17/05/2013&lt;/p&gt;
+" data-medium-file="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/new-ichigo-04.jpg?fit=217%2C300&amp;ssl=1" data-large-file="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/new-ichigo-04.jpg?fit=359%2C496&amp;ssl=1" data-lazy-src="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/new-ichigo-04.jpg?fit=217%2C300&amp;ssl=1&amp;is-pending-load=1" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"></a>
+			</div>
+				<figcaption class='wp-caption-text gallery-caption' id='gallery-3-105487'>
+				17/05/2013
+				</figcaption></figure><figure class='gallery-item'>
+			<div class='gallery-icon portrait'>
+				<a href='https://blogbbm.com/manga/morango/new-ichigo-05/'><img width="209" height="300" src="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/new-ichigo-05.jpg?fit=209%2C300&amp;ssl=1" class="attachment-medium size-medium jetpack-lazy-image" alt aria-describedby="gallery-3-105488" data-attachment-id="105488" data-permalink="https://blogbbm.com/manga/morango/new-ichigo-05/" data-orig-file="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/new-ichigo-05.jpg?fit=349%2C500&amp;ssl=1" data-orig-size="349,500" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="NEW ICHIGO 05" data-image-description data-image-caption="&lt;p&gt;18/06/2013&lt;/p&gt;
+" data-medium-file="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/new-ichigo-05.jpg?fit=209%2C300&amp;ssl=1" data-large-file="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/new-ichigo-05.jpg?fit=349%2C500&amp;ssl=1" data-lazy-src="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/new-ichigo-05.jpg?fit=209%2C300&amp;ssl=1&amp;is-pending-load=1" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"></a>
+			</div>
+				<figcaption class='wp-caption-text gallery-caption' id='gallery-3-105488'>
+				18/06/2013
+				</figcaption></figure><figure class='gallery-item'>
+			<div class='gallery-icon portrait'>
+				<a href='https://blogbbm.com/manga/morango/new-ichigo-06/'><img width="212" height="300" src="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/new-ichigo-06.jpg?fit=212%2C300&amp;ssl=1" class="attachment-medium size-medium jetpack-lazy-image" alt aria-describedby="gallery-3-105489" data-attachment-id="105489" data-permalink="https://blogbbm.com/manga/morango/new-ichigo-06/" data-orig-file="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/new-ichigo-06.jpg?fit=353%2C500&amp;ssl=1" data-orig-size="353,500" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="NEW ICHIGO 06" data-image-description data-image-caption="&lt;p&gt;18/06/2013&lt;/p&gt;
+" data-medium-file="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/new-ichigo-06.jpg?fit=212%2C300&amp;ssl=1" data-large-file="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/new-ichigo-06.jpg?fit=353%2C500&amp;ssl=1" data-lazy-src="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/new-ichigo-06.jpg?fit=212%2C300&amp;ssl=1&amp;is-pending-load=1" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"></a>
+			</div>
+				<figcaption class='wp-caption-text gallery-caption' id='gallery-3-105489'>
+				18/06/2013
+				</figcaption></figure><figure class='gallery-item'>
+			<div class='gallery-icon portrait'>
+				<a href='https://blogbbm.com/manga/morango/new-ichigo-07/'><img width="207" height="300" src="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/new-ichigo-07.jpg?fit=207%2C300&amp;ssl=1" class="attachment-medium size-medium jetpack-lazy-image" alt aria-describedby="gallery-3-105490" data-attachment-id="105490" data-permalink="https://blogbbm.com/manga/morango/new-ichigo-07/" data-orig-file="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/new-ichigo-07.jpg?fit=345%2C500&amp;ssl=1" data-orig-size="345,500" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="NEW ICHIGO 07" data-image-description data-image-caption="&lt;p&gt;18/07/2013&lt;/p&gt;
+" data-medium-file="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/new-ichigo-07.jpg?fit=207%2C300&amp;ssl=1" data-large-file="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/new-ichigo-07.jpg?fit=345%2C500&amp;ssl=1" data-lazy-src="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/new-ichigo-07.jpg?fit=207%2C300&amp;ssl=1&amp;is-pending-load=1" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"></a>
+			</div>
+				<figcaption class='wp-caption-text gallery-caption' id='gallery-3-105490'>
+				18/07/2013
+				</figcaption></figure><figure class='gallery-item'>
+			<div class='gallery-icon portrait'>
+				<a href='https://blogbbm.com/manga/morango/new-ichigo-08/'><img width="207" height="300" src="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/new-ichigo-08.jpg?fit=207%2C300&amp;ssl=1" class="attachment-medium size-medium jetpack-lazy-image" alt aria-describedby="gallery-3-105491" data-attachment-id="105491" data-permalink="https://blogbbm.com/manga/morango/new-ichigo-08/" data-orig-file="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/new-ichigo-08.jpg?fit=345%2C500&amp;ssl=1" data-orig-size="345,500" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="NEW ICHIGO 08" data-image-description data-image-caption="&lt;p&gt;18/07/2013&lt;/p&gt;
+" data-medium-file="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/new-ichigo-08.jpg?fit=207%2C300&amp;ssl=1" data-large-file="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/new-ichigo-08.jpg?fit=345%2C500&amp;ssl=1" data-lazy-src="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/new-ichigo-08.jpg?fit=207%2C300&amp;ssl=1&amp;is-pending-load=1" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"></a>
+			</div>
+				<figcaption class='wp-caption-text gallery-caption' id='gallery-3-105491'>
+				18/07/2013
+				</figcaption></figure><figure class='gallery-item'>
+			<div class='gallery-icon portrait'>
+				<a href='https://blogbbm.com/manga/morango/new-ichigo-09/'><img width="206" height="300" src="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/new-ichigo-09.jpg?fit=206%2C300&amp;ssl=1" class="attachment-medium size-medium jetpack-lazy-image" alt aria-describedby="gallery-3-105492" data-attachment-id="105492" data-permalink="https://blogbbm.com/manga/morango/new-ichigo-09/" data-orig-file="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/new-ichigo-09.jpg?fit=344%2C500&amp;ssl=1" data-orig-size="344,500" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="NEW ICHIGO 09" data-image-description data-image-caption="&lt;p&gt;16/08/2013&lt;/p&gt;
+" data-medium-file="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/new-ichigo-09.jpg?fit=206%2C300&amp;ssl=1" data-large-file="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/new-ichigo-09.jpg?fit=344%2C500&amp;ssl=1" data-lazy-src="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/new-ichigo-09.jpg?fit=206%2C300&amp;ssl=1&amp;is-pending-load=1" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"></a>
+			</div>
+				<figcaption class='wp-caption-text gallery-caption' id='gallery-3-105492'>
+				16/08/2013
+				</figcaption></figure><figure class='gallery-item'>
+			<div class='gallery-icon portrait'>
+				<a href='https://blogbbm.com/manga/morango/new-ichigo-10/'><img width="202" height="300" src="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/new-ichigo-10.jpg?fit=202%2C300&amp;ssl=1" class="attachment-medium size-medium jetpack-lazy-image" alt aria-describedby="gallery-3-105493" data-attachment-id="105493" data-permalink="https://blogbbm.com/manga/morango/new-ichigo-10/" data-orig-file="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/new-ichigo-10.jpg?fit=337%2C500&amp;ssl=1" data-orig-size="337,500" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="NEW ICHIGO 10" data-image-description data-image-caption="&lt;p&gt;16/08/2013&lt;/p&gt;
+" data-medium-file="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/new-ichigo-10.jpg?fit=202%2C300&amp;ssl=1" data-large-file="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/new-ichigo-10.jpg?fit=337%2C500&amp;ssl=1" data-lazy-src="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/new-ichigo-10.jpg?fit=202%2C300&amp;ssl=1&amp;is-pending-load=1" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"></a>
+			</div>
+				<figcaption class='wp-caption-text gallery-caption' id='gallery-3-105493'>
+				16/08/2013
+				</figcaption></figure>
+		</div>
+
+<hr />
+<p><a href="http://amzn.to/2A5WKN9"><img data-attachment-id="82706" data-permalink="https://blogbbm.com/2017/11/08/ni-223-novas-series-dos-autores-de-gantz-e-i-am-a-hero/amazon-2/" data-orig-file="https://i0.wp.com/blogbbm.com/wp-content/uploads/2017/11/amazon.jpg?fit=1729%2C510&amp;ssl=1" data-orig-size="1729,510" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="Amazon" data-image-description data-image-caption data-medium-file="https://i0.wp.com/blogbbm.com/wp-content/uploads/2017/11/amazon.jpg?fit=300%2C88&amp;ssl=1" data-large-file="https://i0.wp.com/blogbbm.com/wp-content/uploads/2017/11/amazon.jpg?fit=810%2C239&amp;ssl=1" class="aligncenter size-full wp-image-82706 jetpack-lazy-image" src="https://i0.wp.com/blogbbm.com/wp-content/uploads/2017/11/amazon.jpg?resize=810%2C239&#038;ssl=1" alt width="810" height="239" data-recalc-dims="1" data-lazy-src="https://i0.wp.com/blogbbm.com/wp-content/uploads/2017/11/amazon.jpg?resize=810%2C239&amp;is-pending-load=1#038;ssl=1" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"><noscript><img data-lazy-fallback="1" data-attachment-id="82706" data-permalink="https://blogbbm.com/2017/11/08/ni-223-novas-series-dos-autores-de-gantz-e-i-am-a-hero/amazon-2/" data-orig-file="https://i0.wp.com/blogbbm.com/wp-content/uploads/2017/11/amazon.jpg?fit=1729%2C510&amp;ssl=1" data-orig-size="1729,510" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="Amazon" data-image-description="" data-image-caption="" data-medium-file="https://i0.wp.com/blogbbm.com/wp-content/uploads/2017/11/amazon.jpg?fit=300%2C88&amp;ssl=1" data-large-file="https://i0.wp.com/blogbbm.com/wp-content/uploads/2017/11/amazon.jpg?fit=810%2C239&amp;ssl=1" class="aligncenter size-full wp-image-82706" src="https://i0.wp.com/blogbbm.com/wp-content/uploads/2017/11/amazon.jpg?resize=810%2C239&#038;ssl=1" alt="" width="810" height="239" data-recalc-dims="1"  /></noscript></a></p>
+		<div id="atatags-840258981-630fa276dedac"></div>
+		
+		<script>
+			__ATA.cmd.push(function() {
+				__ATA.initDynamicSlot({
+					id: 'atatags-840258981-630fa276dedac',
+					location: 120,
+					formFactor: '001',
+					label: {
+						text: 'Anúncios',
+					},
+					creative: {
+						reportAd: {
+							text: 'Denunciar este anúncio',
+						},
+						privacySettings: {
+							text: 'Configurações de privacidade',
+						}
+					}
+				});
+			});
+		</script><div class="sharedaddy sd-sharing-enabled"><div class="robots-nocontent sd-block sd-social sd-social-official sd-sharing"><h3 class="sd-title">Compartilhe essa publicação em:</h3><div class="sd-content"><ul><li class="share-twitter"><a href="https://twitter.com/share" class="twitter-share-button" data-url="https://blogbbm.com/manga/morango/" data-text="100% Morango"  >Tweet</a></li><li class="share-facebook"><div class="fb-share-button" data-href="https://blogbbm.com/manga/morango/" data-layout="button_count"></div></li><li class="share-tumblr"><a class="tumblr-share-button" target="_blank" href="https://www.tumblr.com/share" data-title="100% Morango" data-content="https://blogbbm.com/manga/morango/" title="Compartilhar no Tumblr"data-posttype="link">Compartilhar no Tumblr</a></li><li class="share-telegram"><a rel="nofollow noopener noreferrer" data-shared="" class="share-telegram sd-button" href="https://blogbbm.com/manga/morango/?share=telegram" target="_blank" title="Clique para compartilhar no Telegram" ><span>Telegram</span></a></li><li class="share-jetpack-whatsapp"><a rel="nofollow noopener noreferrer" data-shared="" class="share-jetpack-whatsapp sd-button" href="https://blogbbm.com/manga/morango/?share=jetpack-whatsapp" target="_blank" title="Clique para compartilhar no WhatsApp" ><span>WhatsApp</span></a></li><li class="share-email"><a rel="nofollow noopener noreferrer" data-shared="" class="share-email sd-button" href="mailto:?subject=%5BPost%20compartilhado%5D%20100%25%20Morango&body=https%3A%2F%2Fblogbbm.com%2Fmanga%2Fmorango%2F&share=email" target="_blank" title="Clique para enviar um link por e-mail para um amigo" data-email-share-error-title="Você tem algum e-mail configurado?" data-email-share-error-text="Se você está tendo problemas para compartilhar por e-mail, é possível que você não tenha configurado o e-mail para seu navegador. Talvez seja necessário você mesmo criar um novo e-mail." data-email-share-nonce="4fee692e48" data-email-share-track-url="https://blogbbm.com/manga/morango/?share=email"><span>E-mail</span></a></li><li class="share-skype"><div class="skype-share" data-href="https://blogbbm.com/manga/morango/" data-lang="en-US" data-style="small" data-source="jetpack" ></div></li><li class="share-end"></li></ul></div></div></div><div class='sharedaddy sd-block sd-like jetpack-likes-widget-wrapper jetpack-likes-widget-unloaded' id='like-post-wrapper-84025898-105444-630fa276ef0c2' data-src='https://widgets.wp.com/likes/#blog_id=84025898&amp;post_id=105444&amp;origin=blogbbm.com&amp;obj_id=84025898-105444-630fa276ef0c2' data-name='like-post-frame-84025898-105444-630fa276ef0c2' data-title='Curtir ou reblogar'><h3 class="sd-title">Curtir isso:</h3><div class='likes-widget-placeholder post-likes-widget-placeholder' style='height: 55px;'><span class='button'><span>Curtir</span></span> <span class="loading">Carregando...</span></div><span class='sd-text-color'></span><a class='sd-link-color'></a></div>            </div>
+
+</article>
+
+
+                
+            </div><!-- #primary -->
+
+                <div id="secondary" class="widget-area">
+        		<div id="atatags-840258983-630fa276f2879"></div>
+		
+		<script>
+			__ATA.cmd.push(function() {
+				__ATA.initDynamicSlot({
+					id: 'atatags-840258983-630fa276f2879',
+					location: 150,
+					formFactor: '001',
+					label: {
+						text: 'Anúncios',
+					},
+					creative: {
+						reportAd: {
+							text: 'Denunciar este anúncio',
+						},
+						privacySettings: {
+							text: 'Configurações de privacidade',
+						}
+					}
+				});
+			});
+		</script><aside id="search-3" class="widget widget_search"><h3 class="widget-title"><span>Pesquise no Blog</span></h3><form role="search" method="get" class="search-form" action="https://blogbbm.com/">
+				<label>
+					<span class="screen-reader-text">Pesquisar por:</span>
+					<input type="search" class="search-field" placeholder="Pesquisar &hellip;" value="" name="s" />
+				</label>
+				<input type="submit" class="search-submit" value="Pesquisar" />
+			</form></aside><aside id="custom_html-2" class="widget_text widget widget_custom_html"><div class="textwidget custom-html-widget"><p align='justify'>Participamos do <b>Programa de Associados da Amazon</b>, um serviço de intermediação entre a Amazon e os clientes, que remunera a inclusão de links para o site da Amazon e os sites afiliados.</p></div></aside><aside id="media_image-60" class="widget widget_media_image"><style>.widget.widget_media_image img { height: auto; max-width: 100%; } </style><a href="https://amzn.to/3jZEp8g"><img width="350" height="250" src="https://i0.wp.com/blogbbm.com/wp-content/uploads/2020/09/hgx8g1_TBzcx099srum8-DyMgpSV3ig7EsNPVrDwqhgpX92IB.jpg?fit=350%2C250&amp;ssl=1" class="image wp-image-138828  attachment-full size-full jetpack-lazy-image" alt="" loading="lazy" style="max-width: 100%; height: auto;" data-attachment-id="138828" data-permalink="https://blogbbm.com/hgx8g1_tbzcx099srum8-dymgpsv3ig7esnpvrdwqhgpx92ib/" data-orig-file="https://i0.wp.com/blogbbm.com/wp-content/uploads/2020/09/hgx8g1_TBzcx099srum8-DyMgpSV3ig7EsNPVrDwqhgpX92IB.jpg?fit=350%2C250&amp;ssl=1" data-orig-size="350,250" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;1&quot;}" data-image-title="hgx8g1_TBzcx099srum8-DyMgpSV3ig7EsNPVrDwqhgpX92IB" data-image-description="" data-image-caption="" data-medium-file="https://i0.wp.com/blogbbm.com/wp-content/uploads/2020/09/hgx8g1_TBzcx099srum8-DyMgpSV3ig7EsNPVrDwqhgpX92IB.jpg?fit=300%2C214&amp;ssl=1" data-large-file="https://i0.wp.com/blogbbm.com/wp-content/uploads/2020/09/hgx8g1_TBzcx099srum8-DyMgpSV3ig7EsNPVrDwqhgpX92IB.jpg?fit=350%2C250&amp;ssl=1" data-lazy-srcset="https://i0.wp.com/blogbbm.com/wp-content/uploads/2020/09/hgx8g1_TBzcx099srum8-DyMgpSV3ig7EsNPVrDwqhgpX92IB.jpg?w=350&amp;ssl=1 350w, https://i0.wp.com/blogbbm.com/wp-content/uploads/2020/09/hgx8g1_TBzcx099srum8-DyMgpSV3ig7EsNPVrDwqhgpX92IB.jpg?resize=300%2C214&amp;ssl=1 300w, https://i0.wp.com/blogbbm.com/wp-content/uploads/2020/09/hgx8g1_TBzcx099srum8-DyMgpSV3ig7EsNPVrDwqhgpX92IB.jpg?resize=150%2C107&amp;ssl=1 150w" data-lazy-sizes="(max-width: 350px) 100vw, 350px" data-lazy-src="https://i0.wp.com/blogbbm.com/wp-content/uploads/2020/09/hgx8g1_TBzcx099srum8-DyMgpSV3ig7EsNPVrDwqhgpX92IB.jpg?fit=350%2C250&amp;ssl=1&amp;is-pending-load=1" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" /></a></aside>		<div id="atatags-840258985-630fa276f321a"></div>
+		
+		<script>
+			__ATA.cmd.push(function() {
+				__ATA.initDynamicSlot({
+					id: 'atatags-840258985-630fa276f321a',
+					location: 150,
+					formFactor: '003',
+					label: {
+						text: 'Anúncios',
+					},
+					creative: {
+						reportAd: {
+							text: 'Denunciar este anúncio',
+						},
+						privacySettings: {
+							text: 'Configurações de privacidade',
+						}
+					}
+				});
+			});
+		</script>
+		<aside id="recent-posts-3" class="widget widget_recent_entries">
+		<h3 class="widget-title"><span>Posts Recentes</span></h3>
+		<ul>
+											<li>
+					<a href="https://blogbbm.com/2022/08/29/retorno-de-baymax-possivel-data-de-ryuko-e-outras-informacoes/">Retorno de &#8220;Baymax&#8221;, possível data de &#8220;Ryuko&#8221; e outras informações&#8230;</a>
+									</li>
+											<li>
+					<a href="https://blogbbm.com/2022/08/28/mangas-que-sairam-esta-semana-21-08-a-27-08/">Mangás que saíram esta semana (21/08 a 27/08)</a>
+									</li>
+											<li>
+					<a href="https://blogbbm.com/2022/08/24/jbc-divulga-previsao-de-lancamento-de-evangelion-e-outras-obras/">JBC divulga previsão de lançamento de &#8220;Evangelion&#8221; e outras obras</a>
+									</li>
+											<li>
+					<a href="https://blogbbm.com/2022/08/23/numeros-finais-de-hunter-x-hunter-em-pre-venda/">Números  &#8220;finais&#8221; de &#8220;Hunter x Hunter&#8221; em pré-venda</a>
+									</li>
+											<li>
+					<a href="https://blogbbm.com/2022/08/21/mangas-que-sairam-esta-semana-14-08-a-20-08/">Mangás que saíram esta semana (14/08 a 20/08)</a>
+									</li>
+					</ul>
+
+		</aside><aside id="top-posts-10" class="widget widget_top-posts"><h3 class="widget-title"><span>Mais acessados do dia</span></h3><ul class='widgets-list-layout no-grav'>
+<li><a href="https://blogbbm.com/" title="01 - New Home" class="bump-view" data-bump-view="tp">
+								<img width="40" height="40" src="https://i0.wp.com/blogbbm.com/wp-content/uploads/2020/06/cropped-13391593_1093777110695979_3604007059539203306_o.jpg?fit=40%2C40&#038;ssl=1" alt="01 - New Home" data-pin-nopin="true" class="widgets-list-layout-blavatar"/>
+							</a>
+							<div class="widgets-list-layout-links">
+								<a href="https://blogbbm.com/" title="01 - New Home" class="bump-view" data-bump-view="tp">01 - New Home</a>
+							</div>
+							</li><li><a href="https://blogbbm.com/2022/08/28/mangas-que-sairam-esta-semana-21-08-a-27-08/" title="Mangás que saíram esta semana (21/08 a 27/08)" class="bump-view" data-bump-view="tp">
+								<img width="40" height="40" src="https://i0.wp.com/blogbbm.com/wp-content/uploads/2022/08/Confissoes-e-Namoradas.jpg?fit=800%2C300&#038;ssl=1&#038;resize=40%2C40" alt="Mangás que saíram esta semana (21/08 a 27/08)" data-pin-nopin="true" class="widgets-list-layout-blavatar"/>
+							</a>
+							<div class="widgets-list-layout-links">
+								<a href="https://blogbbm.com/2022/08/28/mangas-que-sairam-esta-semana-21-08-a-27-08/" title="Mangás que saíram esta semana (21/08 a 27/08)" class="bump-view" data-bump-view="tp">Mangás que saíram esta semana (21/08 a 27/08)</a>
+							</div>
+							</li><li><a href="https://blogbbm.com/manfra/omega_complex/" title="Omega Complex (Mangá Francês)" class="bump-view" data-bump-view="tp">
+								<img width="40" height="40" src="https://i0.wp.com/blogbbm.com/wp-content/uploads/2019/04/omega-complex.png?fit=672%2C302&#038;ssl=1&#038;resize=40%2C40" alt="Omega Complex (Mangá Francês)" data-pin-nopin="true" class="widgets-list-layout-blavatar"/>
+							</a>
+							<div class="widgets-list-layout-links">
+								<a href="https://blogbbm.com/manfra/omega_complex/" title="Omega Complex (Mangá Francês)" class="bump-view" data-bump-view="tp">Omega Complex (Mangá Francês)</a>
+							</div>
+							</li><li><a href="https://blogbbm.com/2022/08/29/retorno-de-baymax-possivel-data-de-ryuko-e-outras-informacoes/" title="Retorno de &quot;Baymax&quot;, possível data de &quot;Ryuko&quot; e outras informações..." class="bump-view" data-bump-view="tp">
+								<img width="40" height="40" src="https://i0.wp.com/blogbbm.com/wp-content/uploads/2022/08/ryuko.jpg?fit=800%2C300&#038;ssl=1&#038;resize=40%2C40" alt="Retorno de &quot;Baymax&quot;, possível data de &quot;Ryuko&quot; e outras informações..." data-pin-nopin="true" class="widgets-list-layout-blavatar"/>
+							</a>
+							<div class="widgets-list-layout-links">
+								<a href="https://blogbbm.com/2022/08/29/retorno-de-baymax-possivel-data-de-ryuko-e-outras-informacoes/" title="Retorno de &quot;Baymax&quot;, possível data de &quot;Ryuko&quot; e outras informações..." class="bump-view" data-bump-view="tp">Retorno de &quot;Baymax&quot;, possível data de &quot;Ryuko&quot; e outras informações...</a>
+							</div>
+							</li><li><a href="https://blogbbm.com/2022/08/24/jbc-divulga-previsao-de-lancamento-de-evangelion-e-outras-obras/" title="JBC divulga previsão de lançamento de &quot;Evangelion&quot; e outras obras" class="bump-view" data-bump-view="tp">
+								<img width="40" height="40" src="https://i0.wp.com/blogbbm.com/wp-content/uploads/2022/08/Evangelion.jpg?fit=800%2C300&#038;ssl=1&#038;resize=40%2C40" alt="JBC divulga previsão de lançamento de &quot;Evangelion&quot; e outras obras" data-pin-nopin="true" class="widgets-list-layout-blavatar"/>
+							</a>
+							<div class="widgets-list-layout-links">
+								<a href="https://blogbbm.com/2022/08/24/jbc-divulga-previsao-de-lancamento-de-evangelion-e-outras-obras/" title="JBC divulga previsão de lançamento de &quot;Evangelion&quot; e outras obras" class="bump-view" data-bump-view="tp">JBC divulga previsão de lançamento de &quot;Evangelion&quot; e outras obras</a>
+							</div>
+							</li><li><a href="https://blogbbm.com/manga/" title="LISTA DOS MANGÁS PUBLICADOS NO BRASIL" class="bump-view" data-bump-view="tp">
+								<img width="40" height="40" src="https://i0.wp.com/blogbbm.com/wp-content/uploads/2020/06/mangas.jpg?fit=808%2C308&#038;ssl=1&#038;resize=40%2C40" alt="LISTA DOS MANGÁS PUBLICADOS NO BRASIL" data-pin-nopin="true" class="widgets-list-layout-blavatar"/>
+							</a>
+							<div class="widgets-list-layout-links">
+								<a href="https://blogbbm.com/manga/" title="LISTA DOS MANGÁS PUBLICADOS NO BRASIL" class="bump-view" data-bump-view="tp">LISTA DOS MANGÁS PUBLICADOS NO BRASIL</a>
+							</div>
+							</li><li><a href="https://blogbbm.com/manga/tokyo-revengers/" title="Tokyo Revengers" class="bump-view" data-bump-view="tp">
+								<img width="40" height="40" src="https://i0.wp.com/blogbbm.com/wp-content/uploads/2020/12/Tokyo-Revengers.png?fit=808%2C308&#038;ssl=1&#038;resize=40%2C40" alt="Tokyo Revengers" data-pin-nopin="true" class="widgets-list-layout-blavatar"/>
+							</a>
+							<div class="widgets-list-layout-links">
+								<a href="https://blogbbm.com/manga/tokyo-revengers/" title="Tokyo Revengers" class="bump-view" data-bump-view="tp">Tokyo Revengers</a>
+							</div>
+							</li><li><a href="https://blogbbm.com/blog/" title="ÚLTIMAS NOTÍCIAS" class="bump-view" data-bump-view="tp">
+								<img width="40" height="40" src="https://i0.wp.com/blogbbm.com/wp-content/uploads/2020/06/cropped-13391593_1093777110695979_3604007059539203306_o.jpg?fit=40%2C40&#038;ssl=1" alt="ÚLTIMAS NOTÍCIAS" data-pin-nopin="true" class="widgets-list-layout-blavatar"/>
+							</a>
+							<div class="widgets-list-layout-links">
+								<a href="https://blogbbm.com/blog/" title="ÚLTIMAS NOTÍCIAS" class="bump-view" data-bump-view="tp">ÚLTIMAS NOTÍCIAS</a>
+							</div>
+							</li><li><a href="https://blogbbm.com/manga/shinda/" title="Hikaru ga Shinda Natsu" class="bump-view" data-bump-view="tp">
+								<img width="40" height="40" src="https://i0.wp.com/blogbbm.com/wp-content/uploads/2022/08/Hikaru-ga-Shinda-Natsu.jpg?fit=800%2C300&#038;ssl=1&#038;resize=40%2C40" alt="Hikaru ga Shinda Natsu" data-pin-nopin="true" class="widgets-list-layout-blavatar"/>
+							</a>
+							<div class="widgets-list-layout-links">
+								<a href="https://blogbbm.com/manga/shinda/" title="Hikaru ga Shinda Natsu" class="bump-view" data-bump-view="tp">Hikaru ga Shinda Natsu</a>
+							</div>
+							</li><li><a href="https://blogbbm.com/manga/jojo/" title="Jojo&#039;s Bizarre Adventure" class="bump-view" data-bump-view="tp">
+								<img width="40" height="40" src="https://i0.wp.com/blogbbm.com/wp-content/uploads/2020/10/jojo-phantom-blood.png?fit=808%2C308&#038;ssl=1&#038;resize=40%2C40" alt="Jojo&#039;s Bizarre Adventure" data-pin-nopin="true" class="widgets-list-layout-blavatar"/>
+							</a>
+							<div class="widgets-list-layout-links">
+								<a href="https://blogbbm.com/manga/jojo/" title="Jojo&#039;s Bizarre Adventure" class="bump-view" data-bump-view="tp">Jojo&#039;s Bizarre Adventure</a>
+							</div>
+							</li></ul>
+</aside>		<div id="atatags-840258986-630fa2770302f"></div>
+		
+		<script>
+			__ATA.cmd.push(function() {
+				__ATA.initDynamicSlot({
+					id: 'atatags-840258986-630fa2770302f',
+					location: 150,
+					formFactor: '003',
+					label: {
+						text: 'Anúncios',
+					},
+					creative: {
+						reportAd: {
+							text: 'Denunciar este anúncio',
+						},
+						privacySettings: {
+							text: 'Configurações de privacidade',
+						}
+					}
+				});
+			});
+		</script><aside id="wpcom_instagram_widget-2" class="widget widget_wpcom_instagram_widget"><h3 class="widget-title"><span>Nos Siga no Instagram</span></h3><div class="wpcom-instagram-images wpcom-instagram-columns-2">
+<a href="https://www.instagram.com/p/Ch3CnmbLTdH/" target="_self"><div class="sq-bg-image" style="background-image: url(https://scontent-lax3-1.cdninstagram.com/v/t51.29350-15/302058570_149978437665019_616418010855762353_n.webp?stp=dst-jpg&#038;_nc_cat=110&#038;ccb=1-7&#038;_nc_sid=8ae9d6&#038;_nc_ohc=uGC17JO0DkcAX8iD3yw&#038;_nc_ht=scontent-lax3-1.cdninstagram.com&#038;edm=ANo9K5cEAAAA&#038;oh=00_AT8AZQjDurFrmk6plEuvsEtmTtj4EjKgy7k2UQfaHPwAsA&#038;oe=6313F1DE)"><span class="screen-reader-text">Cuidar com a mão direita?Hum....</span></div></a>
+<a href="https://www.instagram.com/p/Ch2v8CBvMNG/" target="_self"><div class="sq-bg-image" style="background-image: url(https://scontent-lax3-1.cdninstagram.com/v/t51.29350-15/301983336_563547392165964_8384439345306439481_n.webp?stp=dst-jpg&#038;_nc_cat=109&#038;ccb=1-7&#038;_nc_sid=8ae9d6&#038;_nc_ohc=bHdrK_0HZcsAX81QDPT&#038;_nc_ht=scontent-lax3-1.cdninstagram.com&#038;edm=ANo9K5cEAAAA&#038;oh=00_AT9yQdvWK8Si_KvC1aWEa9a5N6ilx17gCX5xMOAt6CkMuw&#038;oe=6313FC2E)"><span class="screen-reader-text">Os dois mangás de Tsubasa Yamaguchi publicados no Brasil.</span></div></a>
+<a href="https://www.instagram.com/p/ChqZMaGr61V/" target="_self"><div class="sq-bg-image" style="background-image: url(https://scontent-lax3-2.cdninstagram.com/v/t51.29350-15/301682970_182965750868273_8472320577531232937_n.webp?stp=dst-jpg&#038;_nc_cat=107&#038;ccb=1-7&#038;_nc_sid=8ae9d6&#038;_nc_ohc=iyashIyzfXUAX_oDkub&#038;_nc_ht=scontent-lax3-2.cdninstagram.com&#038;edm=ANo9K5cEAAAA&#038;oh=00_AT-RiDlbDdy0up1CMWYTRuAzkLeHQEKxKpDJrHc8y5Mfaw&#038;oe=6313B4E4)"><span class="screen-reader-text">O site da editora Kodansha lista o lançamento de &quot;Atelier of Witch Hat #11&quot; para o dia 21/10/2022 no Japão.</span></div></a>
+<a href="https://www.instagram.com/p/Chith7JrZ7X/" target="_self"><div class="sq-bg-image" style="background-image: url(https://scontent-lax3-2.cdninstagram.com/v/t51.29350-15/300260519_586230389660261_2824657695307764596_n.webp?stp=dst-jpg&#038;_nc_cat=111&#038;ccb=1-7&#038;_nc_sid=8ae9d6&#038;_nc_ohc=kplLT3RhxdYAX-s0jx4&#038;_nc_ht=scontent-lax3-2.cdninstagram.com&#038;edm=ANo9K5cEAAAA&#038;oh=00_AT8EtI2HofxvR8Wpha4G9sSOAhyT1L_sxBsgIvKXX8G20Q&#038;oe=631402E4)"><span class="screen-reader-text">Você já deve ter ouvido falar da história de que o filme &quot;O Rei Leão&quot;, da Disney, é muito inspirado (ou mesmo uma cópia) no mangá &quot;Kimba - O Leão Branco&quot;, de Osamu Tezuka, certo?</span></div></a>
+</div>
+</aside><aside id="facebook-likebox-5" class="widget widget_facebook_likebox"><h3 class="widget-title"><span><a href="https://www.facebook.com/bibliotecabrasileirademangas/">Curta nossa página</a></span></h3>		<div id="fb-root"></div>
+		<div class="fb-page" data-href="https://www.facebook.com/bibliotecabrasileirademangas/" data-width="340"  data-height="432" data-hide-cover="false" data-show-facepile="true" data-tabs="false" data-hide-cta="false" data-small-header="false">
+		<div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/bibliotecabrasileirademangas/"><a href="https://www.facebook.com/bibliotecabrasileirademangas/">Curta nossa página</a></blockquote></div>
+		</div>
+		</aside><aside id="linkcat-438499509" class="widget widget_links"><h3 class="widget-title"><span>Colunas</span></h3>
+	<ul class='xoxo blogroll'>
+<li><a href="https://bibliotecabrasileirademangas.wordpress.com/category/listas/">BBM Lista</a></li>
+<li><a href="https://bibliotecabrasileirademangas.wordpress.com/category/checklist/">Checklists</a></li>
+<li><a href="https://bibliotecabrasileirademangas.wordpress.com/category/curiosidades/">Curiosidades</a></li>
+<li><a href="https://bibliotecabrasileirademangas.wordpress.com/category/desmistificando/">Desmistificando</a></li>
+<li><a href="https://bibliotecabrasileirademangas.wordpress.com/tag/guia-de-franquias/">Guia de Franquias</a></li>
+<li><a href="https://bibliotecabrasileirademangas.wordpress.com/tag/guia-de-importacao/">Guia de Importação</a></li>
+<li><a href="https://bibliotecabrasileirademangas.wordpress.com/category/guias/">Guias</a></li>
+<li><a href="https://bibliotecabrasileirademangas.wordpress.com/tag/nas-bancas/">Mangás da semana</a></li>
+<li><a href="https://bibliotecabrasileirademangas.wordpress.com/category/materias/">Matérias</a></li>
+<li><a href="https://bibliotecabrasileirademangas.wordpress.com/category/noticias/" rel="noopener" title="As principais notícias sobre o mercado de mangás e novels no Brasil" target="_blank">Notícias</a></li>
+<li><a href="https://bibliotecabrasileirademangas.wordpress.com/category/noticias-internacionais/">Notícias Internacionais</a></li>
+<li><a href="https://bibliotecabrasileirademangas.wordpress.com/category/opiniao/">Opinião</a></li>
+<li><a href="https://bibliotecabrasileirademangas.wordpress.com/category/review/">Resenhas</a></li>
+<li><a href="https://bibliotecabrasileirademangas.wordpress.com/category/retrospectiva/">Retrospectiva</a></li>
+<li><a href="https://bibliotecabrasileirademangas.wordpress.com/category/utilidades/">Utilidades</a></li>
+<li><a href="https://bibliotecabrasileirademangas.wordpress.com/category/novos-volumes-de-mangas-no-japao/">Volumes de Mangás no Japão</a></li>
+
+	</ul>
+</aside>
+    </div><!-- #secondary -->
+            </div>
+    </div>
+
+
+</div><!-- #content -->
+
+<footer id="vn-colophon" class="site-footer">
+            <div class="vn-top-footer">
+            <div class="vn-container">
+                <div class="vn-top-footer-inner vn-clearfix">
+                    <div class="vn-footer-1 vn-footer-block">
+                        <aside id="text-21" class="widget widget_text">			<div class="textwidget"><ul>
+<li><a href="https://blogbbm.com/sobre/">Sobre o Blog</a></li>
+<li><a href="https://blogbbm.com/tag/calendario-de-lancamentos/">Futuros lançamentos</a></li>
+<li><a href="https://blogbbm.com/tag/nas-bancas/">Lançamentos da Semana</a></li>
+<li><a href="https://blogbbm.com/category/novos-volumes-de-mangas-no-japao/">Lançamentos no Japão</a></li>
+<li><a href="https://blogbbm.com/2019/04/29/onde-comprar-mangas-e-light-novels-pela-internet/">Onde Comprar Mangás?</a></li>
+</ul>
+</div>
+		</aside>                    </div>
+
+                    <div class="vn-footer-2 vn-footer-block">
+                        <aside id="text-24" class="widget widget_text">			<div class="textwidget"><ul>
+<li><a href="https://blogbbm.com/category/review/">Resenhas</a></li>
+<li><a href="https://blogbbm.com/checklists/">Checklists</a></li>
+<li><a href="https://blogbbm.com/category/curiosidades/">Curiosidades</a></li>
+<li><a href="https://blogbbm.com/tag/memoria/">Memória</a></li>
+<li><a href="https://blogbbm.com/tag/guia-de-importacao/">Importação</a></li>
+<li><a href="https://blogbbm.com/tag/bbm-responde/">BBM Responde</a></li>
+<li><a href="https://blogbbm.com/tag/guia-de-franquias/">Guia de Franquias</a></li>
+<li><a href="https://blogbbm.com/blog/">Últimas Notícias</a></li>
+</ul>
+</div>
+		</aside>                    </div>
+
+                    <div class="vn-footer-3 vn-footer-block">
+                        <aside id="text-26" class="widget widget_text">			<div class="textwidget"><ul>
+<li><a href="https://blogbbm.com/manga/">Mangás</a></li>
+<li><a href="https://blogbbm.com/anime-comics/">Anime Comics</a></li>
+<li><a href="https://blogbbm.com/artbook/">Artbooks</a></li>
+<li><a href="https://blogbbm.com/databook/">Databooks</a></li>
+<li><a href="https://blogbbm.com/ebook">Ebooks de Mangás</a></li>
+<li><a href="https://blogbbm.com/2020/10/15/o-guia-de-light-novels-lancados-no-brasil/">Light Novels</a></li>
+</ul>
+</div>
+		</aside>                    </div>
+
+                    <div class="vn-footer-4 vn-footer-block">
+                        <aside id="text-25" class="widget widget_text">			<div class="textwidget"><ul>
+<li><a href="https://blogbbm.com/editora/jbc/">Editora JBC</a></li>
+<li><a href="https://blogbbm.com/editora/newpop/">Editora NewPOP</a></li>
+<li><a href="https://blogbbm.com/editora/panini/">Editora Panini</a></li>
+<li><a href="https://blogbbm.com/editora/darkside/">Darkside Books</a></li>
+<li><a href="https://blogbbm.com/editora/devir/">Devir</a></li>
+<li><a href="https://blogbbm.com/editora/pipoca/">Pipoca &amp; Nanquim</a></li>
+<li><a href="https://blogbbm.com/editora/veneta/">Veneta</a></li>
+</ul>
+</div>
+		</aside>                    </div>
+                </div>
+            </div>
+        </div>
+    
+    <div class="vn-bottom-footer">
+        <div class="vn-container">
+            <div class="vn-site-info">
+                WordPress HashThemes            </div>
+        </div>
+    </div>
+</footer>
+</div>
+
+<div id="vn-back-top" class="vn-hide"><i class="mdi mdi-chevron-up"></i></div>
+
+
+
+            <script>
+                ;(function () { window.wpDarkMode = {"config":{"brightness":100,"contrast":90,"sepia":10},"enable_preset":false,"customize_colors":false,"colors":{"bg":"#1B2836","text":"#fff","link":"#459BE6"},"enable_frontend":true,"enable_backend":false,"enable_os_mode":true,"excludes":"rs-fullwidth-wrap,.mejs-container","includes":"","is_excluded":false,"remember_darkmode":false,"default_mode":false,"keyboard_shortcut":true,"url_parameter":false,"images":"","videos":"","is_pro_active":false,"is_ultimate_active":false,"pro_version":0,"is_elementor_editor":false,"is_block_editor":false,"frontend_mode":false,"pluginUrl":"https:\/\/blogbbm.com\/wp-content\/plugins\/wp-dark-mode\/"}; window.checkOsDarkMode = () => { if (!window.wpDarkMode.enable_os_mode || localStorage.getItem('wp_dark_mode_active')) return false; const darkMediaQuery = window.matchMedia('(prefers-color-scheme: dark)'); if (darkMediaQuery.matches) return true; try { darkMediaQuery.addEventListener('change', function(e) { return e.matches == true; }); } catch (e1) { try { darkMediaQuery.addListener(function(e) { return e.matches == true; }); } catch (e2) { console.error(e2); return false; } } return false; }; const is_saved = localStorage.getItem('wp_dark_mode_active'); const shouldDarkMode = is_saved == '1' || (!is_saved && window.checkOsDarkMode()); if (shouldDarkMode) { const isCustomColor = parseInt(""); const isPerformanceMode = Boolean(); if (!isCustomColor && !isPerformanceMode) { if (document.getElementById('pre_css')) { document.getElementById('pre_css').remove(); } if ('' === ``) { if(typeof DarkMode === 'object') DarkMode.enable(); } } } })(); 
+            </script>
+
+			<!--  -->
+<script defer id="bilmur" data-provider="wordpress.com" data-service="atomic"  src="https://s0.wp.com/wp-content/js/bilmur.min.js?m=202235"></script>
+
+<div class="wp-dark-mode-switcher wp-dark-mode-ignore style-2   floating right_bottom">
+
+	
+    <label for="wp-dark-mode-switch" class="wp-dark-mode-ignore wp-dark-mode-none">
+        <div class="toggle wp-dark-mode-ignore"></div>
+        <div class="modes wp-dark-mode-ignore">
+            <p class="light wp-dark-mode-ignore switch-light-text">Light</p>
+            <p class="dark wp-dark-mode-ignore switch-dark-text">Dark</p>
+        </div>
+    </label>
+
+</div><div id="htSearchWrapper" class="ht-search-wrapper"><div class="ht-search-container"><form role="search" method="get" class="search-form" action="https://blogbbm.com/"><input autocomplete="off" type="search" class="search-field" placeholder="Enter a keyword to search..." value="" name="s" /><button type="submit" class="search-submit"><i class="mdi mdi-magnify"></i></button><a href="#" class="ht-search-close" ><span></span></a></form></div></div>		<div id="jp-carousel-loading-overlay">
+			<div id="jp-carousel-loading-wrapper">
+				<span id="jp-carousel-library-loading">&nbsp;</span>
+			</div>
+		</div>
+		<div class="jp-carousel-overlay" style="display: none;">
+
+		<div class="jp-carousel-container">
+			<!-- The Carousel Swiper -->
+			<div
+				class="jp-carousel-wrap swiper-container jp-carousel-swiper-container jp-carousel-transitions"
+				itemscope
+				itemtype="https://schema.org/ImageGallery">
+				<div class="jp-carousel swiper-wrapper"></div>
+				<div class="jp-swiper-button-prev swiper-button-prev">
+					<svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<mask id="maskPrev" mask-type="alpha" maskUnits="userSpaceOnUse" x="8" y="6" width="9" height="12">
+							<path d="M16.2072 16.59L11.6496 12L16.2072 7.41L14.8041 6L8.8335 12L14.8041 18L16.2072 16.59Z" fill="white"/>
+						</mask>
+						<g mask="url(#maskPrev)">
+							<rect x="0.579102" width="23.8823" height="24" fill="#FFFFFF"/>
+						</g>
+					</svg>
+				</div>
+				<div class="jp-swiper-button-next swiper-button-next">
+					<svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<mask id="maskNext" mask-type="alpha" maskUnits="userSpaceOnUse" x="8" y="6" width="8" height="12">
+							<path d="M8.59814 16.59L13.1557 12L8.59814 7.41L10.0012 6L15.9718 12L10.0012 18L8.59814 16.59Z" fill="white"/>
+						</mask>
+						<g mask="url(#maskNext)">
+							<rect x="0.34375" width="23.8822" height="24" fill="#FFFFFF"/>
+						</g>
+					</svg>
+				</div>
+			</div>
+			<!-- The main close buton -->
+			<div class="jp-carousel-close-hint">
+				<svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<mask id="maskClose" mask-type="alpha" maskUnits="userSpaceOnUse" x="5" y="5" width="15" height="14">
+						<path d="M19.3166 6.41L17.9135 5L12.3509 10.59L6.78834 5L5.38525 6.41L10.9478 12L5.38525 17.59L6.78834 19L12.3509 13.41L17.9135 19L19.3166 17.59L13.754 12L19.3166 6.41Z" fill="white"/>
+					</mask>
+					<g mask="url(#maskClose)">
+						<rect x="0.409668" width="23.8823" height="24" fill="#FFFFFF"/>
+					</g>
+				</svg>
+			</div>
+			<!-- Image info, comments and meta -->
+			<div class="jp-carousel-info">
+				<div class="jp-carousel-info-footer">
+					<div class="jp-carousel-pagination-container">
+						<div class="jp-swiper-pagination swiper-pagination"></div>
+						<div class="jp-carousel-pagination"></div>
+					</div>
+					<div class="jp-carousel-photo-title-container">
+						<h2 class="jp-carousel-photo-caption"></h2>
+					</div>
+					<div class="jp-carousel-photo-icons-container">
+						<a href="#" class="jp-carousel-icon-btn jp-carousel-icon-info" aria-label="Alternar visibilidade de metadados de imagem">
+							<span class="jp-carousel-icon">
+								<svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<mask id="maskInfo" mask-type="alpha" maskUnits="userSpaceOnUse" x="2" y="2" width="21" height="20">
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M12.7537 2C7.26076 2 2.80273 6.48 2.80273 12C2.80273 17.52 7.26076 22 12.7537 22C18.2466 22 22.7046 17.52 22.7046 12C22.7046 6.48 18.2466 2 12.7537 2ZM11.7586 7V9H13.7488V7H11.7586ZM11.7586 11V17H13.7488V11H11.7586ZM4.79292 12C4.79292 16.41 8.36531 20 12.7537 20C17.142 20 20.7144 16.41 20.7144 12C20.7144 7.59 17.142 4 12.7537 4C8.36531 4 4.79292 7.59 4.79292 12Z" fill="white"/>
+									</mask>
+									<g mask="url(#maskInfo)">
+										<rect x="0.8125" width="23.8823" height="24" fill="#FFFFFF"/>
+									</g>
+								</svg>
+							</span>
+						</a>
+											</div>
+				</div>
+				<div class="jp-carousel-info-extra">
+					<div class="jp-carousel-info-content-wrapper">
+						<div class="jp-carousel-photo-title-container">
+							<h2 class="jp-carousel-photo-title"></h2>
+						</div>
+						<div class="jp-carousel-comments-wrapper">
+													</div>
+						<div class="jp-carousel-image-meta">
+							<div class="jp-carousel-title-and-caption">
+								<div class="jp-carousel-photo-info">
+									<h3 class="jp-carousel-caption" itemprop="caption description"></h3>
+								</div>
+
+								<div class="jp-carousel-photo-description"></div>
+							</div>
+							<ul class="jp-carousel-image-exif" style="display: none;"></ul>
+							<a class="jp-carousel-image-download" target="_blank" style="display: none;">
+								<svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="3" y="3" width="19" height="18">
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M5.84615 5V19H19.7775V12H21.7677V19C21.7677 20.1 20.8721 21 19.7775 21H5.84615C4.74159 21 3.85596 20.1 3.85596 19V5C3.85596 3.9 4.74159 3 5.84615 3H12.8118V5H5.84615ZM14.802 5V3H21.7677V10H19.7775V6.41L9.99569 16.24L8.59261 14.83L18.3744 5H14.802Z" fill="white"/>
+									</mask>
+									<g mask="url(#mask0)">
+										<rect x="0.870605" width="23.8823" height="24" fill="#FFFFFF"/>
+									</g>
+								</svg>
+								<span class="jp-carousel-download-text"></span>
+							</a>
+							<div class="jp-carousel-image-map" style="display: none;"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		</div>
+					<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+						<div id="fb-root"></div>
+			<script>(function(d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (d.getElementById(id)) return; js = d.createElement(s); js.id = id; js.src = 'https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&amp;appId=249643311490&version=v2.3'; fjs.parentNode.insertBefore(js, fjs); }(document, 'script', 'facebook-jssdk'));</script>
+			<script>
+			document.body.addEventListener( 'is.post-load', function() {
+				if ( 'undefined' !== typeof FB ) {
+					FB.XFBML.parse();
+				}
+			} );
+			</script>
+						<script id="tumblr-js" type="text/javascript" src="https://assets.tumblr.com/share-button.js"></script>
+						<script>
+				(function(r, d, s) {
+					r.loadSkypeWebSdkAsync = r.loadSkypeWebSdkAsync || function(p) {
+							var js, sjs = d.getElementsByTagName(s)[0];
+							if (d.getElementById(p.id)) { return; }
+							js = d.createElement(s);
+							js.id = p.id;
+							js.src = p.scriptToLoad;
+							js.onload = p.callback
+							sjs.parentNode.insertBefore(js, sjs);
+						};
+					var p = {
+						scriptToLoad: 'https://swx.cdn.skype.com/shared/v/latest/skypewebsdk.js',
+						id: 'skype_web_sdk'
+					};
+					r.loadSkypeWebSdkAsync(p);
+				})(window, document, 'script');
+			</script>
+			<link rel='stylesheet' id='all-css-c7da959ba19284134b17d9cb19b7e26f' href='https://blogbbm.com/_static/??-eJyVjFsKgCAQAC+UbWYEfURnMV3C8oXr4vUjqAP0O8NMy8KkWDFWyJ4PFwlOrFmbC0Ky7JHA6JKY0AM1l7GInaP12Buirv2oXyE+8Ay2sMpZyWFcpJpuzec0Gg==' type='text/css' media='all' />
+<script src='https://blogbbm.com/wp-content/plugins/data-tables-generator-by-supsystic/app/assets/js/dtgsnonce.js?ver=0.01' id='dtgs_nonce_frontend-js'></script>
+<script id='dtgs_nonce_frontend-js-after'>
+var DTGS_NONCE_FRONTEND = "90324c0089"
+</script>
+<script type='text/javascript'  src='https://blogbbm.com/wp-content/plugins/jetpack/_inc/build/photon/photon.min.js?m=1638896208'></script>
+<script src='https://blogbbm.com/wp-includes/js/underscore.min.js?ver=1.13.3' id='underscore-js'></script>
+<script id='wp-util-js-extra'>
+var _wpUtilSettings = {"ajax":{"url":"\/wp-admin\/admin-ajax.php"}};
+</script>
+<script id='wp-dark-mode-frontend-js-extra'>
+var wpDarkMode = {"config":{"brightness":100,"contrast":90,"sepia":10},"enable_preset":"","customize_colors":"","colors":{"bg":"#1B2836","text":"#fff","link":"#459BE6"},"enable_frontend":"1","enable_backend":"","enable_os_mode":"1","excludes":"rs-fullwidth-wrap,.mejs-container","includes":"","is_excluded":"","remember_darkmode":"","default_mode":"","keyboard_shortcut":"1","url_parameter":"","images":"","videos":"","is_pro_active":"","is_ultimate_active":"","pro_version":"0","is_elementor_editor":"","is_block_editor":"","frontend_mode":"","pluginUrl":"https:\/\/blogbbm.com\/wp-content\/plugins\/wp-dark-mode\/"};
+</script>
+<script id='jetpack-facebook-embed-js-extra'>
+var jpfbembed = {"appid":"249643311490","locale":"pt_BR"};
+</script>
+<script id='jetpack-lazy-images-js-extra'>
+var jetpackLazyImagesL10n = {"loading_warning":"As imagens ainda est\u00e3o sendo carregadas. Cancele a impress\u00e3o e tente novamente."};
+</script>
+<script id='jetpack-carousel-js-extra'>
+var jetpackSwiperLibraryPath = {"url":"https:\/\/blogbbm.com\/wp-content\/plugins\/jetpack\/_inc\/build\/carousel\/swiper-bundle.min.js"};
+var jetpackCarouselStrings = {"widths":[370,700,1000,1200,1400,2000],"is_logged_in":"","lang":"pt","ajaxurl":"https:\/\/blogbbm.com\/wp-admin\/admin-ajax.php","nonce":"fb081d1176","display_exif":"1","display_comments":"0","single_image_gallery":"1","single_image_gallery_media_file":"","background_color":"black","comment":"Coment\u00e1rio","post_comment":"Publicar coment\u00e1rio","write_comment":"Escreva um Coment\u00e1rio","loading_comments":"Carregando coment\u00e1rios...","download_original":"Visualizar tamanho original <span class=\"photo-size\">{0}<span class=\"photo-size-times\">\u00d7<\/span>{1}<\/span>","no_comment_text":"Certifique-se de enviar algum texto com o seu coment\u00e1rio.","no_comment_email":"Informe um endere\u00e7o de e-mail para comentar.","no_comment_author":"Forne\u00e7a seu nome para comentar.","comment_post_error":"Desculpe, mas ocorreu um erro ao postar seu coment\u00e1rio. Tente novamente mais tarde.","comment_approved":"Seu coment\u00e1rio foi aprovado.","comment_unapproved":"Seu coment\u00e1rio est\u00e1 aguardando modera\u00e7\u00e3o.","camera":"C\u00e2mera","aperture":"Abertura","shutter_speed":"Velocidade do Obturador","focal_length":"Comprimento Focal","copyright":"Direito autoral","comment_registration":"0","require_name_email":"0","login_url":"https:\/\/blogbbm.com\/wp-login.php?redirect_to=https%3A%2F%2Fblogbbm.com%2Fmanga%2Fmorango%2F","blog_id":"1","meta_data":["camera","aperture","shutter_speed","focal_length","copyright"]};
+</script>
+<script type='text/javascript'  src='https://blogbbm.com/_static/??-eJytkttOwzAMhl+INGwXAy4QjzI5ibu6zaHESavu6bEKm6ZpiF5wFcX+Px9+eR4VReurQ9Y963lUtZBvAsWm5yf52hQLxqJHX08UV4WDPKiQHGpgxrKCbV517gFZOgxSfaIMXkWcV32afWMhp8rot+glSKC4kB0WxeTQQN7C9Z8V89JwHTG3xN0WxlYuKfyyf49lBDvoo9imTSXvdAsWTUqDwmDwkQP37M97nMSwlDVUaQdFdrtklIfzoijASYZzxEWTVMqMtlCKKhnGPOG9Af/Q5iawfX9Pg/BidMUOovMy2N8e3PCXO7iOdT2M7zIf4X13OOz2L89v+9cv784GLA=='></script>
+<script id='sharing-js-js-extra'>
+var sharing_js_options = {"lang":"en","counts":"1","is_stats_active":"1"};
+</script>
+<script src='https://blogbbm.com/wp-content/plugins/jetpack/_inc/build/sharedaddy/sharing.min.js?ver=11.3-beta' id='sharing-js-js'></script>
+<script id='sharing-js-js-after'>
+var windowOpen;
+			( function () {
+				function matches( el, sel ) {
+					return !! (
+						el.matches && el.matches( sel ) ||
+						el.msMatchesSelector && el.msMatchesSelector( sel )
+					);
+				}
+
+				document.body.addEventListener( 'click', function ( event ) {
+					if ( ! event.target ) {
+						return;
+					}
+
+					var el;
+					if ( matches( event.target, 'a.share-facebook' ) ) {
+						el = event.target;
+					} else if ( event.target.parentNode && matches( event.target.parentNode, 'a.share-facebook' ) ) {
+						el = event.target.parentNode;
+					}
+
+					if ( el ) {
+						event.preventDefault();
+
+						// If there's another sharing window open, close it.
+						if ( typeof windowOpen !== 'undefined' ) {
+							windowOpen.close();
+						}
+						windowOpen = window.open( el.getAttribute( 'href' ), 'wpcomfacebook', 'menubar=1,resizable=1,width=600,height=400' );
+						return false;
+					}
+				} );
+			} )();
+var windowOpen;
+			( function () {
+				function matches( el, sel ) {
+					return !! (
+						el.matches && el.matches( sel ) ||
+						el.msMatchesSelector && el.msMatchesSelector( sel )
+					);
+				}
+
+				document.body.addEventListener( 'click', function ( event ) {
+					if ( ! event.target ) {
+						return;
+					}
+
+					var el;
+					if ( matches( event.target, 'a.share-telegram' ) ) {
+						el = event.target;
+					} else if ( event.target.parentNode && matches( event.target.parentNode, 'a.share-telegram' ) ) {
+						el = event.target.parentNode;
+					}
+
+					if ( el ) {
+						event.preventDefault();
+
+						// If there's another sharing window open, close it.
+						if ( typeof windowOpen !== 'undefined' ) {
+							windowOpen.close();
+						}
+						windowOpen = window.open( el.getAttribute( 'href' ), 'wpcomtelegram', 'menubar=1,resizable=1,width=450,height=450' );
+						return false;
+					}
+				} );
+			} )();
+</script>
+	<iframe src='https://widgets.wp.com/likes/master.html?ver=202235#ver=202235&#038;lang=pt-br' scrolling='no' id='likes-master' name='likes-master' style='display:none;'></iframe>
+	<div id='likes-other-gravatars'><div class="likes-text"><span>%d</span> blogueiros gostam disto:</div><ul class="wpl-avatars sd-like-gravatars"></ul></div>
+			<div id="atatags-840258982-630fa2774c11c"></div>
+					<script type="text/javascript">
+			var adNode       = document.getElementById( 'atatags-840258982-630fa2774c11c' );
+			var selector     = "body > :first-child";
+			var relocateNode = document.querySelector( selector );
+			relocateNode.parentNode.insertBefore( adNode, relocateNode );
+			</script>
+		<script>
+			__ATA.cmd.push(function() {
+				__ATA.initDynamicSlot({
+					id: 'atatags-840258982-630fa2774c11c',
+					location: 110,
+					formFactor: '002',
+					label: {
+						text: 'Anúncios',
+					},
+					creative: {
+						reportAd: {
+							text: 'Denunciar este anúncio',
+						},
+						privacySettings: {
+							text: 'Configurações de privacidade',
+						}
+					}
+				});
+			});
+		</script><script src='https://stats.wp.com/e-202235.js' defer></script>
+<script>
+	_stq = window._stq || [];
+	_stq.push([ 'view', {v:'ext',j:'1:11.3-beta',blog:'84025898',post:'105444',tz:'-3',srv:'blogbbm.com',hp:'atomic',ac:'2',amp:'0'} ]);
+	_stq.push([ 'clickTrackerInit', '84025898', '105444' ]);
+</script>
+
+</body>
+</html>
+<!--
+	generated in 0.613 seconds
+	172520 bytes batcached for 300 seconds
+-->

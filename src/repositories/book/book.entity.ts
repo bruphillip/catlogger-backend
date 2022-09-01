@@ -2,18 +2,17 @@ import {
   Entity,
   PrimaryGeneratedColumn,
   Column,
-  BeforeInsert,
   UpdateDateColumn,
   CreateDateColumn,
-  JoinTable,
-  ManyToMany,
+  ManyToOne,
+  OneToMany,
 } from 'typeorm'
 
-import { hash } from 'bcrypt'
 import { BookVolume } from 'repositories/bookVolume/bookVolume.entity'
+import { Publisher } from 'repositories/publisher/publisher.entity'
 
 @Entity()
-export class User {
+export class Book {
   @PrimaryGeneratedColumn('uuid')
   id: string
 
@@ -21,14 +20,19 @@ export class User {
   name: string
 
   @Column()
-  email: string
+  url: string
 
-  @ManyToMany(() => BookVolume, (book) => book.users)
-  @JoinTable({})
+  @Column({ nullable: true })
+  author?: string
+
+  @ManyToOne(() => Publisher, (publisher) => publisher.books, {
+    nullable: false,
+    cascade: true,
+  })
+  publisher: Publisher
+
+  @OneToMany(() => BookVolume, (bookVolume) => bookVolume.book)
   volumes: BookVolume[]
-
-  @Column({ nullable: false })
-  password: string
 
   @Column({ default: true })
   isActive: boolean
@@ -38,9 +42,4 @@ export class User {
 
   @UpdateDateColumn()
   updatedAt: Date
-
-  @BeforeInsert()
-  async updatePassword() {
-    this.password = await hash(this.password, process.env.BCRYPT_SALT)
-  }
 }
