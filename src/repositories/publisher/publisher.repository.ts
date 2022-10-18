@@ -1,5 +1,5 @@
 import { Injectable } from '@nestjs/common'
-import { DataSource, In } from 'typeorm'
+import { DataSource, In, Like } from 'typeorm'
 import { differenceBy } from 'lodash'
 
 import { Publisher } from './publisher.entity'
@@ -33,7 +33,14 @@ export class PublisherRepository {
     return [...createdPublishers, ...newPublishers]
   }
 
-  all() {
-    return this.publisherRepository.find({ relations: { books: true } })
+  all({ query }: { query: string }) {
+    return this.publisherRepository.find({
+      where: query && [
+        { name: Like(`%${query}%`) },
+        { id: Like(`%${query}%`) },
+      ],
+
+      relations: { books: true },
+    })
   }
 }

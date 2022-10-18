@@ -39,7 +39,7 @@ export class BookRepository {
       where: {
         publisher: publisher && [{ name: publisher }, { id: publisher }],
       },
-      relations: { publisher: true },
+      relations: { publisher: true, volumes: true },
     })
   }
 

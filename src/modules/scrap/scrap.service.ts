@@ -1,6 +1,7 @@
 import { Injectable } from '@nestjs/common'
 
-import { BBM, ScrapBookReturn } from 'helpers/scrapping/adapters/bbm'
+import { BBM } from 'helpers/scrapping/adapters/bbm'
+import { ScrapBookReturn } from 'helpers/scrapping/adapters/bbm.types'
 import { find } from 'lodash'
 import { BookRepository, BookType } from 'repositories/book/book.repository'
 import { BookVolumeRepository } from 'repositories/bookVolume/bookVolume.repository'

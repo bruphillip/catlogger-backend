@@ -38,7 +38,6 @@ export class UserRepository {
 
     const newUser = this.userRepository.create({
       volumes,
-      email: volumeId,
       id: userId,
     })
 
@@ -46,11 +45,22 @@ export class UserRepository {
 
     return this.userRepository.findOne({
       where: { id: userId },
-      relations: {
+      relations: ['volumes', 'volumes.book', 'volumes.book.publisher'],
+      order: {
         volumes: {
-          book: { volumes: true },
+          number: 'ASC',
         },
       },
     })
+  }
+
+  getByEmail(email: string) {
+    return this.userRepository.findOne({ where: { email } })
+  }
+
+  async create(user: Partial<User>) {
+    const createdUser = await this.userRepository.create(user)
+
+    return this.userRepository.save(createdUser)
   }
 }

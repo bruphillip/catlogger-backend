@@ -6,6 +6,7 @@ import {
   CreateDateColumn,
   ManyToOne,
   OneToMany,
+  AfterLoad,
 } from 'typeorm'
 
 import { BookVolume } from 'repositories/bookVolume/bookVolume.entity'
@@ -42,4 +43,11 @@ export class Book {
 
   @UpdateDateColumn()
   updatedAt: Date
+
+  protected numberOfVolumes: number
+
+  @AfterLoad()
+  async getNumberOfVolumes() {
+    this.numberOfVolumes = this.volumes?.length | 0
+  }
 }

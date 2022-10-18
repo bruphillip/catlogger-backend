@@ -13,11 +13,15 @@ export type JsonObject = {
 
 class Scrap {
   async load(url: string) {
-    const { data } = await axios.get(url)
+    try {
+      const { data } = await axios.get(url)
 
-    const $ = cheerio.load(data)
-    return {
-      getByTag: (tag) => this.getByTag($, tag),
+      const $ = cheerio.load(data)
+      return {
+        getByTag: (tag) => this.getByTag($, tag),
+      }
+    } catch (err) {
+      console.log(err.message)
     }
   }
 

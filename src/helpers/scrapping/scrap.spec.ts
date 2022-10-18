@@ -1,41 +1,39 @@
-import { BBM } from './adapters/bbm'
 import * as fs from 'fs'
 import axios from 'axios'
-import API from 'constant/api'
+import { Scrap } from './scrap'
 
 jest.mock('axios')
 const mockedAxios = axios as jest.Mocked<typeof axios>
 const bbmSpecReq = `${__dirname}/mock/bbm_books_publishers.spec.txt`
-const bbmVolumesSpecReq = `${__dirname}/mock/bbm_book_volumes.spec.txt`
 
 describe('Scrapping', () => {
-  let bbm: BBM
+  let scrap: Scrap
 
   beforeEach(async () => {
-    bbm = new BBM()
+    scrap = new Scrap()
   })
 
-  it('should load and get html from webpage', async () => {
-    const htmlList = fs.readFileSync(bbmSpecReq).toString()
-    const htmlVolumes = fs.readFileSync(bbmVolumesSpecReq).toString()
-    mockedAxios.get.mockImplementation((param) => {
-      let html
-      switch (param) {
-        case API.BBM:
-          html = htmlList
-          break
+  it('should load html page from url', async () => {
+    const html = fs.readFileSync(bbmSpecReq).toString()
+    const fakeUrl = 'http://bbm.fakeurl.com'
 
-        default:
-          html = htmlVolumes
-          break
-      }
+    mockedAxios.get.mockImplementation((params) => {
+      expect(params).toBe(fakeUrl)
+
       return Promise.resolve({ data: html })
     })
 
-    const scrap = await bbm.scrapBooks()
+    await scrap.load(fakeUrl)
+  })
 
-    const booksVolume = await bbm.getBooksVolume(scrap.books)
+  it.only('should load and get html from webpage', async () => {
+    const html = fs.readFileSync(bbmSpecReq).toString()
+    const fakeUrl = 'http://bbm.fakeurl.com'
 
-    console.log(booksVolume)
+    mockedAxios.get.mockImplementation((params) => {
+      expect(params).toBe(fakeUrl)
+
+      return Promise.resolve({ data: html })
+    })
   })
 })

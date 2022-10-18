@@ -4,45 +4,15 @@ import { get, tail, uniqBy } from 'lodash'
 import { Queue } from 'helpers/queue'
 
 import { Scrap, JsonObject } from '../scrap'
-
-const BOOKS_OBJECT_KEY = {
-  URL: 'children[0].children[0].attribs.href',
-  NAME: 'children[0].children[0].children[0].data',
-  PUBLISHER: 'children[1].children[0].data',
-  AUTHOR: 'children[9].data',
-  VOL_NUMBER: 'children[1].children[0].data',
-  VOL_RELEASE_DATE: 'children[3].children[0].data',
-  VOL_PRICE: 'children[7].children[0].data',
-} as const
-
-const TAG_KEY = {
-  TABLE_TBODY: 'table tbody',
-  PRIMARY_ARTICLE_DIV_P: '#primary article div p',
-}
-
-type BooksObjectKeyType = typeof BOOKS_OBJECT_KEY[keyof typeof BOOKS_OBJECT_KEY]
-
-export type ScrapBookReturn = {
-  url: string
-  name: string
-  publisher: string
-}
-
-export type ScrapPublisherReturn = {
-  name: string
-}
-
-export type ScrapVolumeReturn = {
-  number: string
-  price: string
-  releaseDate: string
-}
-
-export type ScrapVolumeAuthorReturn = {
-  name: string
-  author: string
-  volumes: ScrapVolumeReturn[]
-}
+import { BOOKS_OBJECT_KEY } from 'constant/books.object.key'
+import { TAG_KEY } from 'constant/tag.key'
+import {
+  ScrapBookReturn,
+  ScrapVolumeAuthorReturn,
+  BooksObjectKeyType,
+  ScrapPublisherReturn,
+} from './bbm.types'
+import { Cluster } from 'helpers/cluster/cluster'
 
 @Injectable()
 export class BBM {
@@ -93,6 +63,7 @@ export class BBM {
     )
 
     await this.queue.instance.drain()
+
     return scrapVolumes
   }
 
@@ -107,15 +78,18 @@ export class BBM {
 
     const volumesScrapped = elementVolumes.children
       .filter((volume) => volume.tag || volume.data !== '\n')
-      .map((volume) => {
+      .map((volume, index) => {
         const number = this.get(volume, BOOKS_OBJECT_KEY.VOL_NUMBER)
         const price = this.get(volume, BOOKS_OBJECT_KEY.VOL_PRICE)
         const releaseDate = this.get(volume, BOOKS_OBJECT_KEY.VOL_RELEASE_DATE)
+
+        const coverUrl = this.getVolumeCover(page, String(index - 1))
 
         return {
           number,
           price,
           releaseDate,
+          coverUrl,
         }
       })
 
@@ -126,13 +100,23 @@ export class BBM {
     }
   }
 
-  getPublishers(scrapped: ScrapBookReturn[]): ScrapPublisherReturn[] {
+  private getPublishers(scrapped: ScrapBookReturn[]): ScrapPublisherReturn[] {
     return uniqBy(scrapped, (scrap) => scrap.publisher).map((scrap) => ({
       name: scrap.publisher,
     }))
   }
 
-  get(object: JsonObject, key: BooksObjectKeyType): string {
+  private getVolumeCover(page, volumeNumber: string): string {
+    const element = page.getByTag(TAG_KEY.GALLERY_1).json()
+    const coverUrl = this.get(
+      element,
+      BOOKS_OBJECT_KEY.COVER.replace('idx', volumeNumber) as any,
+    )
+
+    return coverUrl
+  }
+
+  private get(object: JsonObject, key: BooksObjectKeyType): string {
     return get(object, key)
   }
 }

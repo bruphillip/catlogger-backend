@@ -1,20 +1,43 @@
 import { Global, Module } from '@nestjs/common'
-import { TypeOrmModule } from '@nestjs/typeorm'
+import { TypeOrmModule, TypeOrmModuleOptions } from '@nestjs/typeorm'
+import env from 'constant/env'
+import { createDatabase } from 'typeorm-extension'
 
 @Global()
 @Module({
   imports: [
-    TypeOrmModule.forRoot({
-      type: 'postgres',
-      host: 'localhost',
-      port: Number(process.env.DB_PORT) || 5432,
-      username: process.env.DB_USERNAME,
-      password: process.env.DB_PASSWORD,
-      database: process.env.DB_NAME,
-      logging: Boolean(process.env.DB_LOGGING) || true,
-      synchronize: Boolean(process.env.DB_SYNCRONIZE) || true,
-      entities: [__dirname + '/../../**/*.entity{.ts,.js}'],
-      uuidExtension: 'pgcrypto',
+    TypeOrmModule.forRootAsync({
+      useFactory: async () => {
+        const opts: TypeOrmModuleOptions = {
+          type: 'postgres',
+          host: 'localhost',
+          port: Number(env.DB_PORT) || 5432,
+          username: env.DB_USERNAME,
+          password: env.DB_PASSWORD,
+          database: env.DB_NAME,
+          logging: env.DB_LOGGING,
+          synchronize: env.DB_SYNCRONIZE,
+          entities: [__dirname + '/../../**/*.entity{.ts,.js}'],
+          uuidExtension: 'pgcrypto',
+        }
+
+        try {
+          await createDatabase({
+            ifNotExist: true,
+            options: {
+              type: opts.type,
+              database: opts.database,
+              username: opts.username,
+              password: opts.password,
+              port: opts.port,
+              uuidExtension: 'pgcrypto',
+              entities: opts.entities,
+            },
+          })
+        } catch (err) {}
+
+        return opts
+      },
     }),
   ],
 })

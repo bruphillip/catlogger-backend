@@ -1,4 +1,5 @@
 import { Controller, Post } from '@nestjs/common'
+import { JwtToken } from 'helpers/decorators/token.apply.decorator'
 
 import { ScrapService } from './scrap.service'
 
@@ -7,9 +8,13 @@ export class ScrapController {
   constructor(private scrapService: ScrapService) {}
 
   @Post('bbm')
+  @JwtToken()
   async bbm() {
-    const scrappedTable = await this.scrapService.scrap()
-
-    return scrappedTable
+    try {
+      const scrappedTable = await this.scrapService.scrap()
+      return scrappedTable
+    } catch (err) {
+      console.log(err)
+    }
   }
 }

@@ -9,8 +9,11 @@ import {
   ManyToMany,
 } from 'typeorm'
 
-import { hash } from 'bcrypt'
+import { compare, hash } from 'bcrypt'
 import { BookVolume } from 'repositories/bookVolume/bookVolume.entity'
+import { jwtAdapter } from 'helpers/jwt'
+import { omit } from 'lodash'
+import env from 'constant/env'
 
 @Entity()
 export class User {
@@ -25,7 +28,7 @@ export class User {
 
   @ManyToMany(() => BookVolume, (book) => book.users)
   @JoinTable({})
-  volumes: BookVolume[]
+  volumes?: BookVolume[]
 
   @Column({ nullable: false })
   password: string
@@ -41,6 +44,18 @@ export class User {
 
   @BeforeInsert()
   async updatePassword() {
-    this.password = await hash(this.password, process.env.BCRYPT_SALT)
+    this.password = await hash(this.password, Number(env.BCRYPT_SALT))
+  }
+
+  async comparePassword(password) {
+    return compare(password, this.password)
+  }
+
+  sign() {
+    return jwtAdapter.sign(this)
+  }
+
+  omit(field: (keyof User)[]) {
+    return omit(this, field)
   }
 }
