@@ -2,13 +2,22 @@ import env from 'constant/env'
 import { faker } from '@faker-js/faker'
 import { JwtService } from '@nestjs/jwt'
 import { formatTo } from 'helpers/date.format'
-import { Book } from 'repositories/book/book.entity'
-import { BookVolume } from 'repositories/bookVolume/bookVolume.entity'
-import { Publisher } from 'repositories/publisher/publisher.entity'
-import { User } from 'repositories/user/user.entity'
-import { DataSource, EntityTarget, Entity } from 'typeorm'
+import { PrismaService } from 'helpers/database/database.service'
+import { Prisma } from '@prisma/client'
+
+interface GeneratorProps {
+  user: {
+    id: string
+    name: string
+    email: string
+    password: string
+    volumes: [{ bookVolumeId: string }]
+  }
+}
 
 export class Generator {
+  constructor(private prismaService: PrismaService) {}
+
   get faker() {
     return faker
   }
@@ -17,43 +26,27 @@ export class Generator {
     return this.faker.datatype.uuid()
   }
 
-  get db() {
-    return this.dataSource
-  }
-
-  async clearAllRepositories(only?: EntityTarget<typeof Entity>[]) {
-    if (!only || only.length === 0)
-      await Promise.all([
-        this.BookRepository.delete,
-        this.UserRepository.delete,
-        this.PublisherRepository.delete,
-        this.VolumeRepository.delete,
-      ])
-    else
-      await Promise.all(
-        only.map((instance) => this.dataSource.getRepository(instance).delete),
-      )
+  async clearAllRepositories() {
+    await this.prismaService.cleanDatabase()
   }
 
   get UserRepository() {
-    return this.dataSource.getRepository(User)
+    return this.prismaService.user
   }
 
   get PublisherRepository() {
-    return this.dataSource.getRepository(Publisher)
+    return this.prismaService.publisher
   }
 
   get BookRepository() {
-    return this.dataSource.getRepository(Book)
+    return this.prismaService.book
   }
 
   get VolumeRepository() {
-    return this.dataSource.getRepository(BookVolume)
+    return this.prismaService.bookVolume
   }
 
-  constructor(private dataSource: DataSource) {}
-
-  token(user: Partial<User>) {
+  token(user: Partial<GeneratorProps['user']>) {
     new JwtService({ secret: env.JWT_SECRET }).sign({
       id: user.id,
       email: user.email,
@@ -61,7 +54,7 @@ export class Generator {
     })
   }
 
-  mockUser(user?: Partial<User>) {
+  mockUser(user?: Partial<GeneratorProps['user']>) {
     const fullName = this.faker.name.fullName()
 
     return {
@@ -72,14 +65,30 @@ export class Generator {
     }
   }
 
-  mockPublisher(publisher?: Partial<Publisher>): Partial<Publisher> {
+  async createUser(data?: Partial<GeneratorProps['user']>) {
+    const mock = await this.mockUser(data)
+
+    return this.UserRepository.create({
+      data: mock,
+    })
+  }
+
+  mockPublisher(publisher?: Partial<Prisma.PublisherUncheckedCreateInput>) {
     return {
       name: this.faker.company.name(),
       ...publisher,
     }
   }
 
-  mockBook(book?: Partial<Book>): Partial<Book> {
+  async createPublisher(data?: Partial<Prisma.PublisherUncheckedCreateInput>) {
+    const mock = await this.mockPublisher(data)
+
+    return this.PublisherRepository.create({
+      data: mock,
+    })
+  }
+
+  mockBook(book?: Partial<Prisma.BookUncheckedCreateInput>) {
     return {
       url: this.faker.internet.url(),
       name: this.faker.commerce.productName(),
@@ -88,7 +97,21 @@ export class Generator {
     }
   }
 
-  mockVolume(volume?: Partial<BookVolume>): Partial<BookVolume> {
+  async createBook(
+    publisherId: string,
+    data?: Partial<Prisma.BookCreateInput>,
+  ) {
+    const mock = await this.mockBook({ ...data })
+
+    return this.BookRepository.create({
+      data: {
+        ...mock,
+        publisherId,
+      },
+    })
+  }
+
+  mockVolume(volume?: Partial<Prisma.BookVolumeUncheckedCreateInput>) {
     return {
       coverUrl: this.faker.image.cats(1234, 2345, true),
       number: `#${this.faker.random.numeric(1)}`,
@@ -98,54 +121,18 @@ export class Generator {
     }
   }
 
-  async createUser(data?: Partial<User>) {
-    const mock = await this.mockUser()
+  async createVolume(
+    bookId: string,
+    data?: Partial<Prisma.BookVolumeUncheckedCreateInput>,
+  ) {
+    const mock = await this.mockVolume(data)
 
-    const created = await this.UserRepository.create({
-      ...mock,
-      ...data,
-    })
-
-    return this.UserRepository.save(created)
-  }
-
-  async createPublisher(data?: Partial<Publisher>) {
-    const mock = await this.mockPublisher()
-
-    const created = await this.PublisherRepository.create({
-      ...mock,
-      ...data,
-    })
-
-    return this.PublisherRepository.save(created)
-  }
-
-  async createBook(publisherId: string, data?: Partial<Book>) {
-    const mock = await this.mockBook()
-
-    const created = await this.BookRepository.create({
-      ...mock,
-      ...data,
-      publisher: {
-        id: publisherId,
+    return this.VolumeRepository.create({
+      data: {
+        ...mock,
+        bookId,
       },
     })
-
-    return this.BookRepository.save(created)
-  }
-
-  async createVolume(bookId: string, data?: Partial<BookVolume>) {
-    const mock = await this.mockVolume()
-
-    const created = await this.VolumeRepository.create({
-      ...mock,
-      ...data,
-      book: {
-        id: bookId,
-      },
-    })
-
-    return this.VolumeRepository.save(created)
   }
 
   async createUserBookVolume({
@@ -155,11 +142,18 @@ export class Generator {
     userId: string
     volumesId: string[]
   }) {
-    const created = await this.UserRepository.create({
-      id: userId,
-      volumes: volumesId.map((id) => ({ id })),
+    return await this.UserRepository.update({
+      where: { id: userId },
+      data: {
+        volumes: {
+          createMany: {
+            skipDuplicates: true,
+            data: volumesId.map((volume) => ({
+              bookVolumeId: volume,
+            })),
+          },
+        },
+      },
     })
-
-    return this.UserRepository.save(created)
   }
 }

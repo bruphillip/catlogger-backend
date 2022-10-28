@@ -1,7 +1,17 @@
-import axios from 'axios'
-import * as cheerio from 'cheerio'
+// eslint-disable-next-line @typescript-eslint/no-var-requires
+const rateLimit = require('axios-rate-limit')
 
-type HtmlTag = keyof HTMLElementTagNameMap
+import axios, { AxiosInstance } from 'axios'
+import axiosRetry from 'axios-retry'
+
+import * as cheerio from 'cheerio'
+import { compact, get, isArray } from 'lodash'
+
+interface AllTag {
+  '*': HTMLElement
+}
+
+type HtmlTag = keyof HTMLElementTagNameMap | keyof AllTag
 
 export type JsonObject = {
   data?: string
@@ -12,50 +22,65 @@ export type JsonObject = {
 }
 
 class Scrap {
+  private http: AxiosInstance
+
+  constructor() {
+    this.http = rateLimit(axios, {
+      maxRequests: 5,
+      perMilliseconds: 1000,
+      maxRPS: 5,
+    })
+
+    axiosRetry(this.http, { retries: 5 })
+  }
+
   async load(url: string) {
     try {
-      const { data } = await axios.get(url)
+      const { data } = await this.http.get(url)
 
       const $ = cheerio.load(data)
-      return {
-        getByTag: (tag) => this.getByTag($, tag),
-      }
+
+      return $
     } catch (err) {
       console.log(err.message)
+      throw err
     }
   }
 
-  getByTag($, tag) {
-    const element = $(tag)
-
-    return {
-      element,
-      json: () => this.htmlToJson(element[0]),
-    }
+  getByTag($, tag, position = 0) {
+    return $(tag)[position]
   }
 
-  htmlToJson(element, position?: number): JsonObject {
-    if (!element) return
-    const { children, name, attribs, data } = element
+  getElementByText($, text: string | string[], matchTag: HtmlTag = '*') {
+    return isArray(text)
+      ? compact(text.map((t) => $(`${matchTag}:contains('${t}')`)))[0]
+      : $(`${matchTag}:contains('${text}')`)
+  }
 
-    if (children) {
-      const mapped = children.map((child, index) =>
-        this.htmlToJson(child, index),
-      )
-      return {
-        tag: name,
-        children: mapped,
-        attribs,
-        position,
+  getElementByPath($: any, path: string) {
+    return get($._root, path)
+  }
+
+  domPath(element: any) {
+    const stack: string[] = []
+    while (element.parentNode != null) {
+      let sibCount = 0
+      let sibIndex = 0
+      for (let i = 0; i < element.parentNode.childNodes.length; i++) {
+        const sib = element.parentNode.childNodes[i]
+        if (sib.nodeName == element.nodeName) {
+          if (sib === element) {
+            sibIndex = sibCount
+          }
+          sibCount++
+        }
       }
+      stack.unshift(`children[${sibIndex}]`)
+
+      element = element.parentNode
     }
 
-    return {
-      tag: name,
-      attribs,
-      data,
-      position,
-    }
+    return stack.join('.')
   }
 }
 

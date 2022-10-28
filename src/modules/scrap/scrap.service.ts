@@ -46,10 +46,9 @@ export class ScrapService {
     return books.map<BookType>((book) => ({
       name: book.name,
       url: book.url,
-      publisher: find(
-        publishers,
-        (publisher) => publisher.name === book.publisher,
-      ),
+      publisherId:
+        find(publishers, (publisher) => publisher.name === book.publisher)
+          ?.id || '',
     }))
   }
 }

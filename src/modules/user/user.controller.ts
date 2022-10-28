@@ -4,54 +4,80 @@ import {
   Param,
   Post,
   PreconditionFailedException,
+  UnauthorizedException,
 } from '@nestjs/common'
 import { AuthUser, AuthUserProps } from 'helpers/decorators/auth.user.decorator'
 import { JwtToken } from 'helpers/decorators/token.apply.decorator'
 import { UserRepository } from 'repositories/user/user.repository'
-import { UserProps, UserSchema } from './user.schema'
+import { UserSchemaBuildProps, UserSchema } from './user.schema'
 
 @Controller('user')
 export class UserController {
   constructor(private userRepository: UserRepository) {}
 
   @JwtToken()
-  @Post('/:userId/volume/:volumeId')
+  @Post('volume/:volumeId')
   async toogleVolumes(
     @AuthUser() user: AuthUserProps,
     @Param('volumeId') volumeId: string,
   ) {
-    return (await this.userRepository.toogleVolume(user.id, volumeId))?.omit([
-      'password',
-    ])
+    return this.userRepository.toogleVolume(user.id, volumeId)
   }
 
   @JwtToken()
   @Get('/me')
   async me(@AuthUser() user: AuthUserProps) {
-    return (await this.userRepository.getById(user.id))?.omit(['password'])
+    try {
+      const me = await this.userRepository.getById(user?.id)
+      return this.userRepository.omit(me, ['password'])
+    } catch (err) {
+      throw new UnauthorizedException()
+    }
   }
 
   @Get('id/:id')
   @JwtToken()
   async getById(@Param('id') id: string) {
-    return (await this.userRepository.getById(id))?.omit(['password']) || {}
+    const user = await this.userRepository.getById(id)
+    return this.userRepository.omit(user, ['password'])
   }
 
   @Post('/login')
-  async login(@UserSchema('login') userBody: UserProps) {
-    const user = await this.userRepository.getByEmail(userBody.email)
+  async login(@UserSchema('login') userBody: UserSchemaBuildProps['login']) {
+    try {
+      const user = await this.userRepository.getByEmail(userBody.email)
 
-    if (!user) throw new PreconditionFailedException(user)
+      if (!user) throw new PreconditionFailedException(user)
 
-    const isSamePass = await user.comparePassword(userBody.password)
+      const isSamePass = await this.userRepository.comparePassword(
+        userBody.password,
+        user.password,
+      )
 
-    if (!isSamePass) throw new PreconditionFailedException()
+      if (!isSamePass) throw new PreconditionFailedException()
 
-    return { ...user.omit(['password']), token: user.sign() }
+      const loggedUser = this.userRepository.omit(user, ['password'])
+
+      return {
+        ...loggedUser,
+        token: this.userRepository.sign(loggedUser as any),
+      }
+    } catch (err) {
+      throw new UnauthorizedException('invalid login')
+    }
   }
 
   @Post('/')
-  async create(@UserSchema('create') userBody: UserProps) {
-    return (await this.userRepository.create(userBody))?.omit(['password'])
+  async create(@UserSchema('create') userBody: UserSchemaBuildProps['create']) {
+    return this.userRepository.create(userBody)
+  }
+
+  @Post('like/:bookId')
+  @JwtToken()
+  async toogleLike(
+    @AuthUser() user: AuthUserProps,
+    @Param('bookId') bookId: string,
+  ) {
+    return this.userRepository.toogleLike(user.id, bookId)
   }
 }

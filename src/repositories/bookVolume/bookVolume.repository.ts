@@ -1,9 +1,7 @@
 import { Injectable } from '@nestjs/common'
-import { DataSource, In } from 'typeorm'
 import { differenceBy } from 'lodash'
 
-import { BookVolume } from './bookVolume.entity'
-import { Book } from 'repositories/book/book.entity'
+import { PrismaService } from 'helpers/database/database.service'
 
 export type BookVolumesType = {
   name: string
@@ -20,54 +18,72 @@ export type BookVolumeType = {
 
 @Injectable()
 export class BookVolumeRepository {
-  constructor(private dataSource: DataSource) {}
+  constructor(private prismaService: PrismaService) {}
 
   private get bookVolumeRepository() {
-    return this.dataSource.getRepository(BookVolume)
+    return this.prismaService.bookVolume
   }
 
   private get bookRepository() {
-    return this.dataSource.getRepository(Book)
+    return this.prismaService.book
   }
 
   async createMany(bookVolumes: BookVolumesType[]) {
-    return Promise.all(
-      bookVolumes.map(async (volume) => {
-        const book = await this.bookRepository.findOneBy({ name: volume.name })
+    try {
+      return Promise.all(
+        bookVolumes.map(async (volume) => {
+          const book = await this.bookRepository.findFirstOrThrow({
+            where: { name: volume.name },
+          })
 
-        if (!book.author) {
-          await this.bookRepository.update(
-            { id: book.id },
-            { author: volume.author },
-          )
-        }
+          if (!book?.author) {
+            await this.bookRepository.update({
+              where: {
+                id: book.id,
+              },
+              data: {
+                author: volume.author,
+              },
+            })
+          }
 
-        const createdVolumes = await this.bookVolumeRepository.find({
-          where: {
-            number: In(volume.volumes.map((vol) => vol.number)),
-            book: { id: book.id },
-          },
-        })
+          const createdVolumes = await this.bookVolumeRepository.findMany({
+            where: {
+              number: {
+                in: volume.volumes.map((vol) => vol.number),
+              },
+              bookId: book.id,
+            },
+            select: {
+              bookId: true,
+              coverUrl: true,
+              id: true,
+              number: true,
+              price: true,
+            },
+          })
 
-        const volumeWithBookId = volume.volumes.map((volume) => ({
-          ...volume,
-          book: { id: book.id },
-        }))
+          const volumeWithBookId = volume.volumes.map((volume) => ({
+            ...volume,
+            bookId: book.id,
+          }))
 
-        let toCreate = volumeWithBookId
+          let toCreate = volumeWithBookId
 
-        if (createdVolumes) {
-          toCreate = differenceBy(volumeWithBookId, createdVolumes, 'number')
-        }
+          if (createdVolumes) {
+            toCreate = differenceBy(volumeWithBookId, createdVolumes, 'number')
+          }
 
-        let newVolumes = []
+          if (toCreate.length !== 0) {
+            await this.bookVolumeRepository.createMany({
+              skipDuplicates: true,
+              data: toCreate,
+            })
+          }
 
-        if (toCreate.length !== 0) {
-          newVolumes = await this.bookVolumeRepository.save(toCreate)
-        }
-
-        return [...createdVolumes, ...newVolumes]
-      }),
-    )
+          return this.bookVolumeRepository.findMany()
+        }),
+      )
+    } catch (err) {}
   }
 }

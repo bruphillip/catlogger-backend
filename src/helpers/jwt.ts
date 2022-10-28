@@ -19,14 +19,14 @@ class JWTAdapter {
     )
   }
 
-  async decode(token: string): Promise<UserProps> {
-    if (!token) return
+  async decode(token?: string): Promise<UserProps | null> {
+    if (!token) return null
     const [prefix, actualToken] = token.split(' ')
 
     if (prefix === env.TOKEN_PREFIX) {
       return verify(actualToken, env.JWT_SECRET) as UserProps
     }
-    return
+    return null
   }
 }
 

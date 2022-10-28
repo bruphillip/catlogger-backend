@@ -1,26 +1,45 @@
 import { Injectable } from '@nestjs/common'
-import { DataSource, FindOptionsRelations, In } from 'typeorm'
-import { differenceBy } from 'lodash'
 
-import { Book } from './book.entity'
+import { PrismaService } from 'helpers/database/database.service'
+import { differenceBy, sortBy } from 'lodash'
+
+interface BookRepositoryProps {
+  createMany: {
+    url: string
+    name: string
+    publisherId: string
+  }
+  getByIdWithUserVolume: {
+    bookId: string
+    userId: string
+  }
+}
 
 export type BookType = {
   url: string
   name: string
-  publisher: { id: string }
+  publisherId: string
 }
 
 @Injectable()
 export class BookRepository {
-  constructor(private dataSource: DataSource) {}
+  constructor(private prismaService: PrismaService) {}
 
   private get bookRepository() {
-    return this.dataSource.getRepository(Book)
+    return this.prismaService.book
   }
 
-  async createMany(books: BookType[]) {
-    const createdBooks = await this.bookRepository.find({
-      where: { name: In(books.map((book) => book.name)) },
+  private get bookVolumeRepository() {
+    return this.prismaService.bookVolume
+  }
+
+  async createMany(books: BookRepositoryProps['createMany'][]) {
+    const createdBooks = await this.bookRepository.findMany({
+      where: {
+        name: {
+          in: books.map((book) => book.name),
+        },
+      },
     })
 
     let toCreate = books
@@ -29,24 +48,181 @@ export class BookRepository {
       toCreate = differenceBy(books, createdBooks, 'name')
     }
 
-    const newBooks = await this.bookRepository.save(toCreate)
+    await this.bookRepository.createMany({
+      skipDuplicates: true,
+      data: toCreate,
+    })
 
-    return [...createdBooks, ...newBooks]
+    return this.bookRepository.findMany()
   }
 
-  all(publisher: string) {
-    return this.bookRepository.find({
-      where: {
-        publisher: publisher && [{ name: publisher }, { id: publisher }],
+  async all(publisher?: string, sort?: 'asc' | 'desc') {
+    return this.bookRepository.findMany({
+      orderBy: {
+        name: sort,
       },
-      relations: { publisher: true, volumes: true },
+      select: {
+        author: true,
+        createdAt: true,
+        id: true,
+        isActive: true,
+        name: true,
+        publisher: {
+          select: {
+            id: true,
+            name: true,
+            createdAt: true,
+            isActive: true,
+            updatedAt: true,
+          },
+        },
+        url: true,
+        volumes: {
+          select: {
+            coverUrl: true,
+            createdAt: true,
+            id: true,
+            isActive: true,
+            number: true,
+            price: true,
+            releaseDate: true,
+            updatedAt: true,
+          },
+          orderBy: {
+            number: 'asc',
+          },
+          take: 1,
+        },
+      },
+      where: publisher
+        ? {
+            volumes: {
+              none: {
+                id: undefined,
+              },
+            },
+            publisher: {
+              OR: [
+                {
+                  id: publisher,
+                },
+                {
+                  name: publisher,
+                },
+              ],
+            },
+          }
+        : {
+            volumes: {
+              some: {
+                id: undefined,
+              },
+            },
+          },
     })
   }
 
-  getById(id: string, relations?: FindOptionsRelations<Book>) {
-    return this.bookRepository.findOne({
+  getById(id: string) {
+    return this.bookRepository.findUnique({
       where: { id },
-      relations,
+      include: {
+        publisher: true,
+      },
+    })
+  }
+
+  async getByIdWithUserVolume({
+    bookId,
+    userId,
+  }: BookRepositoryProps['getByIdWithUserVolume']) {
+    const usersVolume = (
+      await this.bookVolumeRepository.findMany({
+        where: {
+          userVolumes: {
+            some: {
+              userId,
+              book_volume: {
+                bookId,
+              },
+            },
+          },
+        },
+        orderBy: {
+          number: 'asc',
+        },
+        include: {
+          userVolumes: false,
+        },
+      })
+    ).map((bookVolume) => ({ ...bookVolume, checked: true }))
+
+    const bookWithVolumes = await this.bookRepository.findFirstOrThrow({
+      where: {
+        id: bookId,
+      },
+      select: {
+        id: true,
+        name: true,
+        author: true,
+        url: true,
+        createdAt: true,
+        isActive: true,
+        publisher: true,
+        updatedAt: true,
+        liked: {
+          where: {
+            id: userId,
+          },
+          take: 1,
+          distinct: 'id',
+        },
+        volumes: {
+          where: {
+            id: {
+              notIn: usersVolume.map((user) => user.id),
+            },
+          },
+        },
+      },
+    })
+
+    return {
+      ...bookWithVolumes,
+      volumes: sortBy([...bookWithVolumes.volumes, ...usersVolume], 'number'),
+    }
+  }
+
+  async search(search: string) {
+    return this.bookRepository.findMany({
+      where: {
+        name: {
+          contains: search,
+        },
+      },
+      orderBy: {
+        name: 'asc',
+      },
+      select: {
+        id: true,
+        name: true,
+        publisher: {
+          select: {
+            name: true,
+            id: true,
+            isActive: true,
+            createdAt: true,
+            updatedAt: true,
+          },
+        },
+        isActive: true,
+        url: true,
+        author: true,
+        createdAt: true,
+        updatedAt: true,
+        volumes: {
+          take: 1,
+        },
+      },
     })
   }
 }

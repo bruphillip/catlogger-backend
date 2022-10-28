@@ -1,12 +1,14 @@
 import { object, string, ValidationError } from 'yup'
 import { HttpException, HttpStatus } from '@nestjs/common'
-import { User } from 'repositories/user/user.entity'
 import { decorate } from 'helpers/schema.decorate'
 
-export type UserProps = Partial<User>
+export interface UserSchemaBuildProps {
+  login: { email: string; password: string }
+  create: { name: string; email: string; password: string }
+}
 
 class UserSchemaBuild {
-  async login(user: UserProps) {
+  async login(user: UserSchemaBuildProps['login']) {
     try {
       const schema = object().shape({
         email: string().email().required(),
@@ -22,7 +24,7 @@ class UserSchemaBuild {
     }
   }
 
-  async create(user: UserProps) {
+  async create(user: UserSchemaBuildProps['create']) {
     try {
       const schema = object().shape({
         email: string().email().required(),

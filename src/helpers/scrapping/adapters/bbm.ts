@@ -1,6 +1,6 @@
 import { Injectable } from '@nestjs/common'
 import API from 'constant/api'
-import { get, tail, uniqBy } from 'lodash'
+import { compact, get, isArray, tail, uniqBy } from 'lodash'
 import { Queue } from 'helpers/queue'
 
 import { Scrap, JsonObject } from '../scrap'
@@ -11,8 +11,8 @@ import {
   ScrapVolumeAuthorReturn,
   BooksObjectKeyType,
   ScrapPublisherReturn,
+  ScrapVolumeReturn,
 } from './bbm.types'
-import { Cluster } from 'helpers/cluster/cluster'
 
 @Injectable()
 export class BBM {
@@ -28,21 +28,9 @@ export class BBM {
   async scrapBooks() {
     const loaded = await this.scrapping.load(this.loadApi)
 
-    const { children } = loaded.getByTag(TAG_KEY.TABLE_TBODY).json()
+    const { children } = this.scrapping.getByTag(loaded, TAG_KEY.TABLE_TBODY)
 
-    const books = children.map((child) => {
-      const url = this.get(child, BOOKS_OBJECT_KEY.URL)
-      const name = this.get(child, BOOKS_OBJECT_KEY.NAME)
-      const publisher = this.get(child, BOOKS_OBJECT_KEY.PUBLISHER)
-        ?.trimEnd()
-        ?.replace('`', '')
-
-      return {
-        url,
-        name,
-        publisher,
-      }
-    })
+    const books = this.getBooks(children)
 
     const publishers = this.getPublishers(books)
 
@@ -69,29 +57,41 @@ export class BBM {
 
   async getBookVolume(scrap: ScrapBookReturn) {
     const page = await this.scrapping.load(scrap.url)
-    const element = page.getByTag(TAG_KEY.PRIMARY_ARTICLE_DIV_P).json()
-    const author = this.get(element, BOOKS_OBJECT_KEY.AUTHOR)
-      ?.replace(':', '')
+
+    const author = this.scrapping
+      .getElementByText(page, BOOKS_OBJECT_KEY.AUTHOR, 'strong')[0]
+      .next.data?.replace(':', '')
       ?.trimStart()
 
-    const elementVolumes = page.getByTag(TAG_KEY.TABLE_TBODY).json()
+    const table = this.scrapping.getElementByText(
+      page,
+      BOOKS_OBJECT_KEY.VOL as any,
+      'table tbody' as any,
+    )[0]
 
-    const volumesScrapped = elementVolumes.children
-      .filter((volume) => volume.tag || volume.data !== '\n')
-      .map((volume, index) => {
-        const number = this.get(volume, BOOKS_OBJECT_KEY.VOL_NUMBER)
-        const price = this.get(volume, BOOKS_OBJECT_KEY.VOL_PRICE)
-        const releaseDate = this.get(volume, BOOKS_OBJECT_KEY.VOL_RELEASE_DATE)
+    const volumesScrapped = compact(
+      table.children
+        .filter((volume) => volume.data !== '\n')
+        .map((volume, index) => {
+          const number = this.get(volume, BOOKS_OBJECT_KEY.VOL_NUMBER)
+          const price = this.get(volume, BOOKS_OBJECT_KEY.VOL_PRICE)
+          const releaseDate = this.get(
+            volume,
+            BOOKS_OBJECT_KEY.VOL_RELEASE_DATE_BR,
+          )
 
-        const coverUrl = this.getVolumeCover(page, String(index - 1))
+          if (!price && !releaseDate) return undefined
 
-        return {
-          number,
-          price,
-          releaseDate,
-          coverUrl,
-        }
-      })
+          const coverUrl = this.getVolumeCover(page, index - 1)
+
+          return {
+            number,
+            price,
+            releaseDate,
+            coverUrl,
+          }
+        }),
+    ) as ScrapVolumeReturn[]
 
     return {
       name: scrap.name,
@@ -100,23 +100,43 @@ export class BBM {
     }
   }
 
+  private getBooks(element): ScrapBookReturn[] {
+    return element.map((child) => {
+      const url = this.get(child, BOOKS_OBJECT_KEY.URL)
+      const name = this.get(child, BOOKS_OBJECT_KEY.NAME)
+      const publisher = this.get(child, BOOKS_OBJECT_KEY.PUBLISHER)
+        ?.trimEnd()
+        ?.replace('`', '')
+
+      return {
+        url,
+        name,
+        publisher,
+      }
+    })
+  }
+
   private getPublishers(scrapped: ScrapBookReturn[]): ScrapPublisherReturn[] {
     return uniqBy(scrapped, (scrap) => scrap.publisher).map((scrap) => ({
       name: scrap.publisher,
     }))
   }
 
-  private getVolumeCover(page, volumeNumber: string): string {
-    const element = page.getByTag(TAG_KEY.GALLERY_1).json()
-    const coverUrl = this.get(
-      element,
-      BOOKS_OBJECT_KEY.COVER.replace('idx', volumeNumber) as any,
+  private getVolumeCover(page, volumeNumber: number): string {
+    const element = this.scrapping.getByTag(
+      page,
+      TAG_KEY.FIGURE_IMG,
+      volumeNumber,
     )
+
+    const coverUrl = this.get(element, BOOKS_OBJECT_KEY.COVER)
 
     return coverUrl
   }
 
   private get(object: JsonObject, key: BooksObjectKeyType): string {
-    return get(object, key)
+    return isArray(key)
+      ? compact(key.map((k) => get(object, k)))[0]
+      : get(object, key)
   }
 }

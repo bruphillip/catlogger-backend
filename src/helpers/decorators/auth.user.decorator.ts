@@ -1,7 +1,6 @@
 import { createParamDecorator, ExecutionContext } from '@nestjs/common'
-import { User } from 'repositories/user/user.entity'
 
-export type AuthUserProps = Readonly<Omit<User, 'password' | 'updatePassword'>>
+export type AuthUserProps = { id: string; email: string; name: string }
 
 export const AuthUser: () => ParameterDecorator = createParamDecorator(
   (data: any, ctx: ExecutionContext) => {

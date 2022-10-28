@@ -1,66 +1,177 @@
 import { Injectable } from '@nestjs/common'
-import { DataSource } from 'typeorm'
-import { xorBy } from 'lodash'
+import { omit, xorBy } from 'lodash'
 
 import { User } from './user.entity'
-import { BookVolume } from 'repositories/bookVolume/bookVolume.entity'
+import { PrismaService } from 'helpers/database/database.service'
+import { jwtAdapter, UserProps } from 'helpers/jwt'
+import { UserSchemaBuildProps } from 'modules/user/user.schema'
+
+import { Crypto } from 'helpers/crypto'
 
 @Injectable()
 export class UserRepository {
-  constructor(private dataSource: DataSource) {}
+  private cryto: Crypto
+  constructor(private prismaService: PrismaService) {
+    this.cryto = new Crypto()
+  }
+
+  async updatePassword(password: string) {
+    return this.cryto.hash(password)
+  }
+
+  async comparePassword(password, crypted) {
+    return this.cryto.compare(password, crypted)
+  }
+
+  sign(user: UserProps) {
+    return jwtAdapter.sign(user)
+  }
+
+  omit(user, field: (keyof User)[]) {
+    return omit(user, field)
+  }
 
   private get userRepository() {
-    return this.dataSource.getRepository(User)
+    return this.prismaService.user
   }
 
   findAll() {
-    return this.userRepository.find()
+    return this.userRepository.findMany()
   }
 
   getById(id: string) {
-    return this.userRepository.findOne({
+    return this.userRepository.findFirstOrThrow({
       where: { id },
-      relations: { volumes: true },
+      include: {
+        volumes: true,
+      },
     })
   }
 
   async toogleVolume(userId: string, volumeId: string) {
-    const user = await this.userRepository.findOne({
-      where: { id: userId },
-      relations: { volumes: true },
+    const hasVolume = await this.userRepository.findFirst({
+      where: { id: userId, volumes: { some: { bookVolumeId: volumeId } } },
     })
 
-    const volumes = xorBy(
-      user.volumes || [],
-      [{ id: volumeId }] as BookVolume[],
-      'id',
-    )
+    if (hasVolume) {
+      await this.userRepository.update({
+        where: { id: userId },
+        data: {
+          volumes: {
+            delete: {
+              userId_bookVolumeId: {
+                userId,
+                bookVolumeId: volumeId,
+              },
+            },
+          },
+        },
+      })
+    } else {
+      await this.userRepository.update({
+        where: { id: userId },
+        data: {
+          volumes: {
+            create: {
+              bookVolumeId: volumeId,
+            },
+          },
+        },
+      })
+    }
 
-    const newUser = this.userRepository.create({
-      volumes,
-      id: userId,
-    })
-
-    await this.userRepository.save(newUser, { reload: true })
-
-    return this.userRepository.findOne({
-      where: { id: userId },
-      relations: ['volumes', 'volumes.book', 'volumes.book.publisher'],
-      order: {
+    return this.userRepository.findFirstOrThrow({
+      where: {
+        id: userId,
+      },
+      include: {
         volumes: {
-          number: 'ASC',
+          include: {
+            book_volume: {
+              select: {
+                bookId: false,
+                userVolumes: false,
+                coverUrl: true,
+                id: true,
+                createdAt: true,
+                isActive: true,
+                number: true,
+                price: true,
+                updatedAt: true,
+                releaseDate: true,
+                book: {
+                  select: {
+                    author: true,
+                    createdAt: true,
+                    id: true,
+                    isActive: true,
+                    name: true,
+                    updatedAt: true,
+                    url: true,
+                    publisher: true,
+                  },
+                },
+              },
+            },
+          },
+          orderBy: {
+            book_volume: {
+              number: 'asc',
+            },
+          },
         },
       },
     })
   }
 
   getByEmail(email: string) {
-    return this.userRepository.findOne({ where: { email } })
+    return this.userRepository.findFirst({ where: { email } })
   }
 
-  async create(user: Partial<User>) {
-    const createdUser = await this.userRepository.create(user)
+  async create(user: UserSchemaBuildProps['create']) {
+    return this.userRepository.create({
+      data: {
+        ...user,
+        password: user.password,
+      },
+    })
+  }
 
-    return this.userRepository.save(createdUser)
+  async toogleLike(userId: string, bookId: string) {
+    const user = await this.userRepository.findFirst({
+      where: { id: userId, likes: { some: { id: bookId } } },
+      select: {
+        likes: true,
+      },
+    })
+
+    if (!user)
+      return this.userRepository.update({
+        where: { id: userId },
+        data: {
+          likes: {
+            connect: {
+              id: bookId,
+            },
+          },
+        },
+        include: {
+          likes: true,
+        },
+      })
+
+    return this.userRepository.update({
+      where: { id: userId },
+      data: {
+        likes: {
+          disconnect: {
+            id: bookId,
+          },
+        },
+      },
+      include: {
+        likes: true,
+      },
+    })
   }
 }

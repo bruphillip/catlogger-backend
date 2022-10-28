@@ -1,0 +1,68 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Book {
+  id          String        @unique @id @default(uuid())
+  name        String       
+  url         String       
+  author      String?      
+  isActive    Boolean       @default(true)
+  createdAt   DateTime      @default(now())
+  updatedAt   DateTime      @updatedAt
+  publisherId String        
+  publisher   Publisher     @relation(fields: [publisherId], references: [id], onDelete: Cascade, onUpdate: Cascade)
+  volumes     BookVolume[]
+  liked       User[]
+}
+
+model BookVolume {
+  id                       String                     @unique @id @default(uuid())
+  number                   String?                    
+  price                    String?                    
+  releaseDate              String?                    
+  coverUrl                 String?                    
+  isActive                 Boolean                    @default(true)
+  createdAt                DateTime                   @default(now()) @db.Timestamp(6)
+  updatedAt                DateTime                   @updatedAt
+  bookId                   String                     
+  book                     Book                       @relation(fields: [bookId], references: [id], onDelete: Cascade, onUpdate: Cascade)
+  userVolumes              UserVolumesBookVolumes[]
+}
+
+model Publisher {
+  id        String   @unique @id @default(uuid())
+  name      String   
+  isActive  Boolean  @default(true)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  books      Book[]
+}
+
+model User {
+  id                       String                     @unique @id @default(uuid())
+  name                     String                     
+  email                    String                     @unique() 
+  password                 String                     
+  isActive                 Boolean                    @default(true)
+  createdAt                DateTime                   @default(now()) @db.Timestamp(6)
+  updatedAt                DateTime                   @updatedAt
+  likes                    Book[]
+  volumes                  UserVolumesBookVolumes[]
+}
+
+model UserVolumesBookVolumes {
+  userId       String     
+  bookVolumeId String     
+  user         User        @relation(fields: [userId], references: [id], onDelete: Cascade)
+  book_volume  BookVolume @relation(fields: [bookVolumeId], references: [id], onDelete: Cascade, onUpdate: Cascade)
+
+  @@id([userId, bookVolumeId])
+  @@index([userId])
+  @@index([bookVolumeId])
+}
