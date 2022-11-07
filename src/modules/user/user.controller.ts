@@ -9,6 +9,7 @@ import {
 import { AuthUser, AuthUserProps } from 'helpers/decorators/auth.user.decorator'
 import { JwtToken } from 'helpers/decorators/token.apply.decorator'
 import { UserRepository } from 'repositories/user/user.repository'
+
 import { UserSchemaBuildProps, UserSchema } from './user.schema'
 
 @Controller('user')

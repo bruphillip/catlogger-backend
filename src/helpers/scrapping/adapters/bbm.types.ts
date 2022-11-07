@@ -7,6 +7,7 @@ export type ScrapBookReturn = {
   url: string
   name: string
   publisher: string
+  dupIndex?: number
 }
 
 export type ScrapPublisherReturn = {

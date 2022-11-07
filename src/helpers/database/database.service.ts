@@ -36,8 +36,5 @@ export class PrismaService
     ) as string[]
 
     return Promise.all(models.map((modelKey) => this[modelKey].deleteMany()))
-    // return Promise.all(
-    //   models.map((modelKey) => this.$queryRawUnsafe(`TRUNCATE ${modelKey}`)),
-    // )
   }
 }

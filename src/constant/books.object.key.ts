@@ -1,6 +1,7 @@
 export const BOOKS_OBJECT_KEY = {
   AUTHOR: 'Autor',
   VOL: ['Vol', 'VOLUME', 'VOLUMES'],
+  BRASIL: 'Brasil',
   URL: 'children[0].children[0].attribs.href',
   NAME: 'children[0].children[0].children[0].data',
   PUBLISHER: 'children[1].children[0].data',
@@ -12,5 +13,6 @@ export const BOOKS_OBJECT_KEY = {
   ],
   VOL_PRICE: 'children[7].children[0].data',
   AMAZON_LINK: 'children[9].children[0].data',
-  COVER: `attribs.src`,
+  COVER: `children[1].children[1].children[0].attribs["data-large-file"]`,
+  NEXT_SIBLING: 'nextSibling.data',
 } as const

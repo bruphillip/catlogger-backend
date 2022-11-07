@@ -1,9 +1,9 @@
-import env from 'constant/env'
 import { faker } from '@faker-js/faker'
 import { JwtService } from '@nestjs/jwt'
-import { formatTo } from 'helpers/date.format'
-import { PrismaService } from 'helpers/database/database.service'
 import { Prisma } from '@prisma/client'
+import env from 'constant/env'
+import { PrismaService } from 'helpers/database/database.service'
+import { formatTo } from 'helpers/date.format'
 
 interface GeneratorProps {
   user: {

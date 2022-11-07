@@ -2,6 +2,7 @@ import { Test, TestingModule } from '@nestjs/testing'
 import { DatabaseModule } from 'helpers/database/database.module'
 import { PrismaService } from 'helpers/database/database.service'
 import { PublisherRepository } from 'repositories/publisher/publisher.repository'
+
 import { Generator } from '../../../test/generator'
 import { PublisherController } from './publisher.controller'
 

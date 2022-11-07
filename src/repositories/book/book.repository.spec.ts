@@ -1,8 +1,9 @@
 import { Test, TestingModule } from '@nestjs/testing'
-import { BookRepository } from './book.repository'
-import { Generator } from '../../../test/generator'
 import { DatabaseModule } from 'helpers/database/database.module'
 import { PrismaService } from 'helpers/database/database.service'
+
+import { Generator } from '../../../test/generator'
+import { BookRepository } from './book.repository'
 
 describe('Book Repository (unit)', () => {
   let bookRepository: BookRepository

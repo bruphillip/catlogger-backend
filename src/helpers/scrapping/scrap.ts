@@ -1,11 +1,10 @@
-// eslint-disable-next-line @typescript-eslint/no-var-requires
-const rateLimit = require('axios-rate-limit')
-
 import axios, { AxiosInstance } from 'axios'
 import axiosRetry from 'axios-retry'
-
 import * as cheerio from 'cheerio'
 import { compact, get, isArray } from 'lodash'
+
+// eslint-disable-next-line @typescript-eslint/no-var-requires
+const rateLimit = require('axios-rate-limit')
 
 interface AllTag {
   '*': HTMLElement
@@ -47,7 +46,11 @@ class Scrap {
     }
   }
 
-  getByTag($, tag, position = 0) {
+  getByTag($, tag, position: number | null) {
+    if (position === null) {
+      return $(tag)
+    }
+
     return $(tag)[position]
   }
 

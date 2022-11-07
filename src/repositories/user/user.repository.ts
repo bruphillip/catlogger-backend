@@ -1,12 +1,10 @@
 import { Injectable } from '@nestjs/common'
-import { omit, xorBy } from 'lodash'
-
-import { User } from './user.entity'
+import { User } from '@prisma/client'
+import { Crypto } from 'helpers/crypto'
 import { PrismaService } from 'helpers/database/database.service'
 import { jwtAdapter, UserProps } from 'helpers/jwt'
+import { omit } from 'lodash'
 import { UserSchemaBuildProps } from 'modules/user/user.schema'
-
-import { Crypto } from 'helpers/crypto'
 
 @Injectable()
 export class UserRepository {
@@ -27,7 +25,7 @@ export class UserRepository {
     return jwtAdapter.sign(user)
   }
 
-  omit(user, field: (keyof User)[]) {
+  omit<K extends keyof User>(user: User, field: K[]): Omit<User, K> {
     return omit(user, field)
   }
 

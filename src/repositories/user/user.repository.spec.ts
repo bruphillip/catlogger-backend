@@ -1,8 +1,9 @@
 import { Test, TestingModule } from '@nestjs/testing'
-import { UserRepository } from './user.repository'
-import { Generator } from '../../../test/generator'
 import { DatabaseModule } from 'helpers/database/database.module'
 import { PrismaService } from 'helpers/database/database.service'
+
+import { Generator } from '../../../test/generator'
+import { UserRepository } from './user.repository'
 
 describe('User Service (unit)', () => {
   let userRepository: UserRepository

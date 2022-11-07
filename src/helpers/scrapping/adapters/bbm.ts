@@ -1,11 +1,12 @@
 import { Injectable } from '@nestjs/common'
 import API from 'constant/api'
-import { compact, get, isArray, tail, uniqBy } from 'lodash'
-import { Queue } from 'helpers/queue'
-
-import { Scrap, JsonObject } from '../scrap'
 import { BOOKS_OBJECT_KEY } from 'constant/books.object.key'
 import { TAG_KEY } from 'constant/tag.key'
+import { getAllAfter } from 'helpers/getAllAfter'
+import { Queue } from 'helpers/queue'
+import { compact, get, isArray, reverse, sum, uniqBy } from 'lodash'
+
+import { Scrap, JsonObject } from '../scrap'
 import {
   ScrapBookReturn,
   ScrapVolumeAuthorReturn,
@@ -28,7 +29,7 @@ export class BBM {
   async scrapBooks() {
     const loaded = await this.scrapping.load(this.loadApi)
 
-    const { children } = this.scrapping.getByTag(loaded, TAG_KEY.TABLE_TBODY)
+    const { children } = this.scrapping.getByTag(loaded, TAG_KEY.TABLE_TBODY, 0)
 
     const books = this.getBooks(children)
 
@@ -63,45 +64,36 @@ export class BBM {
       .next.data?.replace(':', '')
       ?.trimStart()
 
-    const table = this.scrapping.getElementByText(
-      page,
-      BOOKS_OBJECT_KEY.VOL as any,
-      'table tbody' as any,
-    )[0]
+    const table = this.getAllTables(page)
 
-    const volumesScrapped = compact(
-      table.children
-        .filter((volume) => volume.data !== '\n')
-        .map((volume, index) => {
-          const number = this.get(volume, BOOKS_OBJECT_KEY.VOL_NUMBER)
-          const price = this.get(volume, BOOKS_OBJECT_KEY.VOL_PRICE)
-          const releaseDate = this.get(
-            volume,
-            BOOKS_OBJECT_KEY.VOL_RELEASE_DATE_BR,
-          )
+    const numberOfVolumesInBrazil = reverse(
+      this.getNumberOfVolumesInBrazil(table, page),
+    )
 
-          if (!price && !releaseDate) return undefined
+    const matchingPosition = scrap.dupIndex || 0
 
-          const coverUrl = this.getVolumeCover(page, index - 1)
+    const current = numberOfVolumesInBrazil[matchingPosition]
 
-          return {
-            number,
-            price,
-            releaseDate,
-            coverUrl,
-          }
-        }),
-    ) as ScrapVolumeReturn[]
+    // const totalSum = sum(numberOfVolumesInBrazil) - current
+
+    const previousSum = sum(getAllAfter(numberOfVolumesInBrazil, current))
+
+    const currentTable = reverse([...table])[matchingPosition]?.children.splice(
+      0,
+      current,
+    )
+
+    const volumesScrapped = this.scrapVolumes(currentTable, page, previousSum)
 
     return {
       name: scrap.name,
       author,
-      volumes: tail(volumesScrapped),
+      volumes: volumesScrapped,
     }
   }
 
   private getBooks(element): ScrapBookReturn[] {
-    return element.map((child) => {
+    const books = element.map((child) => {
       const url = this.get(child, BOOKS_OBJECT_KEY.URL)
       const name = this.get(child, BOOKS_OBJECT_KEY.NAME)
       const publisher = this.get(child, BOOKS_OBJECT_KEY.PUBLISHER)
@@ -114,6 +106,8 @@ export class BBM {
         publisher,
       }
     })
+
+    return this.findDuplicatedBookNamesAndFixIt(books)
   }
 
   private getPublishers(scrapped: ScrapBookReturn[]): ScrapPublisherReturn[] {
@@ -122,16 +116,93 @@ export class BBM {
     }))
   }
 
-  private getVolumeCover(page, volumeNumber: number): string {
-    const element = this.scrapping.getByTag(
+  private findDuplicatedBookNamesAndFixIt(books: ScrapBookReturn[]) {
+    return books.reduce((currentArray, book) => {
+      const dup = currentArray.filter((current) =>
+        book.name.includes(current.name),
+      )
+      if (dup.length > 0) {
+        currentArray.push({ ...book, dupIndex: dup.length })
+        return currentArray
+      }
+
+      currentArray.push({ ...book, dupIndex: 0 })
+      return currentArray
+    }, [] as ScrapBookReturn[])
+  }
+
+  private getVolumeCover(page, currentIndex): string {
+    const allCoversElements = this.scrapping.getByTag(
       page,
-      TAG_KEY.FIGURE_IMG,
-      volumeNumber,
+      TAG_KEY.GALERY_ITEM,
+      null,
     )
+
+    const element = [...allCoversElements][currentIndex]
 
     const coverUrl = this.get(element, BOOKS_OBJECT_KEY.COVER)
 
     return coverUrl
+  }
+
+  private getNumberOfVolumesInBrazil(table, page): number[] {
+    return [...table].map(
+      (tab, index, array) =>
+        tab.children.map((vol, volIdx) => {
+          return this.scrapping
+            .getByTag(page, TAG_KEY.GALERY_ITEM, null)
+            [
+              (array[index - 1]?.children.length || 0) + volIdx
+            ]?.parent.children?.filter((d) => d.type !== 'text').length
+        })[0],
+    )
+  }
+
+  private getAllTables(page) {
+    return [
+      ...this.scrapping
+        .getElementByText(
+          page,
+          BOOKS_OBJECT_KEY.BRASIL as any,
+          'table tbody' as any,
+        )
+        .map((_, tableEl) => ({
+          children: tableEl?.children
+            ?.filter((volume) => volume.data !== '\n')
+            ?.filter((_, index) => index >= 1)
+            ?.filter(
+              (volume) => !!this.get(volume, BOOKS_OBJECT_KEY.VOL_PRICE),
+            ),
+        })),
+    ].filter((table) => table.children.length !== 0)
+  }
+
+  private scrapVolumes(currentTable, page, sum) {
+    const volumesScrapped = compact(
+      currentTable.map((volume, index) => {
+        const number = this.get(volume, BOOKS_OBJECT_KEY.VOL_NUMBER)
+        const price = this.get(volume, BOOKS_OBJECT_KEY.VOL_PRICE)
+        const releaseDate = this.get(
+          volume,
+          BOOKS_OBJECT_KEY.VOL_RELEASE_DATE_BR,
+        )
+
+        if (!price || !releaseDate || !price) return undefined
+
+        const coverUrl = this.getVolumeCover(page, index + sum)
+
+        if (!coverUrl) return undefined
+
+        return {
+          number,
+          price,
+          releaseDate,
+          coverUrl,
+        }
+      }),
+    ) as ScrapVolumeReturn[]
+
+    return volumesScrapped
   }
 
   private get(object: JsonObject, key: BooksObjectKeyType): string {

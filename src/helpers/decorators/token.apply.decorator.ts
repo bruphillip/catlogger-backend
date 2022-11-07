@@ -1,6 +1,7 @@
-import { builderDecorator, CallbackType } from './builder.decorator'
 import { UnauthorizedException } from '@nestjs/common'
 import { jwtAdapter } from 'helpers/jwt'
+
+import { builderDecorator, CallbackType } from './builder.decorator'
 
 const tokenApply: CallbackType = async ({ request }) => {
   try {

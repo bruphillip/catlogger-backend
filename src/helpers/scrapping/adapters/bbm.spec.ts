@@ -1,8 +1,10 @@
-import { BBM } from './bbm'
 import axios from 'axios'
+
 import {
   abcDoBudismo,
   aEstrelaDoHentai,
+  bleach,
+  booksDuplicatedHtml,
   booksHtml,
   boruto,
   joy2,
@@ -10,6 +12,7 @@ import {
   morango,
   shakugan,
 } from '../mock'
+import { BBM } from './bbm'
 
 const mockedAxios = axios as jest.Mocked<typeof axios>
 jest.mock('axios')
@@ -28,7 +31,7 @@ describe('BBM', () => {
     await jest.restoreAllMocks()
   })
 
-  it.only('should load books title and publisher', async () => {
+  it('should load books title and publisher', async () => {
     mockedAxios.get.mockImplementation(() =>
       Promise.resolve({ data: booksHtml }),
     )
@@ -46,6 +49,37 @@ describe('BBM', () => {
     expect(scrap.publishers[2].name).toBe('NewPOP')
   })
 
+  it('should load books title and publisher and fix duplicated names', async () => {
+    mockedAxios.get.mockImplementation(() =>
+      Promise.resolve({ data: booksDuplicatedHtml }),
+    )
+    const scrap = await bbm.scrapBooks()
+
+    expect(scrap.books).toHaveLength(20)
+    expect(scrap.books[0].name).toBe(
+      '.Hack // A Lenda do Bracelete do Crepúsculo',
+    )
+    expect(scrap.books[1].name).toBe('07-ghost')
+    expect(scrap.books[2].name).toBe('1 litro de lágrimas')
+    expect(scrap.publishers).toHaveLength(8)
+    expect(scrap.publishers[0].name).toBe('JBC')
+    expect(scrap.publishers[1].name).toBe('Panini')
+    expect(scrap.publishers[2].name).toBe('NewPOP')
+
+    expect(scrap.books[3].name).toBe('100% morango')
+    expect(scrap.books[3].dupIndex).toBe(0)
+    expect(scrap.books[4].name).toBe('100% morango ultimate')
+    expect(scrap.books[4].dupIndex).toBe(1)
+
+    expect(scrap.books).toEqual(
+      expect.arrayContaining([
+        expect.objectContaining({
+          dupIndex: expect.any(Number),
+        }),
+      ]),
+    )
+  })
+
   it('should load and get information books volume in batch(boruto)', async () => {
     const mock = mockedAxios.get.mockImplementation(() =>
       Promise.resolve({ data: boruto }),
@@ -57,7 +91,7 @@ describe('BBM', () => {
 
     expect(booksVolume[0].author).toBe('Masashi Kishimoto; Mikio Ikemoto')
     expect(booksVolume[0].name).toBe('Boruto')
-    expect(booksVolume[0].volumes).toHaveLength(20)
+    expect(booksVolume[0].volumes).toHaveLength(16)
     expect(booksVolume[0].volumes[0].number).toBe('# 01')
     expect(booksVolume[0].volumes[0].releaseDate).toBe('08/2018')
     expect(booksVolume[0].volumes[0].coverUrl).toBeTruthy()
@@ -97,7 +131,7 @@ describe('BBM', () => {
     expect(booksVolume.author).toBe('Kazuo Koike; Goseki Kojima')
     expect(booksVolume.volumes).toHaveLength(28)
     expect(booksVolume.volumes[0].number).toBe('# 01')
-    expect(booksVolume.volumes[0].releaseDate).toBe('Dezembro de 2016')
+    expect(booksVolume.volumes[0].releaseDate).toBe('Dezembro de 2004')
     expect(booksVolume.volumes[0].coverUrl).toBeTruthy()
   })
 
@@ -129,7 +163,7 @@ describe('BBM', () => {
     })
 
     expect(booksVolume.author).toBe('Ayato Sasakura')
-    expect(booksVolume.volumes).toHaveLength(10)
+    expect(booksVolume.volumes).toHaveLength(4)
     expect(booksVolume.volumes[0].number).toBe('# 01')
     expect(booksVolume.volumes[0].releaseDate).toBe('15/11/2018')
     expect(booksVolume.volumes[0].coverUrl).toBeTruthy()
@@ -171,6 +205,58 @@ describe('BBM', () => {
     expect(booksVolume.volumes[0].number).toBe('# 01')
     expect(booksVolume.volumes[0].releaseDate).toBe('15/11/2018')
     expect(booksVolume.volumes[0].coverUrl).toBeTruthy()
+    expect(mock).toHaveBeenCalled()
+  })
+
+  it('should load and get information books volume in batch(bleach - old volumes)', async () => {
+    const mock = mockedAxios.get.mockImplementation(() =>
+      Promise.resolve({ data: bleach }),
+    )
+
+    const booksVolume = await bbm.getBookVolume({
+      name: 'bleach(2)',
+      publisher: 'Random Publisher',
+      url: 'abc',
+    })
+
+    expect(booksVolume.author).toBe('Tite Kubo')
+    expect(booksVolume.volumes).toHaveLength(74)
+    expect(booksVolume.volumes[0].number).toBe('# 01')
+    expect(booksVolume.volumes[0].releaseDate).toBe('07/2007')
+    expect(booksVolume.volumes[0].coverUrl).toBeTruthy()
+    expect(mock).toHaveBeenCalled()
+
+    // URL matching
+    expect(booksVolume.volumes[0].coverUrl.includes('01')).toBe(true)
+
+    expect(booksVolume.volumes[73].coverUrl.includes('74')).toBe(true)
+  })
+
+  it('should load and get information books volume in batch(bleach remix - new volumes)', async () => {
+    const mock = mockedAxios.get.mockImplementation(() =>
+      Promise.resolve({ data: bleach }),
+    )
+
+    const booksVolume = await bbm.getBookVolume({
+      name: 'bleach (1)',
+      publisher: 'Random Publisher',
+      url: 'abc',
+      dupIndex: 1,
+    })
+
+    expect(booksVolume.author).toBe('Tite Kubo')
+    expect(booksVolume.volumes).toHaveLength(5)
+    expect(booksVolume.volumes[0].number).toBe('# 01')
+    expect(booksVolume.volumes[0].releaseDate).toBe('10/06/2022')
+    expect(booksVolume.volumes[0].coverUrl).toBeTruthy()
+
+    // URL matching
+    expect(booksVolume.volumes[0].coverUrl.includes('Remix')).toBe(true)
+    expect(booksVolume.volumes[0].coverUrl.includes('01')).toBe(true)
+
+    expect(booksVolume.volumes[4].coverUrl.includes('Remix')).toBe(true)
+    expect(booksVolume.volumes[4].coverUrl.includes('05')).toBe(true)
+
     expect(mock).toHaveBeenCalled()
   })
 })

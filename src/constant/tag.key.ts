@@ -6,4 +6,5 @@ export const TAG_KEY = {
     '#primary article div table tbody tr td',
   GALLERY_1: '#gallery-1',
   FIGURE_IMG: 'figure img',
+  GALERY_ITEM: '.gallery-item',
 } as const

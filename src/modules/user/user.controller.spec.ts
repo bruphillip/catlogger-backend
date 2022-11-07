@@ -3,8 +3,8 @@ import env from 'constant/env'
 import { DatabaseModule } from 'helpers/database/database.module'
 import { PrismaService } from 'helpers/database/database.service'
 import { jwtAdapter } from 'helpers/jwt'
-import { User } from 'repositories/user/user.entity'
 import { UserRepository } from 'repositories/user/user.repository'
+
 import { Generator } from '../../../test/generator'
 import { UserController } from './user.controller'
 
@@ -52,10 +52,10 @@ describe('UserController', () => {
   it('should login and give return token', async () => {
     const user = await generator.createUser({ password: '12345' })
 
-    const result = (await controller.login({
+    const result = await controller.login({
       ...user,
       password: '12345',
-    })) as Partial<User & { token: string }>
+    })
 
     expect(result.id).toBe(user.id)
     expect(result.createdAt?.toDateString()).toBe(user.createdAt.toDateString())
@@ -77,7 +77,7 @@ describe('UserController', () => {
   it('should create a new user', async () => {
     const rawUser = await generator.mockUser()
 
-    const result = (await controller.create(rawUser)) as Partial<User>
+    const result = await controller.create(rawUser)
 
     const created = await generator.UserRepository.findFirstOrThrow({
       where: { id: result.id },
@@ -90,7 +90,7 @@ describe('UserController', () => {
   it('should getById an user', async () => {
     const user = await generator.createUser()
 
-    const result = (await controller.getById(user.id)) as Partial<User>
+    const result = await controller.getById(user.id)
 
     expect(result.email).toBe(user.email)
     expect(result.name).toBe(user.name)

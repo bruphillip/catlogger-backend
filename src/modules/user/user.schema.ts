@@ -1,6 +1,6 @@
-import { object, string, ValidationError } from 'yup'
 import { HttpException, HttpStatus } from '@nestjs/common'
 import { decorate } from 'helpers/schema.decorate'
+import { object, string, ValidationError } from 'yup'
 
 export interface UserSchemaBuildProps {
   login: { email: string; password: string }

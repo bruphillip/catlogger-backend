@@ -1,6 +1,7 @@
 import axios from 'axios'
-import { Scrap } from './scrap'
+
 import { booksHtml, morango } from './mock'
+import { Scrap } from './scrap'
 
 jest.mock('axios')
 const mockedAxios = axios as jest.Mocked<typeof axios>

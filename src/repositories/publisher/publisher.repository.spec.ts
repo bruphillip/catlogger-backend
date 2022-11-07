@@ -1,8 +1,9 @@
 import { Test, TestingModule } from '@nestjs/testing'
-import { PublisherRepository } from './publisher.repository'
-import { Generator } from '../../../test/generator'
 import { DatabaseModule } from 'helpers/database/database.module'
 import { PrismaService } from 'helpers/database/database.service'
+
+import { Generator } from '../../../test/generator'
+import { PublisherRepository } from './publisher.repository'
 
 describe('Publisher Repository (unit)', () => {
   let publisherRepository: PublisherRepository

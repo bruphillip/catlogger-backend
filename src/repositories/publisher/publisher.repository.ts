@@ -1,7 +1,6 @@
 import { Injectable } from '@nestjs/common'
-import { differenceBy } from 'lodash'
-
 import { PrismaService } from 'helpers/database/database.service'
+import { differenceBy } from 'lodash'
 
 interface PublisherRepositoryProps {
   userBooksVolumesOrderedByPublisher: { userId: string }
