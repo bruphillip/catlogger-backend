@@ -17,6 +17,12 @@
       "name": "Jest Current File",
       "request": "launch",
       "type": "node-terminal"
+    },
+    {
+      "command": "NODE_ENV=test npx dotenv -e .env.test -- ${workspaceFolder}/node_modules/.bin/jest --runInBand --detectOpenHandles --testTimeout=300000 --forceExit -i",
+      "name": "Jest",
+      "request": "launch",
+      "type": "node-terminal"
     }
   ]
 }

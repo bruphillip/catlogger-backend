@@ -22,6 +22,18 @@ export class Generator {
     return faker
   }
 
+  get name() {
+    return faker.name.fullName()
+  }
+
+  get productName() {
+    return faker.commerce.productName()
+  }
+
+  get url() {
+    return faker.internet.url()
+  }
+
   get uuid() {
     return this.faker.datatype.uuid()
   }

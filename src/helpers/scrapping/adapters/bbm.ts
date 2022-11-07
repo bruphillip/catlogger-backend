@@ -74,8 +74,6 @@ export class BBM {
 
     const current = numberOfVolumesInBrazil[matchingPosition]
 
-    // const totalSum = sum(numberOfVolumesInBrazil) - current
-
     const previousSum = sum(getAllAfter(numberOfVolumesInBrazil, current))
 
     const currentTable = reverse([...table])[matchingPosition]?.children.splice(

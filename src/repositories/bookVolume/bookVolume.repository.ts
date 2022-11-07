@@ -80,7 +80,9 @@ export class BookVolumeRepository {
             })
           }
 
-          return this.bookVolumeRepository.findMany()
+          return this.bookVolumeRepository.findMany({
+            where: { bookId: book.id },
+          })
         }),
       )
     } catch (err) {}

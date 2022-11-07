@@ -1,8 +1,9 @@
 import { Injectable } from '@nestjs/common'
-
+import { Publisher } from '@prisma/client'
+import blacklist from 'constant/blacklist'
 import { BBM } from 'helpers/scrapping/adapters/bbm'
 import { ScrapBookReturn } from 'helpers/scrapping/adapters/bbm.types'
-import { find } from 'lodash'
+import { find, values } from 'lodash'
 import { BookRepository, BookType } from 'repositories/book/book.repository'
 import { BookVolumeRepository } from 'repositories/bookVolume/bookVolume.repository'
 import {
@@ -30,7 +31,12 @@ export class ScrapService {
       publishers,
     )
 
-    const books = await this.bookRepository.createMany(booksWithPublisherId)
+    const booksFilteredByBlacklist = this.blacklistBooks(
+      booksWithPublisherId,
+      publishers,
+    )
+
+    const books = await this.bookRepository.createMany(booksFilteredByBlacklist)
 
     const volumesScrap = await this.bbmService.getBooksVolume(scrap.books)
 
@@ -50,5 +56,20 @@ export class ScrapService {
         find(publishers, (publisher) => publisher.name === book.publisher)
           ?.id || '',
     }))
+  }
+
+  private blacklistBooks(books: BookType[], publishers: Publisher[]) {
+    const blacklisted = values(blacklist)
+
+    return books.filter((book) => {
+      const some = blacklisted.some(
+        (bl) =>
+          book.name === bl.name &&
+          publishers.find((pub) => book.publisherId === pub.id)?.name ===
+            bl.publisher,
+      )
+
+      return !some
+    })
   }
 }

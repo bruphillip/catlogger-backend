@@ -117,7 +117,7 @@ describe('Publisher Repository (unit)', () => {
     dataSource.publisher.findMany = jest
       .fn()
       .mockImplementationOnce((params) => {
-        expect(params.where.OR[0].name.contains).toBeUndefined()
+        expect(params.where?.OR?.[0]?.name?.contains).toBeUndefined()
 
         return [publisher1, publisher2, publisher3, publisher4]
       })
