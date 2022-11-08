@@ -1,3 +1,7 @@
+// eslint-disable-next-line import-helpers/order-imports
+import * as dotenv from 'dotenv'
+dotenv.config()
+
 import { NestFactory } from '@nestjs/core'
 import env from 'constant/env'
 

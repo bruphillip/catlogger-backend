@@ -8,6 +8,7 @@
   "scripts": {
     "prebuild": "rimraf dist",
     "build": "nest build",
+    "dist:run": "node dist/main.js",
     "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
     "start": "NODE_ENV=development dotenv -e .env.development -- nest start",
     "start:dev": "NODE_ENV=development dotenv -e .env.development -- nest start --watch",
@@ -19,8 +20,9 @@
     "test:cov": "NODE_ENV=test dotenv -e .env.test -- jest --coverage --runInBand",
     "test:debug": "NODE_ENV=test dotenv -e .env.test -- node --inspect-brk -r tsconfig-paths/register -r ts-node/register node_modules/.bin/jest --runInBand",
     "test:e2e": "NODE_ENV=test dotenv -e .env.test -- jest --config ./test/jest-e2e.json --runInBand",
-    "generate:dev": "dotenv -e .env.development -- prisma migrate dev",
-    "generate:test": "dotenv -e .env.test -- prisma migrate dev --skip-seed"
+    "migrate:dev": "dotenv -e .env.development -- prisma migrate dev",
+    "migrate:test": "dotenv -e .env.test -- prisma migrate dev --skip-seed",
+    "migrate:prod": "prisma migrate dev --skip-seed"
   },
   "dependencies": {
     "@nestjs/common": "^8.0.0",

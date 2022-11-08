@@ -1,4 +1,7 @@
+import * as dotenv from 'dotenv'
 import { cpus } from 'os'
+
+dotenv.config().parsed
 
 type NodeEnvType = 'DEVELOPMENT' | 'TEST' | 'PRODUCTION'
 

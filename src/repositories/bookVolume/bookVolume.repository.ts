@@ -32,7 +32,7 @@ export class BookVolumeRepository {
       return Promise.all(
         bookVolumes.map(async (volume) => {
           const book = await this.bookRepository.findFirstOrThrow({
-            where: { name: volume.name },
+            where: { name: volume?.name },
           })
 
           if (!book?.author) {
