@@ -41,7 +41,7 @@ export class BookVolumeRepository {
                 id: book.id,
               },
               data: {
-                author: volume.author,
+                author: volume?.author,
               },
             })
           }
@@ -85,6 +85,8 @@ export class BookVolumeRepository {
           })
         }),
       )
-    } catch (err) {}
+    } catch (err) {
+    } finally {
+    }
   }
 }

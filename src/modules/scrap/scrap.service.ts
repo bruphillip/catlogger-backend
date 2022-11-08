@@ -26,6 +26,7 @@ export class ScrapService {
     const publishers = await this.publisherRepository.createMany(
       scrap.publishers,
     )
+
     const booksWithPublisherId = this.mapBookPublisherNameToId(
       scrap.books,
       publishers,
