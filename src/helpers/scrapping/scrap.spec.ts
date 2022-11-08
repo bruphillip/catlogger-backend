@@ -10,6 +10,7 @@ describe('Scrapping', () => {
   let scrap: Scrap
 
   beforeEach(async () => {
+    jest.restoreAllMocks()
     scrap = new Scrap()
   })
 

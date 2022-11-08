@@ -1,4 +1,9 @@
-import { Injectable, OnModuleInit, OnModuleDestroy } from '@nestjs/common'
+import {
+  Injectable,
+  OnModuleInit,
+  OnModuleDestroy,
+  INestApplication,
+} from '@nestjs/common'
 import { PrismaClient } from '@prisma/client'
 import { Crypto } from 'helpers/crypto'
 import { set } from 'lodash'
@@ -8,9 +13,14 @@ export class PrismaService
   extends PrismaClient
   implements OnModuleInit, OnModuleDestroy
 {
-  async onModuleInit() {
-    await this.$connect()
+  constructor() {
+    super({
+      log: ['error'],
+      errorFormat: 'pretty',
+    })
+  }
 
+  async onModuleInit() {
     this.$use(async (params, next) => {
       if (params.model === 'User') {
         if (params.action === 'create') {
@@ -35,6 +45,14 @@ export class PrismaService
       (key) => key[0] !== '_' && key !== '$extends',
     ) as string[]
 
-    return Promise.all(models.map((modelKey) => this[modelKey].deleteMany()))
+    await Promise.all(models.map((modelKey) => this[modelKey].deleteMany()))
+
+    return this.$disconnect()
+  }
+
+  async enableShutdownHooks(app: INestApplication) {
+    this.$on('beforeExit', async () => {
+      await app.close()
+    })
   }
 }

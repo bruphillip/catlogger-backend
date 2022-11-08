@@ -20,10 +20,8 @@ describe('Book Repository (unit)', () => {
     bookRepository = module.get<BookRepository>(BookRepository)
     dataSource = module.get<PrismaService>(PrismaService)
     generator = new Generator(dataSource)
-  })
 
-  afterEach(async () => {
-    jest.restoreAllMocks()
+    await generator?.clearAllRepositories()
   })
 
   it('should create many books', async () => {

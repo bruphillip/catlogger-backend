@@ -20,10 +20,9 @@ describe('User Service (unit)', () => {
     userRepository = module.get<UserRepository>(UserRepository)
     dataSource = module.get<PrismaService>(PrismaService)
     generator = new Generator(dataSource)
-  })
 
-  afterEach(async () => {
     jest.restoreAllMocks()
+    await generator?.clearAllRepositories()
   })
 
   it('should create a user correctly', async () => {

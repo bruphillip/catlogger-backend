@@ -22,10 +22,6 @@ describe('Publisher Repository (unit)', () => {
     generator = new Generator(dataSource)
   })
 
-  afterEach(async () => {
-    jest.restoreAllMocks()
-  })
-
   it('should create many publishers', async () => {
     const publisher1 = generator.mockPublisher()
     const publisher2 = generator.mockPublisher()

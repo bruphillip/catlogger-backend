@@ -43,16 +43,7 @@ describe('Scrap Service', () => {
     bbm = module.get<BBM>(BBM)
     service = module.get<ScrapService>(ScrapService)
     generator = new Generator(dataSource)
-    await dataSource.onModuleInit()
-    await generator?.clearAllRepositories()
-  })
 
-  afterAll(async () => {
-    await generator?.clearAllRepositories()
-    jest.restoreAllMocks()
-  })
-
-  beforeAll(async () => {
     await generator?.clearAllRepositories()
     jest.restoreAllMocks()
   })

@@ -19,10 +19,6 @@ jest.mock('axios')
 describe('BBM', () => {
   let bbm: BBM
 
-  beforeAll(() => {
-    // jest.enableAutomock()
-  })
-
   beforeEach(async () => {
     bbm = new BBM()
   })

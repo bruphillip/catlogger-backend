@@ -22,14 +22,8 @@ describe('PublisherController', () => {
     dataSource = module.get<PrismaService>(PrismaService)
 
     generator = new Generator(dataSource)
-    await generator?.clearAllRepositories()
-  })
 
-  afterAll(async () => {
-    await generator?.clearAllRepositories()
-  })
-
-  beforeAll(async () => {
+    jest.restoreAllMocks()
     await generator?.clearAllRepositories()
   })
 

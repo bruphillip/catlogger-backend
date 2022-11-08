@@ -23,15 +23,8 @@ describe('UserController', () => {
     dataSource = module.get<PrismaService>(PrismaService)
     controller = module.get<UserController>(UserController)
     generator = new Generator(dataSource)
-    await dataSource.onModuleInit()
-    await generator?.clearAllRepositories()
-  })
 
-  afterAll(async () => {
-    await generator?.clearAllRepositories()
-  })
-
-  beforeAll(async () => {
+    jest.restoreAllMocks()
     await generator?.clearAllRepositories()
   })
 
@@ -50,6 +43,7 @@ describe('UserController', () => {
   })
 
   it('should login and give return token', async () => {
+    await dataSource.onModuleInit()
     const user = await generator.createUser({ password: '12345' })
 
     const result = await controller.login({
