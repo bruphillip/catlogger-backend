@@ -50,7 +50,7 @@ export class UserController {
 
       if (!user) throw new PreconditionFailedException(user)
 
-      const isSamePass = await this.userRepository.comparePassword(
+      const isSamePass = await this.userRepository.cryto.compare(
         userBody.password,
         user.password,
       )

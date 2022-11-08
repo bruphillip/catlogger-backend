@@ -8,17 +8,9 @@ import { UserSchemaBuildProps } from 'modules/user/user.schema'
 
 @Injectable()
 export class UserRepository {
-  private cryto: Crypto
+  public cryto: Crypto
   constructor(private prismaService: PrismaService) {
     this.cryto = new Crypto()
-  }
-
-  async updatePassword(password: string) {
-    return this.cryto.hash(password)
-  }
-
-  async comparePassword(password, crypted) {
-    return this.cryto.compare(password, crypted)
   }
 
   sign(user: UserProps) {
