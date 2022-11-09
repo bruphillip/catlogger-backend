@@ -53,7 +53,7 @@ export class BBM {
 
     await this.queue.instance.drain()
 
-    return scrapVolumes
+    return compact(scrapVolumes)
   }
 
   async getBookVolume(scrap: ScrapBookReturn) {

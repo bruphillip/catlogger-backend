@@ -30,18 +30,18 @@ export class BookVolumeRepository {
   async createMany(bookVolumes: BookVolumesType[]) {
     try {
       return Promise.all(
-        bookVolumes.map(async (volume) => {
-          const book = await this.bookRepository.findFirstOrThrow({
-            where: { name: volume?.name },
+        bookVolumes.map(async (book) => {
+          const bookFound = await this.bookRepository.findFirstOrThrow({
+            where: { name: book.name },
           })
 
-          if (!book?.author) {
+          if (!bookFound?.author) {
             await this.bookRepository.update({
               where: {
-                id: book.id,
+                id: bookFound.id,
               },
               data: {
-                author: volume?.author,
+                author: bookFound?.author,
               },
             })
           }
@@ -49,9 +49,9 @@ export class BookVolumeRepository {
           const createdVolumes = await this.bookVolumeRepository.findMany({
             where: {
               number: {
-                in: volume.volumes.map((vol) => vol.number),
+                in: book.volumes.map((vol) => vol.number),
               },
-              bookId: book.id,
+              bookId: bookFound.id,
             },
             select: {
               bookId: true,
@@ -62,9 +62,9 @@ export class BookVolumeRepository {
             },
           })
 
-          const volumeWithBookId = volume.volumes.map((volume) => ({
+          const volumeWithBookId = book.volumes.map((volume) => ({
             ...volume,
-            bookId: book.id,
+            bookId: bookFound.id,
           }))
 
           let toCreate = volumeWithBookId
@@ -81,12 +81,10 @@ export class BookVolumeRepository {
           }
 
           return this.bookVolumeRepository.findMany({
-            where: { bookId: book.id },
+            where: { bookId: bookFound.id },
           })
         }),
       )
-    } catch (err) {
-    } finally {
-    }
+    } catch (err) {}
   }
 }
