@@ -13,8 +13,6 @@ async function bootstrap() {
     new FastifyAdapter(),
   )
   app.enableCors()
-  await app.listen(env.APP_PORT, '::', (er, port) => {
-    console.log(`app listening to port=${port}`)
-  })
+  await app.listen(env.APP_PORT, '::')
 }
 bootstrap()
