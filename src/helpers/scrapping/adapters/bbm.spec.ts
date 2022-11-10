@@ -3,6 +3,7 @@ import axios from 'axios'
 import {
   abcDoBudismo,
   aEstrelaDoHentai,
+  aotBeforeFall,
   bleach,
   booksDuplicatedHtml,
   booksHtml,
@@ -11,6 +12,7 @@ import {
   loboSolitario,
   morango,
   shakugan,
+  zetsuenNoTempest,
 } from '../mock'
 import { BBM } from './bbm'
 
@@ -251,6 +253,60 @@ describe('BBM', () => {
     expect(booksVolume.volumes[0].coverUrl.includes('01')).toBe(true)
 
     expect(booksVolume.volumes[4].coverUrl.includes('Remix')).toBe(true)
+    expect(booksVolume.volumes[4].coverUrl.includes('05')).toBe(true)
+
+    expect(mock).toHaveBeenCalled()
+  })
+
+  it('should load and get information books volume in batch(attack on titan - before fall)', async () => {
+    const mock = mockedAxios.get.mockImplementation(() =>
+      Promise.resolve({ data: aotBeforeFall }),
+    )
+
+    const booksVolume = await bbm.getBookVolume({
+      name: 'aot',
+      publisher: 'Random Publisher',
+      url: 'abc',
+      dupIndex: 0,
+    })
+
+    expect(booksVolume.author).toBe('Ryo Suzukaze; Satoshi Shiki')
+    expect(booksVolume.volumes).toHaveLength(17)
+    expect(booksVolume.volumes[0].number).toBe('# 01')
+    expect(booksVolume.volumes[0].releaseDate).toBe('08/2015')
+    expect(booksVolume.volumes[0].coverUrl).toBeTruthy()
+
+    // URL matching
+    expect(booksVolume.volumes[0].coverUrl.includes('01')).toBe(true)
+
+    expect(booksVolume.volumes[4].coverUrl.includes('05')).toBe(true)
+
+    expect(mock).toHaveBeenCalled()
+  })
+
+  it('should load and get information books volume in batch(attack on titan - before fall)', async () => {
+    const mock = mockedAxios.get.mockImplementation(() =>
+      Promise.resolve({ data: zetsuenNoTempest }),
+    )
+
+    const booksVolume = await bbm.getBookVolume({
+      name: 'zetsuen no tempest',
+      publisher: 'Random Publisher',
+      url: 'abc',
+      dupIndex: 0,
+    })
+
+    expect(booksVolume.author).toBe(
+      `Arihide Sano; Kyou Shirodaira; Ren Saizaki`,
+    )
+    expect(booksVolume.volumes).toHaveLength(11)
+    expect(booksVolume.volumes[0].number).toBe('# 01')
+    expect(booksVolume.volumes[0].releaseDate).toBe('Fevereiro de 2015')
+    expect(booksVolume.volumes[0].coverUrl).toBeTruthy()
+
+    // URL matching
+    expect(booksVolume.volumes[0].coverUrl.includes('01')).toBe(true)
+
     expect(booksVolume.volumes[4].coverUrl.includes('05')).toBe(true)
 
     expect(mock).toHaveBeenCalled()

@@ -11,6 +11,8 @@ const PATHS = {
     ['abc-do-budismo']: `${__dirname}/volumes/abc-do-budismo-spec.txt`,
     ['a-estrela-do-hentai']: `${__dirname}/volumes/a-estrela-do-hentai.spec.txt`,
     bleach: `${__dirname}/volumes/bleach.spec.txt`,
+    ['attack-on-titan-before-fall']: `${__dirname}/volumes/attack-on-titan-before-fall.spec.txt`,
+    ['zetsuen-no-tempest']: `${__dirname}/volumes/zetsuen-no-tempest.spec.txt`,
   },
 }
 
@@ -31,6 +33,13 @@ const aEstrelaDoHentai = fs
   .toString()
 
 const bleach = fs.readFileSync(PATHS.volumes['bleach']).toString()
+const aotBeforeFall = fs
+  .readFileSync(PATHS.volumes['attack-on-titan-before-fall'])
+  .toString()
+
+const zetsuenNoTempest = fs
+  .readFileSync(PATHS.volumes['zetsuen-no-tempest'])
+  .toString()
 
 export {
   booksHtml,
@@ -43,4 +52,6 @@ export {
   abcDoBudismo,
   aEstrelaDoHentai,
   bleach,
+  aotBeforeFall,
+  zetsuenNoTempest,
 }

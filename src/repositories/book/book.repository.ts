@@ -1,6 +1,7 @@
 import { Injectable } from '@nestjs/common'
 import { PrismaService } from 'helpers/database/database.service'
 import { differenceBy, sortBy } from 'lodash'
+import { BookSchemaBuildProps } from 'modules/book/book.schema'
 
 interface BookRepositoryProps {
   createMany: {
@@ -11,6 +12,10 @@ interface BookRepositoryProps {
   getByIdWithUserVolume: {
     bookId: string
     userId: string
+  }
+  update: {
+    bookId?: string | null | undefined
+    book: BookSchemaBuildProps['save']
   }
 }
 
@@ -220,6 +225,68 @@ export class BookRepository {
         updatedAt: true,
         volumes: {
           take: 1,
+        },
+      },
+    })
+  }
+
+  async update({ bookId, book }: BookRepositoryProps['update']) {
+    return this.bookRepository.upsert({
+      where: {
+        id: bookId || '',
+      },
+      include: {
+        publisher: true,
+        volumes: true,
+      },
+      create: {
+        author: book.author,
+        name: book.name,
+        publisher: {
+          connect: {
+            id: book.publisher.id || '',
+          },
+        },
+        url: book.url,
+        volumes: {
+          createMany: {
+            data: book.volumes.map((volume) => ({
+              coverUrl: volume.coverUrl,
+              number: volume.number,
+              releaseDate: volume.releaseDate,
+              price: volume.price,
+            })),
+          },
+        },
+      },
+      update: {
+        author: book.author,
+        name: book.name,
+        publisher: {
+          connect: {
+            id: book.publisher.id || '',
+          },
+        },
+        url: book.url,
+        volumes: {
+          deleteMany: book.volumes.map((volume) => ({
+            NOT: { id: volume.id || '' },
+          })),
+          upsert: book.volumes.map((volume) => ({
+            create: {
+              coverUrl: volume.coverUrl,
+              number: volume.number,
+              releaseDate: volume.releaseDate,
+              price: volume.price,
+            },
+            where: { id: volume?.id || '' },
+            update: {
+              coverUrl: volume.coverUrl,
+              number: volume.number,
+              releaseDate: volume.releaseDate,
+              price: volume.price,
+            },
+          })),
         },
       },
     })

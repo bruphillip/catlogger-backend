@@ -1,12 +1,19 @@
-import { Controller, Get, Param, Query } from '@nestjs/common'
+import { Controller, Get, Param, Post, Query } from '@nestjs/common'
 import { AuthUser, AuthUserProps } from 'helpers/decorators/auth.user.decorator'
 import { JwtToken } from 'helpers/decorators/token.apply.decorator'
+import { assign } from 'lodash'
 import { BookRepository } from 'repositories/book/book.repository'
+import { PublisherRepository } from 'repositories/publisher/publisher.repository'
+
+import { BookSchema, BookSchemaBuildProps } from './book.schema'
 
 @Controller('book')
 @JwtToken()
 export class BookController {
-  constructor(private bookRepository: BookRepository) {}
+  constructor(
+    private bookRepository: BookRepository,
+    private publisherRepository: PublisherRepository,
+  ) {}
 
   @Get('all')
   all(
@@ -32,5 +39,25 @@ export class BookController {
   @Get('/search')
   search(@Query('search') search: string) {
     return this.bookRepository.search(search)
+  }
+
+  @Post('')
+  async save(@BookSchema('save') book: BookSchemaBuildProps['save']) {
+    const foundPublisher = await this.publisherRepository.findByName({
+      name: book.publisher.name,
+    })
+
+    if (!foundPublisher) {
+      const newPublisher = await this.publisherRepository.create({
+        name: book.publisher.name,
+      })
+      assign(book, { publisher: newPublisher })
+    } else {
+      assign(book, { publisher: foundPublisher })
+    }
+
+    const updated = await this.bookRepository.update({ bookId: book.id, book })
+
+    return updated
   }
 }

@@ -41,7 +41,7 @@ export class BookVolumeRepository {
                 id: bookFound.id,
               },
               data: {
-                author: bookFound?.author,
+                author: book?.author,
               },
             })
           }

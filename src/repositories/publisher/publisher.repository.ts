@@ -4,6 +4,8 @@ import { differenceBy } from 'lodash'
 
 interface PublisherRepositoryProps {
   userBooksVolumesOrderedByPublisher: { userId: string }
+  findByName: { name: string }
+  create: { name: string }
 }
 
 export type PublisherType = {
@@ -146,5 +148,19 @@ export class PublisherRepository {
         })),
       })),
     }))
+  }
+
+  async create({ name }: PublisherRepositoryProps['create']) {
+    return this.publisherRepository.create({
+      data: {
+        name: name,
+      },
+    })
+  }
+
+  async findByName({ name }: PublisherRepositoryProps['findByName']) {
+    return this.publisherRepository.findFirst({
+      where: { name: { contains: name, mode: 'insensitive' } },
+    })
   }
 }

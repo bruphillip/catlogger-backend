@@ -19,8 +19,8 @@
       "type": "node-terminal"
     },
     {
-      "command": "NODE_ENV=test npx dotenv -e .env.test -- ${workspaceFolder}/node_modules/.bin/jest --runInBand --detectOpenHandles --testTimeout=300000 --forceExit -i",
-      "name": "Jest",
+      "command": "npm run start:debug",
+      "name": "NestJS start:debug",
       "request": "launch",
       "type": "node-terminal"
     }

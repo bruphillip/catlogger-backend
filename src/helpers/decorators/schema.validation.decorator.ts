@@ -1,11 +1,24 @@
-import { createParamDecorator, ExecutionContext } from '@nestjs/common'
+import {
+  createParamDecorator,
+  ExecutionContext,
+  HttpException,
+  HttpStatus,
+} from '@nestjs/common'
+import { ObjectSchema, ValidationError } from 'yup'
+
+type SchemaReturn = () => ObjectSchema<any>
 
 export const SchemaBody = createParamDecorator(
-  async (schemaValidation: any, ctx: ExecutionContext) => {
+  async (schema: SchemaReturn, ctx: ExecutionContext) => {
     const body = ctx.switchToHttp().getRequest().body
 
-    const validatedBody = await schemaValidation(body)
+    try {
+      const validatedBody = schema()
 
-    return validatedBody
+      return await validatedBody.validate(body)
+    } catch (err) {
+      const error = err as ValidationError
+      throw new HttpException(error.message, HttpStatus.BAD_REQUEST)
+    }
   },
 )

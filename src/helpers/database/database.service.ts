@@ -13,13 +13,6 @@ export class PrismaService
   extends PrismaClient
   implements OnModuleInit, OnModuleDestroy
 {
-  constructor() {
-    super({
-      log: ['error'],
-      errorFormat: 'pretty',
-    })
-  }
-
   async onModuleInit() {
     this.$use(async (params, next) => {
       if (params.model === 'User') {
