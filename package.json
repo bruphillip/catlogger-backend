@@ -22,7 +22,7 @@
     "test:e2e": "NODE_ENV=test dotenv -e .env.test -- jest --config ./test/jest-e2e.json --runInBand",
     "migrate:dev": "dotenv -e .env.development -- prisma migrate dev",
     "migrate:test": "dotenv -e .env.test -- prisma migrate dev --skip-seed",
-    "migrate:prod": "prisma migrate deploy --skip-seed"
+    "migrate:prod": "prisma migrate deploy"
   },
   "dependencies": {
     "@nestjs/common": "^8.0.0",
