@@ -1,0 +1,10 @@
+[phases.test]
+cmds = ["yarn run test"]
+dependsOn = ["install"]
+
+[phases.build]
+dependsOn = ["...", "lint"]
+cmds = ["yarn migrate:prod", "yarn build"]
+
+[start]
+cmd = "yarn dist:run"
