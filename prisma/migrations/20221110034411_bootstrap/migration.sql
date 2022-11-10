@@ -59,6 +59,12 @@ CREATE TABLE "UserVolumesBookVolumes" (
     CONSTRAINT "UserVolumesBookVolumes_pkey" PRIMARY KEY ("userId","bookVolumeId")
 );
 
+-- CreateTable
+CREATE TABLE "_BookToUser" (
+    "A" TEXT NOT NULL,
+    "B" TEXT NOT NULL
+);
+
 -- CreateIndex
 CREATE UNIQUE INDEX "Book_id_key" ON "Book"("id");
 
@@ -80,6 +86,12 @@ CREATE INDEX "UserVolumesBookVolumes_userId_idx" ON "UserVolumesBookVolumes"("us
 -- CreateIndex
 CREATE INDEX "UserVolumesBookVolumes_bookVolumeId_idx" ON "UserVolumesBookVolumes"("bookVolumeId");
 
+-- CreateIndex
+CREATE UNIQUE INDEX "_BookToUser_AB_unique" ON "_BookToUser"("A", "B");
+
+-- CreateIndex
+CREATE INDEX "_BookToUser_B_index" ON "_BookToUser"("B");
+
 -- AddForeignKey
 ALTER TABLE "Book" ADD CONSTRAINT "Book_publisherId_fkey" FOREIGN KEY ("publisherId") REFERENCES "Publisher"("id") ON DELETE CASCADE ON UPDATE CASCADE;
 
@@ -91,3 +103,9 @@ ALTER TABLE "UserVolumesBookVolumes" ADD CONSTRAINT "UserVolumesBookVolumes_user
 
 -- AddForeignKey
 ALTER TABLE "UserVolumesBookVolumes" ADD CONSTRAINT "UserVolumesBookVolumes_bookVolumeId_fkey" FOREIGN KEY ("bookVolumeId") REFERENCES "BookVolume"("id") ON DELETE CASCADE ON UPDATE CASCADE;
+
+-- AddForeignKey
+ALTER TABLE "_BookToUser" ADD CONSTRAINT "_BookToUser_A_fkey" FOREIGN KEY ("A") REFERENCES "Book"("id") ON DELETE CASCADE ON UPDATE CASCADE;
+
+-- AddForeignKey
+ALTER TABLE "_BookToUser" ADD CONSTRAINT "_BookToUser_B_fkey" FOREIGN KEY ("B") REFERENCES "User"("id") ON DELETE CASCADE ON UPDATE CASCADE;
