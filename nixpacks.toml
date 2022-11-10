@@ -1,9 +1,5 @@
-[phases.test]
-cmds = ["npm run test"]
-dependsOn = ["install"]
-
 [phases.build]
-dependsOn = ["test"]
+dependsOn = ["install"]
 cmds = ["npm run migrate:prod", "npm run build"]
 
 [start]
