@@ -116,9 +116,7 @@ export class BBM {
 
   private findDuplicatedBookNamesAndFixIt(books: ScrapBookReturn[]) {
     return books.reduce((currentArray, book) => {
-      const dup = currentArray.filter((current) =>
-        book.name.includes(current.name),
-      )
+      const dup = currentArray.filter((current) => book.url === current.url)
       if (dup.length > 0) {
         currentArray.push({ ...book, dupIndex: dup.length })
         return currentArray
