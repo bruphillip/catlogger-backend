@@ -42,7 +42,6 @@ module.exports = {
           'module',
           '/^src/',
           '/^app/',
-          '/^@shared/',
           ['parent', 'sibling', 'index'],
         ],
         alphabetize: { order: 'asc', ignoreCase: true },
