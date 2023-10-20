@@ -1,6 +1,6 @@
 import { Global, Module } from '@nestjs/common'
 
-import { BBM } from './adapters/bbm'
+import { BBM } from './adapters/bbm/bbm'
 
 @Global()
 @Module({

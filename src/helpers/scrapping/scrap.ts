@@ -1,9 +1,9 @@
 import axios, { AxiosInstance } from 'axios'
 import axiosRetry from 'axios-retry'
 import * as cheerio from 'cheerio'
+import env from 'constant/env'
 import { compact, get, isArray } from 'lodash'
 
-// eslint-disable-next-line @typescript-eslint/no-var-requires
 const rateLimit = require('axios-rate-limit')
 
 interface AllTag {
@@ -25,12 +25,12 @@ class Scrap {
 
   constructor() {
     this.http = rateLimit(axios, {
-      maxRequests: 5,
-      perMilliseconds: 1000,
-      maxRPS: 5,
+      maxRequests: env.PARALLEL_QUEUE,
+      perMilliseconds: env.MAX_MILISECONDS,
+      maxRPS: env.PARALLEL_QUEUE,
     })
 
-    axiosRetry(this.http, { retries: 5 })
+    axiosRetry(this.http, { retries: env.RETRIES })
   }
 
   async load(url: string) {

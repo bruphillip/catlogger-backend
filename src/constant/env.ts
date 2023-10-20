@@ -16,7 +16,9 @@ export default {
   DB_LOGGING: Boolean(process.env.DB_LOGGING === 'true'),
   DB_SYNCRONIZE: Boolean(process.env.DB_SYNCRONIZE === 'true'),
   BCRYPT_SALT: Number(process.env.BCRYPT_SALT),
-  PARALLEL_QUEUE: 3,
+  PARALLEL_QUEUE: 20,
+  RETRIES: 5,
+  MAX_MILISECONDS: 5000,
   CPUS_NODES: cpus().length,
   TOKEN_PREFIX: 'JWT',
   EXPIRATION_TOKEN:

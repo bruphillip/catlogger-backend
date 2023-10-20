@@ -66,7 +66,9 @@ export class Generator {
     })
   }
 
-  mockUser(user?: Partial<GeneratorProps['user']>) {
+  mockUser(
+    user?: Partial<GeneratorProps['user']>,
+  ): Prisma.UserUncheckedCreateInput {
     const fullName = this.faker.name.fullName()
 
     return {
@@ -74,7 +76,7 @@ export class Generator {
       password: this.faker.internet.password(),
       email: this.faker.internet.email(fullName),
       ...user,
-    }
+    } as Prisma.UserUncheckedCreateInput
   }
 
   async createUser(data?: Partial<GeneratorProps['user']>) {

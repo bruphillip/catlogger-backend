@@ -70,7 +70,8 @@ export class UserController {
 
   @Post('/')
   async create(@UserSchema('create') userBody: UserSchemaBuildProps['create']) {
-    return this.userRepository.create(userBody)
+    const user = await this.userRepository.create(userBody)
+    return this.userRepository.omit(user, ['password'])
   }
 
   @Post('like/:bookId')

@@ -22,7 +22,9 @@
     "test:e2e": "NODE_ENV=test dotenv -e .env.test -- jest --config ./test/jest-e2e.json --runInBand",
     "migrate:dev": "dotenv -e .env.development -- prisma migrate dev",
     "migrate:test": "dotenv -e .env.test -- prisma migrate dev --skip-seed",
-    "migrate:prod": "prisma migrate deploy"
+    "migrate:prod": "prisma migrate deploy",
+    "studio:dev": "dotenv -e .env.development -- prisma studio",
+    "reset:dev": "dotenv -e .env.development -- prisma migrate reset"
   },
   "dependencies": {
     "@nestjs/common": "^8.0.0",
@@ -92,7 +94,12 @@
       "^.+\\.(t|j)s$": "ts-jest"
     },
     "collectCoverageFrom": [
-      "**/*.(t|j)s"
+      "**/*.(t|j)s",
+      "!constant/*.ts",
+      "!main.ts",
+      "!**/*.module.(t|j)s",
+      "!**/*.decorator.(t|j)s",
+      "!**/*.schema.(t|j)s"
     ],
     "coverageDirectory": "../coverage",
     "testEnvironment": "node",

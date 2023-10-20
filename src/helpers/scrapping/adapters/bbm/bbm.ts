@@ -6,7 +6,7 @@ import { getAllAfter } from 'helpers/getAllAfter'
 import { Queue } from 'helpers/queue'
 import { compact, get, isArray, reverse, sum, uniqBy } from 'lodash'
 
-import { Scrap, JsonObject } from '../scrap'
+import { Scrap, JsonObject } from '../../scrap'
 import {
   ScrapBookReturn,
   ScrapVolumeAuthorReturn,
@@ -46,9 +46,9 @@ export class BBM {
   ): Promise<ScrapVolumeAuthorReturn[]> {
     const scrapVolumes: ScrapVolumeAuthorReturn[] = []
     scrapped.map((scrap) =>
-      this.queue.instance.push(scrap, (_, result: ScrapVolumeAuthorReturn) =>
-        scrapVolumes.push(result),
-      ),
+      this.queue.instance.push(scrap, (_, result: ScrapVolumeAuthorReturn) => {
+        scrapVolumes.push(result)
+      }),
     )
 
     await this.queue.instance.drain()

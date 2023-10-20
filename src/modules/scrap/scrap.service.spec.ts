@@ -2,12 +2,12 @@ import { Test, TestingModule } from '@nestjs/testing'
 import { DatabaseModule } from 'helpers/database/database.module'
 import { PrismaService } from 'helpers/database/database.service'
 import { Queue } from 'helpers/queue'
-import { BBM } from 'helpers/scrapping/adapters/bbm'
+import { BBM } from 'helpers/scrapping/adapters/bbm/bbm'
 import {
   ScrapBookReturn,
   ScrapPublisherReturn,
   ScrapVolumeReturn,
-} from 'helpers/scrapping/adapters/bbm.types'
+} from 'helpers/scrapping/adapters/bbm/bbm.types'
 import { range, runInContext } from 'lodash'
 import { BookRepository } from 'repositories/book/book.repository'
 import { BookVolumeRepository } from 'repositories/bookVolume/bookVolume.repository'
